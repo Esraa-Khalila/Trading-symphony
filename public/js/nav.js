@@ -1,13 +1,13 @@
 const createNav = () => {
   let nav = document.querySelector(".navbar");
-  // <button class="hamburger-icon" onclick="openClose()">
-  //   <iconify-icon icon="cil:hamburger-menu"> </iconify-icon>
-  // </button>
+
   nav.innerHTML = `    
 
-    <div class="container nav ">
-
-    <div class="brand_logo"class="nav-content">
+    <div class="container nav" > 
+     <button class="hamburger-icon" onclick="openClose()">
+    <iconify-icon icon="cil:hamburger-menu"> </iconify-icon>
+  </button>
+    <div class="brand_logo">
       <a href="./home.html"
         >Trading
         <p>Symphoney</p>
@@ -28,7 +28,7 @@ const createNav = () => {
       <input type="search" placeholder="What are you looking for?" />
       <iconify-icon class="search-icon" icon="bi:search"></iconify-icon>
     </div>
-    <div>
+    <div id="nav-content" class='nav_content'>
       <ul class="nav_menu">
         <li><a>اللغة العربية</a></li>
         <li><a class="nav_item">Cart</a></li>
@@ -78,11 +78,11 @@ const createNav = () => {
 };
 createNav();
 
-// function openClose() {
-//   var navItem = document.getElementById("nav-content");
-//   if (navItem.style.display === "block") {
-//     navItem.style.display = "none";
-//   } else {
-//     navItem.style.display = "block";
-//   }
-// }
+function openClose() {
+  var navItem = document.getElementById("nav-content");
+  if (navItem.style.display === "block") {
+    navItem.style.display = "none";
+  } else {
+    navItem.style.display = "block";
+  }
+}
