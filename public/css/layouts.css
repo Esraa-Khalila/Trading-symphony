@@ -1,0 +1,216 @@
+@font-face {
+  font-family: "Bookerly";
+  src: url("Bookerly.eot"); /* IE9 Compat Modes */
+  src: url("Bookerly.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */ url("Bookerly.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("Bookerly.woff") format("woff"),
+    /* Pretty Modern Browsers */ url("Bookerly.ttf") format("truetype"),
+    /* Safari, Android, iOS */ url("Bookerly.svg#svgFontName") format("svg"); /* Legacy iOS */
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Bookerly",Arial, sans-serif;
+}
+:root {
+  --primary-color: #edc50c;
+  --secondary-color: #707070;
+  --text-white: #ffffff;
+}
+html {
+  font-size: 62.5%;
+}
+a {
+  text-decoration: none;
+}
+ul li {
+  list-style-type: none;
+}
+
+/*start nav section style */
+.navbar {
+  background-color: var(--primary-color);
+}
+.hamburger-icon {
+  display: none;
+}
+.container {
+  max-width: 1692px;
+  margin: 0 auto;
+}
+.nav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100px;
+}
+.brand_logo {
+  font-size: 15px;
+}
+.brand_logo a {
+  color: black;
+  font-weight: 800;
+}
+.brand_logo p {
+  padding-left: 2rem;
+}
+.delivery {
+  display: flex;
+  font-size: 15px;
+}
+.delivery span {
+  display: block;
+  font-weight: 600;
+}
+.delivery_item {
+  padding-left: 17px;
+}
+ .location{
+font-size: 30px;
+}
+.search {
+  position: relative;
+}
+.search input {
+  position: relative;
+  width: 600px;
+  padding: 15px 0;
+  border-radius: 0.1rem;
+  border: none;
+}
+.search input::placeholder {
+  padding: 10px;
+}
+.search input:hover {
+  outline: none;
+}
+.search .search-icon {
+  position: absolute;
+  right: 2%;
+  top: 20%;
+  font-size: 1.7rem;
+}
+.nav_menu {
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+}
+
+.nav_menu li {
+  padding-left: 25px;
+}
+.nav_item {
+  font-weight: 500;
+  font-size: 20px;
+}
+.btn_nav {
+  background-color: var(--secondary-color);
+  border: none;
+  width: 90px;
+  padding: 7px 0;
+  border-radius: 5px;
+  color: var(--text-white);
+  font-size: 15px;
+  cursor: pointer;
+}
+.bg_sub_nav{
+  background-color: var(--text-white); 
+   box-shadow: 15px 15px 5px rgb(252, 248, 248);
+}
+.sub_nav {
+  display: grid;
+  grid-template-columns: 250px 250px 250px 250px 70px 70px 90px;
+  align-items: center;
+  gap: 35px;
+  padding:17px 70px;
+
+}
+.sub_nav_item {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  box-shadow: 5px 5px 5px rgb(241, 236, 236);
+  border: none;
+  color: #959595;
+  font-size: 16px;
+}
+.sub_nav input:hover,
+:focus {
+  outline: none;
+}
+.sub_nav input::placeholder {
+  font-size: 10px;
+}
+.btn_search {
+  height: 35px;
+  background-color: var(--secondary-color);
+  color: #ffffff;
+}
+
+/* footer style section */
+.footer {
+  background-color: #fbfaea;
+}
+.footer_item li {
+  padding-top: 13px;
+}
+.footer-main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 5rem;
+}
+.footer-details {
+  font-size: 1.3rem;
+}
+.footer-details div {
+  margin-bottom: 1.7rem;
+}
+.footer-menu {
+  display: grid;
+  grid-template-columns: repeat(3, 200px);
+  gap: 10rem;
+}
+.footer-icon {
+  font-size: 3rem;
+}
+.copy-right {
+  text-align: center;
+  padding-bottom: 15px;
+}
+@media (max-width: 1500px) {
+  .sub_nav {
+    gap: 15px;
+}
+}
+@media (max-width: 1200px) {
+  .search input {
+    width: 100px;
+  }
+  .sub_nav {
+    grid-template-columns: none;
+  }
+  .footer-main {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 5rem;
+  }
+  .footer-menu {
+    display: grid;
+    grid-template-columns: repeat(2, 50px);
+    gap: 40px;
+  }
+}
+@media (max-width: 769px) {
+  .nav-content {
+    display: none;
+  }
+  .hamburger-icon {
+    display: block;
+    background-color: black;
+    color: white;
+  }
+
+}

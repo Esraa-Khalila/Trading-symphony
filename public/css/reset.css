@@ -1,0 +1,75 @@
+@import "./layouts.css";
+
+.reset_password {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+}
+.reset_password_details {
+  box-shadow: 5px 5px 5px rgb(249, 243, 243);
+  border: 1.5px solid rgb(249, 243, 243);
+  border-radius: 10px;
+  width: 600px;
+}
+.reset_password_title {
+  font-size: 25px;
+  padding: 25px 35px;
+  border-bottom: 1px solid #d1d1d1;
+}
+.reset_password_info {
+  border-bottom: 1px solid #d1d1d1;
+  display: flex;
+  flex-direction: column;
+}
+.reset_info_four{
+    border-bottom: none;
+}
+.reset_password_info label {
+  font-size: 14px;
+  margin:25px  40px 0 40px;
+}
+.reset_password_info input {
+  height: 40px;
+  padding-left: 10px;
+  border: 1px solid #c7c7c7;
+  border-radius: 4px;
+  margin:20px 40px 50px 40px;
+}
+.reset_password_info .step_one_input {
+  width: 340px;
+}
+.reset_password_info .step_two_input {
+  width: 205px;
+}
+.reset_password_info .step_three_input {
+    width: 355px;
+  }
+  .reset_password_info .step_four_input1 {
+    width: 365px;
+    margin:5px 5px 0 40px;
+  }
+  .reset_password_info .step_four_input2 {
+    width: 365px;
+    margin-bottom: 30px;
+    margin-top: 8px;
+  }
+
+.reset_password_btn {
+  text-align: right;
+  margin: 25px 30px;
+}
+.reset_password_btn button {
+  border-radius: 4px;
+  padding: 5px 13px;
+  border: 1px solid #c7c7c7;
+}
+
+.reset_password_btn .btn_cancel {
+  background-color: white;
+  margin-right: 15px;
+}
+.reset_password_btn .btn_ok {
+  background-color: #707070;
+  color: white;
+}

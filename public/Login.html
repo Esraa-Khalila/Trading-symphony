@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/login.css" />
+    <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
+    <title>Sign In</title>
+  </head>
+  <body>
+    <nav class="navbar"></nav>
+
+    <div class="login container">
+      <div class="login_details">
+        <h1 class="login_details_item title">Sign In</h1>
+        <h2 class="login_details_item title">Welcome to Trading Symphony!</h2>
+        <p class="login_details_item description">
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+          sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+          rebum. Stet clita kasd
+        </p>
+        <a href=""
+          ><button type="button" class="login_details_btn login_details_item">
+            Go Shopping
+          </button></a
+        >
+      </div>
+      <div class="login_form">
+        <form method="post">
+          <div class="login_form_item">
+          <label for="email"> Email </label
+          ><input type="text" placeholder="mmm@gmail.com" id="email" /></div>
+            <div class="login_form_item">
+          <label for="password">Password </label>
+          <div class="login_form_password">
+            <input type="password" placeholder="******" id="password" />
+            <iconify-icon
+              class="eye_icon"
+              icon="ion:eye-off"
+              id="showPassword"
+            ></iconify-icon>
+          </div></div>
+          <button type="button" class="login_form_btn">Sign in</button>
+          <a href="./Reset-step-one.html" class="login_form_forget">Forget Password?</a>
+          <a href="./Register.html" class="login_form_Link"
+            >Don't have an account? <span>Sign Up Now</span></a
+          >
+        </form>
+      </div>
+    </div>
+    <script>
+      const showPassword = document.querySelector("#showPassword");
+      const password = document.querySelector("#password");
+
+      showPassword.addEventListener("click", function (e) {
+        const type =
+          password.getAttribute("type") === "password" ? "text" : "password";
+        password.setAttribute("type", type);
+      });
+    </script>
+    <footer class="footer"></footer>
+    <script src="js/nav.js"></script>
+    <script src="js/footer.js"></script>
+  </body>
+</html>

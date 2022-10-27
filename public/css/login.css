@@ -1,0 +1,125 @@
+@import "./layouts.css";
+
+.login {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.login_details {
+  margin: 100px;
+}
+.login_details_item {
+  padding: 15px;
+}
+.title {
+  font-weight: 700;
+  font-size: 25px;
+}
+.description {
+  font-size: 13px;
+}
+.login_details_btn {
+  background-color: #707070;
+  color: aliceblue;
+  border: none;
+  padding: 9px 18px;
+  margin: 12px;
+}
+.login_form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 640px;
+}
+.login_form form {
+  display: flex;
+  flex-direction: column;
+}
+.login_form label {
+  font-weight: bolder;
+  font-size: 17px;
+  padding-top: 10px;
+}
+.login_form input {
+  font-weight: bolder;
+  font-size: 15px;
+  padding-right: 250px;
+  padding-left: 10px;
+}
+.login_form #password {
+  border: none;
+}
+.login_form #email {
+  height: 45px;
+  border: 1px solid #c7c7c7;
+}.login_form_item{
+  margin-top: 10px;
+  margin-bottom: 25px;
+  display: flex;
+  flex-direction: column;
+}
+.login_form_password {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #c7c7c7;
+  margin-bottom: 15px;
+  height: 45px;
+  align-items: center;
+
+  
+}
+.eye_icon {
+  font-size: 25px;
+  padding-right: 10px;
+}
+.login_form input::placeholder {
+  font-size: 11px;
+  padding: 5px;
+  color:  #9b9b9b;
+}
+
+.login_form_btn {
+  cursor: pointer;
+  height: 45px;
+  background-color: #707070;
+  border: none;
+  font-size: 20px;
+  color: var(--text-white);
+}
+.login_form_forget {
+  font-size: 12px;
+  padding: 15px 0;
+  text-decoration: underline;
+  color: blue;
+}
+.login_form_Link {
+  font-size: 11px;
+  text-align: center;
+  color: #707070;
+}
+.login_form_Link span {
+  font-size: 12px;
+  font-weight: 900;
+}
+
+
+@media (max-width: 769px) {
+  .login {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .login_form {
+    height: 370px;
+  }
+  .login_form input{
+    padding-right:50px;
+  }
+}
+@media (max-width: 480px) {
+  .login {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .login_form input{
+    padding-right:0;
+  }
+}
