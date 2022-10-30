@@ -73,3 +73,25 @@
   background-color: #707070;
   color: white;
 }
+@media (max-width: 769px) {
+  .reset_password_details {
+
+    width: 300px;
+  }
+  .reset_password_info .step_one_input {
+    width: 200px;
+  }
+  .reset_password_info .step_two_input {
+    width: 200px;
+  }
+  .reset_password_info .step_three_input {
+      width: 220px;
+    }
+    .reset_password_info .step_four_input1 {
+      width: 200px;
+    }
+    .reset_password_info .step_four_input2 {
+      width: 200px;
+    }
+   
+}
