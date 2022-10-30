@@ -185,10 +185,6 @@ ul li {
     grid-template-columns: 220px 240px 220px 220px 70px 50px 70px;
     padding: 10px 0;
   }
-  .search input::placeholder {
-    font-size: 2px;
-    padding: 3px;
-  }
 }
 @media (max-width: 1300px) {
   .sub_nav {
