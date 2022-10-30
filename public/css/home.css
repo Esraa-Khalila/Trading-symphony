@@ -123,6 +123,7 @@
   .hero_item {
     display: grid;
     grid-template-columns: 38% 37%;
+    justify-content: center;
   }
   .slider {
     top: auto;
@@ -280,19 +281,17 @@
 .slider{
   top:auto
 }
+.other_product_item h2 {
+  font-size: 20px;
+  width: 400px;
+}
+.other_product_item p {
+  font-size: 10px;
+  width: 250px;
+}
 }
 
-@media (max-width: 1200px) {
- 
-  .other_product_item h2 {
-    font-size: 20px;
-    width: 400px;
-  }
-  .other_product_item p {
-    font-size: 10px;
-    width: 250px;
-  }
-}
+
 @media (max-width: 1029px) {
  
   .other_product_item h2 {
@@ -327,6 +326,10 @@
 }
 .other_product_details {
   margin-top: 5px;
+}
+.other_product {
+  height: 20rem;
+
 }
 }
 @media (max-width: 480px) {
