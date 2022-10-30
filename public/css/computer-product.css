@@ -1,0 +1,144 @@
+@import "./layouts.css";
+.all_product {
+  display: grid;
+  grid-template-columns: repeat(2, 20% 75%);
+  gap: 25px;
+  margin: 17px 60px;
+}
+.product_title h4 {
+  font-size: 16px;
+  padding: 15px 0;
+}
+.product_title p {
+  font-size: 10.5px;
+}
+.product {
+  display: flex;
+  align-items: center;
+  background-color: #f1f1f1;
+  height: 160px;
+  position: relative;
+}
+.product_img {
+  border-radius: 50%;
+  border: 1px solid var(--text-white);
+  background-color: #ffffff;
+  margin: 30px;
+}
+.product_sort {
+  display: flex;
+  justify-content: space-between;
+}
+.product_sort_type {
+  padding-left: 7px;
+  font-size: 20px;
+}
+.product_sort_by {
+  display: flex;
+}
+
+.product_sort_item {
+  border: 1px solid black;
+  width: 80px;
+  display: flex;
+  justify-content: space-between;
+  padding: 4px;
+}
+.sub_product {
+  display: grid;
+  grid-template-columns: repeat(3, 30%);
+  gap: 50px;
+}
+.sub_product_item {
+  border: 1px solid black;
+  height: 400px;
+  padding: 20px;
+}
+.sub_product_item h2 {
+  font-size: 13px;
+  padding: 10px;
+}
+.sub_product_item span {
+  font-size: 15px;
+  padding: 10px 4px;
+  font-weight: 700;
+}
+.sub_product_item p {
+  font-size: 9px;
+  padding: 10px;
+}
+.categories {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+}
+.categories .categories_name {
+  margin: 15px;
+}
+.title {
+  background-color: var(--primary-color);
+  font-size: 15px;
+}
+.categories input {
+  margin: 0 5px;
+}
+.product_details {
+  margin: 23px;
+}
+.after_discount {
+  text-decoration: line-through;
+  color: #9a0000;
+}
+.sub_product_item img {
+  width: 100%;
+}
+.sub_product_item .out_stock {
+  color: #848484;
+  font-size: 10px;
+  padding-left: 15px;
+}
+.sub_product_item .before_discount {
+  padding-left: 80px;
+}
+.pre-btn,
+.nxt-btn {
+  border: none;
+
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.pre-btn {
+  left: 0;
+  top: 50%;
+}
+
+.nxt-btn {
+  right: 0;
+  top: 50%;
+}
+.category_container {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+.category_container::-webkit-scrollbar {
+  display: none;
+}
+.sss {
+  display: none;
+}
+
+.product_design {
+  display: flex;
+}
+
+.active,
+.btn:hover {
+  color: yellow;
+  font-weight: 800;
+}

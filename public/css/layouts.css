@@ -182,8 +182,12 @@ ul li {
 @media (max-width: 1500px) {
   .sub_nav {
     display: grid;
-    grid-template-columns: 230px 220px 250px 250px 70px 50px 70px;
-    padding: 17px 0;
+    grid-template-columns: 220px 240px 220px 220px 70px 50px 70px;
+    padding: 10px 0;
+  }
+  .search input::placeholder {
+    font-size: 2px;
+    padding: 3px;
   }
 }
 @media (max-width: 1300px) {
@@ -192,7 +196,7 @@ ul li {
   }
   .sub_nav {
     display: grid;
-    grid-template-columns: 230px 250px 250px 250px 70px 70px 70px;
+    grid-template-columns: 230px 250px 230px 230px 70px 70px 70px;
   }
 }
 @media (max-width: 1200px) {
@@ -260,5 +264,9 @@ ul li {
   }
   .delivery {
     font-size: 10px;
+  }
+  .search input::placeholder {
+    font-size: 3px;
+    padding: 4px;
   }
 }

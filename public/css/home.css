@@ -80,7 +80,7 @@
 }
 .slider {
   position: absolute;
-  top: 58%;
+  top: 85%;
   left: 45%;
 }
 .active,
@@ -249,7 +249,7 @@
   object-fit: contain;
   background-size: contain;
   height: 55rem;
-  margin: 85px;
+ margin: 85px; 
 }
 .other_product_item h2 {
   width: 600px;
@@ -275,6 +275,13 @@
 .other_product_details {
   margin-top: 20px;
 }
+@media (max-width: 1500px) {
+ 
+.slider{
+  top:auto
+}
+}
+
 @media (max-width: 1200px) {
  
   .other_product_item h2 {
@@ -338,6 +345,16 @@
   }
   .other_product_details {
     margin-top: 3px;
+  }
+  .other_product {
+    height: 20rem;
+   margin: 0px; 
+  }
+  .check_product p {
+    font-size: 10px;
+  }
+  .check_product h2 {
+    font-size: 20px;
   }
 
 }
