@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Icon from iconify -->
+    <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
+    <link rel="stylesheet" href="/css/single-product.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav class="navbar"></nav>
+    <section class="product-details container">
+      <div class="product_item">
+        <h1>
+          Women's Wedge Heel Sandals Wide Width <br />
+          Platform Open Toe Ankle Straps
+        </h1>
+        <div class="image-slider">
+          <img
+            class="image-main"
+            src="./images/shoes_product/sandal.png"
+            class="active"
+          />
+          <div class="product-images">
+            <img src="./images/shoes_product/sandal.png" alt="" />
+            <img src="./images/shoes_product/sandal1.png" alt="" />
+            <img src="./images/shoes_product/sandal2.png" alt="" />
+          </div>
+        </div>
+        <div>
+          <p class="product-sub-heading">colors</p>
+          <div class="s">
+            <label for="s-size" class="radio_btn color_btn color_red check"></label>
+            <input type="radio" name="color" value="red" hidden id="m-size" />
+            <label for="m-size" class="radio_btn color_btn color_yellow"></label>
+            <input
+              type="radio"
+              name="color"
+              value="yellow"
+              hidden
+              id="l-size"
+            />
+            <label for="l-size" class="radio_btn color_btn color_black"></label>
+            <input
+              type="radio"
+              name="color"
+              value="brown"
+              hidden
+              id="xl-size"
+            />
+            <label for="xl-size" class="radio_btn color_btn"></label>
+            <input type="radio" name="color" value="xxl" hidden id="xxl-size" />
+            <label for="xxl-size" class="size-radio-btn"></label>
+          </div>
+        </div>
+
+        <div>
+          <p class="product-sub-heading">Size</p>
+          <div class="product_size">
+            <label for="s-size" class="radio_btn size_btn check">36</label>
+            <input type="radio" name="size" value="m" hidden id="m-size" />
+            <label for="m-size" class="radio_btn size_btn">37</label>
+            <input type="radio" name="size" value="l" hidden id="l-size" />
+            <label for="l-size" class="radio_btn size_btn">38</label>
+            <input type="radio" name="size" value="xl" hidden id="xl-size" />
+            <label for="xl-size" class="radio_btn size_btn">39</label>
+            <input type="radio" name="size" value="xl" hidden id="xl-size" />
+            <label for="xl-size" class="radio_btn size_btn">40</label>
+          </div>
+        </div>
+      </div>
+      <div class="">
+        <div class="product_details_item des">
+          <h3>Description</h3>
+          <p>
+            - Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+            erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+            et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
+          </p>
+          <p>
+            - Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+            erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+            et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
+          </p>
+          <p>
+            - Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+            erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+            et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
+          </p>
+        </div>
+        <div class="product_details_item">
+          <div class="product_info">
+            <span class="pargragh_one" >Price: <span id="discount_price" >15 </span>JOD</span>
+            <p class="product_info_p"><span>Availability :</span>In stock</p>
+            <p class="product-actual-price" ><span id="actual-price">30</span> JOD</p>
+            <p class="product_info_p"><span>Brand :</span> Suede</p>
+          </div>
+          <hr />
+
+          <div class="addtional_info">
+            <p class="saved_money">You Saved <span id="k"></span> JOD</p>
+            <div class="product_action">
+              <div class="counter">
+                <input type="text" id="counter_input" value="1" />
+                <div>
+                  <iconify-icon
+                    icon="dashicons:arrow-up-alt2"
+                    class="quantity_icon up"
+                    onClick="increaseCount(event, this)"
+                  ></iconify-icon>
+                  <iconify-icon
+                    icon="ep:arrow-down-bold"
+                    class="quantity_icon"
+                    onClick="decreaseCount(event, this)"
+                  ></iconify-icon>
+                </div>
+              </div>
+          <button class="btn_add_cart">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+        <div class="product_details_item">
+          <p>Payment accepted through:</p>
+          <div>
+            <img src="./images/payment/download.png" />
+            <img src="./images/payment/download (1).png" />
+            <img src="./images/payment/MClogo-c823e495.png" />
+            <img src="./images/payment/zain-cash-opt.png" />
+          </div>
+        </div>
+      </div>
+    </section>
+     <section class="similar_product container">
+      <hr>
+      <div class="similar_product_title">
+        <h3>Similar product</h3><a href="./computer-product.html">see more</a>
+      </div>
+  
+      <div class="product_details sub_product ss" id="countList">
+        <div class="sub_product_item">
+          <a href="./Single-product-computer.html">
+            <img src="./images/shoes_product/sandal.png" /></a>
+          <h2>
+            ASUS ROG Strix GeForce RTX 3070 GDDR6 OC Edition Graphic Card
+          </h2>
+          <p>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+            diam nonumy eirmod tempor invidunt ut labore et dolore magna
+            aliquyam erat, sed diam voluptua. At vero eos et accusam et
+            justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
+            takimata
+          </p>
+          <span class="after_discount">1500 JOD</span>
+          <span>99900 JOD</span>
+          <!-- <span class="out_stock">- Out of Stock -</span> -->
+        </div>
+        <div class="sub_product_item">
+          <img src="./images/shoes_product/sandal4.png" />
+          <h2>
+            ASUS ROG Strix GeForce RTX 3070 GDDR6 OC Edition Graphic Card
+          </h2>
+          <p>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+            diam nonumy eirmod tempor invidunt ut labore et dolore magna
+            aliquyam erat, sed diam voluptua. At vero eos et accusam et
+            justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
+            takimata
+          </p>
+          <!-- <span class="after_discount">1500 JOD</span> -->
+          <span class="before_discount">99900 JOD</span>
+          <!-- <span class="out_stock">- Out of Stock -</span> -->
+        </div>
+        <div class="sub_product_item">
+          <img src="./images/shoes_product/sandal6.png" />
+          <h2>
+            ASUS ROG Strix GeForce RTX 3070 GDDR6 OC Edition Graphic Card
+          </h2>
+          <p>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+            diam nonumy eirmod tempor invidunt ut labore et dolore magna
+            aliquyam erat, sed diam voluptua. At vero eos et accusam et
+            justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
+            takimata
+          </p>
+          <!-- <span class="after_discount">1500 JOD</span> -->
+          <span class="before_discount">99900 JOD</span>
+          <!-- <span class="out_stock">- Out of Stock -</span> -->
+        </div>
+        <div class="sub_product_item">
+          <img src="./images/shoes_product/sandal6.png" />
+          <h2>
+            ASUS ROG Strix GeForce RTX 3070 GDDR6 OC Edition Graphic Card
+          </h2>
+          <p>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+            diam nonumy eirmod tempor invidunt ut labore et dolore magna
+            aliquyam erat, sed diam voluptua. At vero eos et accusam et
+            justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
+            takimata
+          </p>
+          <!-- <span class="after_discount">1500 JOD</span> -->
+          <span class="before_discount">99900 JOD</span>
+          <!-- <span class="out_stock">- Out of Stock -</span> -->
+        </div>
+      </div>
+    </section>
+  
+    <script>
+      const productImages = document.querySelectorAll(".product-images img");
+      const productImageSlide = document.querySelector(".image-main"); 
+
+      let activeImageSlide = 0; 
+
+      productImages.forEach((item, i) => {
+        item.addEventListener("click", () => {
+          productImages[activeImageSlide].classList.remove("active");
+          item.classList.add("active");
+          productImageSlide.src = item.src;
+          activeImageSlide = i;
+        });
+      });
+      const colorBtns = document.querySelectorAll(".color_btn");
+      const sizeBtns = document.querySelectorAll(".size_btn");
+      let checkedBtn = 0;
+      let checkedBtns = 0;
+      sizeBtns.forEach((item, i) => {
+        item.addEventListener("click", () => {
+          sizeBtns[checkedBtn].classList.remove("check");
+          item.classList.add("check");
+          checkedBtn = i;
+        });
+      });
+      var input = document.getElementById("counter_input");
+      function increaseCount(a, b) {
+        var value = parseInt(input.value, 10);
+        value = isNaN(value) ? 0 : value;
+        value++;
+        input.value = value;
+      }
+      function decreaseCount(a, b) {
+        var value = parseInt(input.value, 10);
+        if (value > 1) {
+          value = isNaN(value) ? 0 : value;
+          value--;
+          input.value = value;
+        }
+      }
+      
+   
+  
+    </script>
+    <footer class="footer"></footer>
+    <script src="js/nav.js"></script>
+    <script src="js/footer.js"></script>
+  </body>
+</html>

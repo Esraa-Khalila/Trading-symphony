@@ -51,7 +51,8 @@
 .login_form #email {
   height: 45px;
   border: 1px solid #c7c7c7;
-}.login_form_item{
+}
+.login_form_item {
   margin-top: 10px;
   margin-bottom: 25px;
   display: flex;
@@ -64,8 +65,6 @@
   margin-bottom: 15px;
   height: 45px;
   align-items: center;
-
-  
 }
 .eye_icon {
   font-size: 25px;
@@ -74,7 +73,7 @@
 .login_form input::placeholder {
   font-size: 11px;
   padding: 5px;
-  color:  #9b9b9b;
+  color: #9b9b9b;
 }
 
 .login_form_btn {
@@ -101,7 +100,6 @@
   font-weight: 900;
 }
 
-
 @media (max-width: 769px) {
   .login {
     display: grid;
@@ -110,8 +108,16 @@
   .login_form {
     height: 370px;
   }
-  .login_form input{
-    padding-right:50px;
+  .login_details {
+    margin: 70px;
+    border-bottom: 1px solid var(--third-color);
+    padding: 25px;
+  }
+  .description {
+    font-size: 12px;
+  }
+  .title {
+    font-size: 15px;
   }
 }
 @media (max-width: 480px) {
@@ -119,7 +125,20 @@
     display: grid;
     grid-template-columns: 1fr;
   }
-  .login_form input{
-    padding-right:0;
+  .login_form input {
+    padding-right: 0;
+  }
+  .description {
+    font-size: 9px;
+  }
+  .title {
+    font-size: 17px;
+  }
+  .login_details {
+    margin: 5px;
   }
 }
+input::-ms-reveal,
+      input::-ms-clear {
+        display: none;
+      }

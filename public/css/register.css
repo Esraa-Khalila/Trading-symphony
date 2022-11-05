@@ -47,10 +47,11 @@
      font-size: 12px;
      color: #9b9b9b;
 }
+   
 @media (max-width: 769px) {
     .register_form {
         display: grid;
-        grid-template-columns: repeat(2, 270px);
+        grid-template-columns: repeat(2, 370px);
       }
       .register_form_number {
        display: flex;
@@ -64,7 +65,7 @@
   @media (max-width: 480px) {
     .register_form {
         display: grid;
-        grid-template-columns: repeat(1, 300px);
+        grid-template-columns: repeat(1, 324px);
       }
     
   }

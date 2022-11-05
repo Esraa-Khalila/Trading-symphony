@@ -74,10 +74,7 @@
   color: white;
 }
 @media (max-width: 769px) {
-  .reset_password_details {
 
-    width: 300px;
-  }
   .reset_password_info .step_one_input {
     width: 200px;
   }
@@ -94,4 +91,17 @@
       width: 200px;
     }
    
+}
+@media (max-width: 480px) {
+  .reset_password_details {
+
+  width: 300px;
+}
+.reset_password_title{
+  font-size: 15px;
+  text-align: center;
+}
+.reset_password_info label{
+  font-size: 10px;
+}
 }
