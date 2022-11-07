@@ -62,19 +62,16 @@ var loadFileFour = function (event) {
 };
 // popup open data from myitem and close this popup
 var popup = document.getElementById("popup");
-var btnData = document.getElementById("popup-data");
-var span = document.getElementsByClassName("close")[0];
+var btnData = document.querySelectorAll(".popup-data");
+var span = document.getElementsByClassName("close")[0]; 
 
-btnData.onclick = function () {
-  popup.style.display = "block";
-};
-
+btnData.forEach((item, i) => {
+  item.addEventListener("click", () => {
+    popup.style.display = "block";
+  });
+});
 span.onclick = function () {
   popup.style.display = "none";
-};
-
-window.onload = function () {
-  chooseBtn();
 };
 
 // change size btn choose
@@ -105,3 +102,6 @@ plusInput.addEventListener("click", () => {
     addColor.appendChild(x);
   }
 });
+window.onload = function () {
+  chooseBtn();
+};
