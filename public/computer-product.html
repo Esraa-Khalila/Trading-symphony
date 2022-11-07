@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/computer-product.css" />
+    <link rel="stylesheet" href="./css/all-products.css" />
     <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
     <title>product</title>
   </head>
@@ -82,7 +82,7 @@
             </div>
           </div>
           <div class="product_details product_sort">
-            <div class="product_design" id="myDIV">
+            <div class="product_design" id="choose_style">
               <div class="btn btn1 active">
                 <iconify-icon
                   icon="bxs:category"
@@ -102,23 +102,21 @@
             <div class="product_sort_by">
               <span class="show">Show</span>
               <div class="product_sort_item">
-                <span>16</span>
-                <iconify-icon
-                  class="delivery_item"
-                  icon="akar-icons:chevron-down"
-                ></iconify-icon>
+                <select class='select1'>
+                  <option>16</option>
+                </select>
+   
               </div>
               <span class="show">Sort By</span>
               <div class="product_sort_item">
-                <span>Lastest</span>
-                <iconify-icon
-                  class="delivery_item"
-                  icon="akar-icons:chevron-down"
-                ></iconify-icon>
+                <select class='select1'>
+                  <option value="">lastest</option>
+                </select>
+   
               </div>
             </div>
           </div>
-          <div class="product_details sub_product ss" id="countList">
+          <div class="product_details sub_product grid" id="countList">
             <div class="sub_product_item">
               <a href="./Single-product-computer.html">
                 <img src="./images/computer-product/speaker1.png"
@@ -597,7 +595,7 @@
               <span class="out_stock">- Out of Stock -</span>
             </div>
           </div>
-          <div class="s">
+          <div class="list">
             <div class="list_type">
               <div class="list_design">
                 <div><img src="./images/computer-product/keyboard.png" /></div>
@@ -661,128 +659,6 @@
     <script src="js/nav.js"></script>
     <script src="js/footer.js"></script>
 
-    <script>
-      const productContainers = [
-        ...document.querySelectorAll(".category_container"),
-      ];
-      const nxtBtn = [...document.querySelectorAll(".nxt-btn")];
-      const preBtn = [...document.querySelectorAll(".pre-btn")];
-
-      productContainers.forEach((item, i) => {
-        let containerDimenstions = item.getBoundingClientRect();
-        let containerWidth = containerDimenstions.width;
-
-        nxtBtn[i].addEventListener("click", () => {
-          item.scrollLeft += containerWidth;
-        });
-
-        preBtn[i].addEventListener("click", () => {
-          item.scrollLeft -= containerWidth;
-        });
-      });
-
-      var btnContainer = document.getElementById("myDIV");
-
-      var btns = btnContainer.getElementsByClassName("btn");
-
-      for (var i = 0; i < btns.length; i++) {
-        btns[i].addEventListener("click", function () {
-          var current = document.getElementsByClassName("active");
-          var currentt = document.getElementsByClassName("s");
-          var currenttt = document.getElementsByClassName("sub_product");
-          current[0].className = current[0].className.replace(" active", "");
-          this.className += " active";
-        });
-      }
-      function f() {
-        var btn = btnContainer.getElementsByClassName("btn1");
-
-        btn[0].addEventListener("click", function () {
-          var currenttt = document.getElementsByClassName("ss");
-          var currentt = document.getElementsByClassName("s");
-
-          currentt[0].classList.remove("show");
-          currenttt[0].classList.add("show");
-        });
-
-        var btn2 = btnContainer.getElementsByClassName("btn2");
-
-        btn2[0].addEventListener("click", function () {
-          var currenttt = document.getElementsByClassName("ss");
-          var currentt = document.getElementsByClassName("s");
-
-          currentt[0].classList.add("show");
-          currenttt[0].classList.remove("show");
-          currenttt[0].classList.add("hide");
-        });
-      }
-
-      const productItems = document.querySelector(".sub_product").children;
-      const prev = document.querySelector(".prev");
-      const next = document.querySelector(".next");
-      const page = document.querySelector(".page-num");
-      const maxItem = 12;
-      let index = 1;
-      let item = 28;
-      let count = 0;
-      const d = document.querySelector(".num_page");
-      const pagination = Math.ceil(productItems.length / maxItem);
-      function Numpage() {
-        count = Math.ceil(item / maxItem);
-
-        let pageNumbers = "";
-        console.log(count);
-        for (let i = 1; i <= count; i++) {
-          pageNumbers = pageNumbers + `<span>${i}</span>`;
-        }
-    
-      }
-
-      prev.addEventListener("click", function () {
-        index--;
-
-        check();
-        showItems();
-      });
-      next.addEventListener("click", function () {
-        index++;
-        check();
-        showItems();
-      });
-
-      function check() {
-        if (index == pagination) {
-          next.classList.add("disabled");
-        } else {
-          next.classList.remove("disabled");
-        }
-
-        if (index == 1) {
-          prev.classList.add("disabled");
-        } else {
-          prev.classList.remove("disabled");
-        }
-      }
-
-      function showItems() {
-        for (let i = 0; i < productItems.length; i++) {
-          productItems[i].classList.remove("show");
-          productItems[i].classList.add("hide");
-
-          if (i >= index * maxItem - maxItem && i < index * maxItem) {
-            productItems[i].classList.remove("hide");
-            productItems[i].classList.add("show");
-          }
-          page.innerHTML=index
-        }
-      }
-
-      window.onload = function () {
-        showItems();
-        check();
-        Numpage();
-        f();
-      };
-    </script>
+    <script src="./js/all-products.js"></script>
   </body>
 </html>

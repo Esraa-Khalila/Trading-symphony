@@ -32,14 +32,28 @@
               <label for="">Email</label>
               <input type="text" placeholder="ex: mmm@gmail.com" />
             </div>
-            <div class="register_form_item">
-                <label for="">password</label>
-                <input type="text" placeholder="******" />
+            <div class="register_password">
+              <label>Password</label>
+              <div class="register_eye">
+                <input type="password" placeholder="******" id="password" />
+                <iconify-icon
+                  class="eye_icon"
+                  icon="ion:eye-off"
+                  id="showPassword"
+                ></iconify-icon>
               </div>
-              <div class="register_form_item">
-                <label for=""> confirm password</label>
-                <input type="text" placeholder="******" />
+            </div>
+            <div class="register_password">
+              <label>Password</label>
+              <div class="register_eye">
+                <input type="password" placeholder="******" id="password" />
+                <iconify-icon
+                  class="eye_icon"
+                  icon="ion:eye-off"
+                  id="showPassword"
+                ></iconify-icon>
               </div>
+            </div>
             <div class="register_form_item">
               <label for="">Mobile Number</label>
               <div class="register_form_number">
@@ -50,7 +64,7 @@
                   ></iconify-icon
                   >+962</span
                 >
-                <input type="text" placeholder="ex: 785962541" id='number'/>
+                <input type="text" placeholder="ex: 785962541" id="number" />
               </div>
             </div>
             <div class="register_form_item">
@@ -75,6 +89,7 @@
       </div>
     </div>
     <footer class="footer"></footer>
+    <script src="./js/show-password.js"></script>
     <script src="js/nav.js"></script>
     <script src="js/footer.js"></script>
   </body>

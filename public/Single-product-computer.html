@@ -27,16 +27,14 @@
       </div>
       <div>
         <p class="product-sub-heading">colors</p>
-        <div class="s">
-          <label for="s-size" class="radio_btn color_btn color_yellow check"></label>
-          <input type="radio" name="color" value="red" hidden id="m-size" />
+        <div class="radio_color">
+          <label for="yellow" class="radio_btn color_btn color_yellow"></label>
+          <input type="radio" name="color" value="yellow" hidden  />
           <label for="m-size" class="radio_btn color_btn color_black"></label>
-          <input type="radio" name="color" value="yellow" hidden id="l-size" />
-          <label for="l-size" class="radio_btn color_btn "></label>
-          <input type="radio" name="color" value="brown" hidden id="xl-size" />
-          <label for="xl-size" class="radio_btn color_btn color_red"></label>
-          <input type="radio" name="color" value="xxl" hidden id="xxl-size" />
-          <label for="xxl-size" class="size-radio-btn"></label>
+          <input type="radio" name="color" value="yellow" hidden  />
+          <label for="white" class="radio_btn color_btn "></label>
+          <input type="radio" name="color" value="white" hidden  />
+          <label for="red" class="radio_btn color_btn color_red"></label>
         </div>
       </div>
 
@@ -87,7 +85,7 @@
         <hr />
 
         <div class="addtional_info">
-          <p class="saved_money">You Saved <span id="k">501</span> JOD</p>
+          <p class="saved_money">You Saved <span id="saved_price"></span> JOD</p>
           <div class="product_action">
             <div class="counter">
               <input type="text" id="counter_input" value="1" />
@@ -98,7 +96,7 @@
                 </iconify-icon>
               </div>
             </div>
-            <button class='btn_add_car'>Add to Cart</button>
+            <button type="button" class="btn_add_cart">Add to Cart</button>
           </div>
         </div>
       </div>
@@ -189,51 +187,7 @@
     </div>
   </section>
 
-
-  <script>
-    const productImages = document.querySelectorAll(".product-images img");
-    const productImageSlide = document.querySelector(".image-main");
-
-    let activeImageSlide = 0;
-
-    productImages.forEach((item, i) => {
-      item.addEventListener("click", () => {
-        productImages[activeImageSlide].classList.remove("active");
-        item.classList.add("active");
-        productImageSlide.src = item.src;
-        activeImageSlide = i;
-      });
-    });
-    const colorBtns = document.querySelectorAll(".color_btn");
-    const sizeBtns = document.querySelectorAll(".size_btn");
-    let checkedBtn = 0;
-    let checkedBtns = 0;
-    sizeBtns.forEach((item, i) => {
-      item.addEventListener("click", () => {
-        sizeBtns[checkedBtn].classList.remove("check");
-        item.classList.add("check");
-        checkedBtn = i;
-      });
-    });
-    var input = document.getElementById("counter_input");
-    function increaseCount(a, b) {
-      var value = parseInt(input.value, 10);
-      value = isNaN(value) ? 0 : value;
-      value++;
-      input.value = value;
-    }
-    function decreaseCount(a, b) {
-      var value = parseInt(input.value, 10);
-      if (value > 1) {
-        value = isNaN(value) ? 0 : value;
-        value--;
-        input.value = value;
-      }
-    }
-
-
-
-  </script>
+  <script src="./js/single-product.js"></script>
   <footer class="footer"></footer>
   <script src="js/nav.js"></script>
   <script src="js/footer.js"></script>

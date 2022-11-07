@@ -13,166 +13,217 @@
   <body>
     <nav class="navbar"></nav>
     <div class="choose_title">
-      <span class="btn btn1 active">My Items</span>
-      <span class="btn btn2">+ Add product</span>
+      <span class="btn btn1">My Items</span>
+      <span class="btn btn2 active">+ Add product</span>
     </div>
-    <section class="add_product container">
-      <p class="main_title">
-        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-        eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
-        voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
-        clita kasd gubergren
-      </p>
-      <div class="sell_product">
-        <div class="product_container">
-          <div class="add_product_item">
-            <label for="">Product Name</label
-            ><input placeholder="Dell Monitor 24 inch 2020" />
-            <p class="warning">
-              Do not exceed 40 character when entering the product name
-            </p>
-          </div>
-          <div class="add_product_item choose_category">
-            <div>
-              <label for="">Category</label
-              ><select class="select1">
-                <option>Search in Category</option>
-              </select>
+    <form>
+      <section class="add_product container">
+        <p class="main_title">
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+          sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+          rebum. Stet clita kasd gubergren
+        </p>
+        <div class="sell_product">
+          <div class="product_container">
+            <div class="add_product_item">
+              <label for="">Product Name</label
+              ><input placeholder="Dell Monitor 24 inch 2020" />
+              <p class="warning">
+                Do not exceed 40 character when entering the product name
+              </p>
             </div>
-            <div>
-              <label for="">Sub-Category</label
-              ><select class="select1">
-                <option>Search in all sub-Category</option>
-              </select>
-            </div>
-          </div>
-          <div class="add_product_item">
-            <label for="">Brand</label><input placeholder="Type here" />
-          </div>
-          <div class="add_product_item">
-            <label for=""
-              >Description
-              <iconify-icon
-                icon="fa-solid:info-circle"
-                style="color: #a4a4a4"
-              ></iconify-icon> </label
-            ><textarea placeholder="Type here"></textarea>
-          </div>
-        </div>
-        <div>
-          <label class="upload_title"
-            >Product Image
-            <iconify-icon
-              icon="fa-solid:info-circle"
-              style="color: #a4a4a4"
-            ></iconify-icon>
-          </label>
-          <div class="upload">
-            <div class="image_upload col">
-              <img id="image_one" class="output" />
-              <iconify-icon
-                icon="eva:image-outline"
-                style="color: #a4a4a4"
-              ></iconify-icon>
-              <span class="input_file"
-                ><input
-                  type="file"
-                  accept="image/*"
-                  onchange="loadFile(event)"
-                  class="image"
-                />Drop Image here, or select
-                <span class="select_image"> click here to browse</span>
-              </span>
-            </div>
-            <div class="image_upload col">
-              <img id="image_two" />
-              <iconify-icon
-                icon="eva:image-outline"
-                style="color: #a4a4a4"
-              ></iconify-icon>
-              <span class="input_file"
-                ><input
-                  type="file"
-                  accept="image/*"
-                  onchange="loadFile(event)"
-                  class="image"
-                />Drop Image here, or select
-                <span class="select_image"> click here to browse</span>
-              </span>
-            </div>
-            <div class="image_upload">
-              <img id="image_three" />
-              <iconify-icon
-                icon="eva:image-outline"
-                style="color: #a4a4a4"
-              ></iconify-icon>
-              <span class="input_file"
-                ><input type="file" accept="image/*" class="image" />Drop Image
-                here, or select
-                <span class="select_image"> click here to browse</span>
-              </span>
-            </div>
-            <div class="image_upload">
-              <img id="image_four" />
-              <iconify-icon
-                icon="eva:image-outline"
-                style="color: #a4a4a4"
-                class="upload_icon"
-              ></iconify-icon>
-              <span class="input_file"
-                ><input type="file" accept="image/*" class="image" />Drop Image
-                here, or select
-                <span class="select_image"> click here to browse</span>
-              </span>
-            </div>
-          </div>
-          <p class="required_title">
-            You need to add at least 4 images, Pay attention to the quality of
-            the pictures you add. Notice that the background must clear, and the
-            pictures shows the dimensions of the product
-          </p>
-          <div class="add_details">
-            <div>
-              <label for="">Add Price</label>
-              <div class="add_price">
-                <input type="text" placeholder="Ex: 589" id="add_price_input" />
-                <select>
-                  <option>JOD</option>
+            <div class="add_product_item choose_category">
+              <div>
+                <label for="">Category</label
+                ><select class="select1">
+                  <option>Search in Category</option>
+                </select>
+              </div>
+              <div>
+                <label for="">Sub-Category</label
+                ><select class="select1">
+                  <option>Search in all sub-Category</option>
                 </select>
               </div>
             </div>
-            <div class="add_size">
-              <label for="">Add Size</label>
-              <div class="add_size_input">
-                <input type="checkbox" />
-
-                <input type="checkbox" /><label></label>
-                <input type="checkbox" /><label></label>
-                <input type="checkbox" /><label></label>
-                <input type="checkbox" /><label></label>
-                <input type="checkbox" /><label></label>
+            <div class="add_product_item">
+              <label for="">Brand</label><input placeholder="Type here" />
+            </div>
+            <div class="add_product_item">
+              <label for=""
+                >Description
+                <iconify-icon
+                  icon="fa-solid:info-circle"
+                  style="color: #a4a4a4"
+                ></iconify-icon> </label
+              ><textarea placeholder="Type here"></textarea>
+            </div>
+          </div>
+          <div>
+            <label class="upload_title"
+              >Product Image
+              <iconify-icon
+                icon="fa-solid:info-circle"
+                style="color: #a4a4a4"
+              ></iconify-icon>
+            </label>
+            <div class="upload">
+              <div class="image_upload col">
+                <img id="image_one" />
+                <iconify-icon
+                  icon="eva:image-outline"
+                  style="color: #a4a4a4"
+                  class="upload_icon_one"
+                ></iconify-icon>
+                <span class="input_file input_file_one"
+                  ><input
+                    type="file"
+                    accept="image/*"
+                    onchange="loadFileOne(event)"
+                    class="image"
+                  />Drop Image here, or select
+                  <span class="select_image"> click here to browse</span>
+                </span>
+              </div>
+              <div class="image_upload col">
+                <img id="image_two" />
+                <iconify-icon
+                  icon="eva:image-outline"
+                  style="color: #a4a4a4"
+                  class="upload_icon_two"
+                ></iconify-icon>
+                <span class="input_file input_file_two"
+                  ><input
+                    type="file"
+                    accept="image/*"
+                    onchange="loadFileTwo(event)"
+                    class="image"
+                  />Drop Image here, or select
+                  <span class="select_image"> click here to browse</span>
+                </span>
+              </div>
+              <div class="image_upload">
+                <img id="image_three" />
+                <iconify-icon
+                  icon="eva:image-outline"
+                  style="color: #a4a4a4"
+                  class="upload_icon_three"
+                ></iconify-icon>
+                <span class="input_file input_file_three"
+                  ><input
+                    type="file"
+                    accept="image/*"
+                    onchange="loadFileThree(event)"
+                    class="image"
+                  />Drop Image here, or select
+                  <span class="select_image"> click here to browse</span>
+                </span>
+              </div>
+              <div class="image_upload">
+                <img id="image_four" />
+                <iconify-icon
+                  icon="eva:image-outline"
+                  style="color: #a4a4a4"
+                  class="upload_icon_four"
+                ></iconify-icon>
+                <span class="input_file input_file_four"
+                  ><input
+                    type="file"
+                    accept="image/*"
+                    onchange="loadFileFour(event)"
+                    class="image"
+                  />Drop Image here, or select
+                  <span class="select_image"> click here to browse</span>
+                </span>
               </div>
             </div>
-            <div class="add_date">
-              <label for="">Product date</label>
-              <input type="date" class="date_input" />
-            </div>
-            <div class="add_color">
-              <label for="">Add color</label>
-              <div class="add_color_input">
-                <input type="checkbox" class="color_input_one" />
-                <input type="checkbox" class="color_input_two" />
-                <input type="checkbox" class="color_input_three" />
-                <input type="checkbox" class="color_input_four" />
-                <input type="checkbox" class="color_input_five" />
+            <p class="required_title">
+              You need to add at least 4 images, Pay attention to the quality of
+              the pictures you add. Notice that the background must clear, and
+              the pictures shows the dimensions of the product
+            </p>
+            <div class="add_details">
+              <div>
+                <label for="">Add Price</label>
+                <div class="add_price">
+                  <input
+                    type="text"
+                    placeholder="Ex: 589"
+                    id="add_price_input"
+                  />
+                  <select>
+                    <option>JOD</option>
+                  </select>
+                </div>
+              </div>
+              <div class="add_size">
+                <label for="">Add Size</label>
+                <div class="add_size_input">
+                  <input
+                    type="checkbox"
+                    name="size"
+                    value="s"
+                    id="s-size"
+                    hidden
+                  />
+                  <label for="s-size" class="checkbox_btn size_btn">S</label>
+
+                  <input
+                    type="checkbox"
+                    name="size"
+                    value="l"
+                    id="m-size"
+                    hidden
+                  />
+                  <label for="m-size" class="checkbox_btn size_btn">M</label>
+
+                  <input
+                    type="checkbox"
+                    name="size"
+                    value="xl"
+                    id="l-size"
+                    hidden
+                  /><label for="l-size" class="checkbox_btn size_btn">L</label>
+
+                  <input
+                    type="checkbox"
+                    name="size"
+                    value="xl"
+                    hidden
+                    id="xl-size"
+                    hidden
+                  />
+                  <label for="xl-size" class="checkbox_btn size_btn">XL</label>
+                </div>
+              </div>
+              <div class="add_date">
+                <label for="">Product date</label>
+                <input type="date" class="date_input" />
+              </div>
+              <div class="add_color">
+                <label for="">Add color</label>
+                <div class="add">
+                <div class="add_color_input">
+                  <input type="color" value="#880000" />
+                  <input type="color" value="#0027c1" />
+                  <input type="color" class="color_input_three" />
+                  <input type="color" value="#ffffff" />
+                </div>
+                <iconify-icon
+                  icon="ant-design:plus-outlined"
+                  id="add_color_input"
+                ></iconify-icon></div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <a href="#sell_item"><button type="button" class="add_product_btn">Add Product</button></a>
-    </section>
-    <section class="sell_item container"id='sell_item'>
+        <a href=""
+          ><button type="button" class="add_product_btn">Add Product</button></a
+        >
+      </section>
+    </form>
+    <section class="sell_item container" id="sell_item">
       <p class="main_title">
         Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
         eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
@@ -191,7 +242,7 @@
           </tr>
         </thead>
         <tbody>
-          <tr id="myBtn">
+          <tr id="popup-data">
             <td>2569</td>
             <td>Dell Monitor 24 inch</td>
             <td>Computer</td>
@@ -203,7 +254,7 @@
             </td>
             <td>In Progress</td>
           </tr>
-          <tr>
+          <tr id="popup-data">
             <td>8565</td>
             <td>Laptop Lenovo</td>
             <td>Computers</td>
@@ -215,7 +266,7 @@
             </td>
             <td>Added</td>
           </tr>
-          <tr>
+          <tr id="popup-data">
             <td>8565</td>
             <td>iPhone 14 Pro</td>
             <td>Mobiles</td>
@@ -229,7 +280,7 @@
           </tr>
         </tbody>
       </table>
-      <div id="myModal" class="modal">
+      <div id="popup" class="popup">
         <div class="modal-content">
           <span class="close">&times;</span>
 
@@ -249,68 +300,7 @@
     </section>
     <div class="copy_right">@ 2022 tading Symphoney. All Rights Reserved</div>
     <script src="js/nav.js"></script>
-
-    <script>
-      var add_product = document.getElementsByClassName("add_product");
-      var sell_item = document.getElementsByClassName("sell_item");
-      var btns = document.getElementsByClassName("btn");
-      for (var i = 0; i < btns.length; i++) {
-        btns[i].addEventListener("click", function () {
-          var current = document.getElementsByClassName("active");
-
-          current[0].className = current[0].className.replace(" active", "");
-          this.className += " active";
-        });
-      }
-      function f() {
-        var btn = document.getElementsByClassName("btn1");
-
-        btn[0].addEventListener("click", function () {
-          sell_item[0].classList.add("show");
-          add_product[0].classList.remove("show");
-        });
-
-        var btn2 = document.getElementsByClassName("btn2");
-
-        btn2[0].addEventListener("click", function () {
-          sell_item[0].classList.remove("show");
-          add_product[0].classList.add("show");
-          add_product[0].classList.add("hide");
-        });
-      }
-      var loadFile = function (event) {
-        // var image = document.getElementsByClassName('output');
-        var image_one = document.getElementById("image_one");
-        var image_two = document.getElementById("image_two");
-        var input = document.querySelector(".input_file");
-        var icon = document.querySelector(".upload_icon");
-        image_one.src = URL.createObjectURL(event.target.files[0]);
-        input.classList.add("hide");
-        icon.classList.add("hide");
-      };
-
-      var modal = document.getElementById("myModal");
-
-      var btn = document.getElementById("myBtn");
-
-      var span = document.getElementsByClassName("close")[0];
-
-      btn.onclick = function () {
-        modal.style.display = "block";
-      };
-
-      span.onclick = function () {
-        modal.style.display = "none";
-      };
-
-      // window.onclick = function(event) {
-      //   if (event.target == modal) {
-      //     modal.style.display = "none";
-      //   }
-      // }
-      window.onload = function () {
-        f();
-      };
-    </script>
+    <script></script>
+    <script src="./js/sell-with-us.js"></script>
   </body>
 </html>

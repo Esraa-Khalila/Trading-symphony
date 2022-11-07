@@ -136,7 +136,7 @@ ul li {
   padding-left: 43px;
 }
 .nav_menu li a {
- color: var(--text-black);
+  color: var(--text-black);
 }
 .nav_menu_item {
   font-weight: 500;
@@ -162,12 +162,11 @@ ul li {
   gap: 24px;
   padding-left: 68px;
 }
-.sub_nav_item {
-  margin: 10px;
-}
+
 .sub_nav_item {
   box-shadow: 5px 5px 5px rgb(241, 236, 236);
   border: none;
+  margin: 10px;
 }
 .sub_nav_item select {
   font-size: 20px;
@@ -245,7 +244,7 @@ ul li {
   .footer-menu {
     padding-left: 20px;
   }
-  .footer-menu li{
+  .footer-menu li {
     font-size: 13px;
   }
   .brand_logo a {
@@ -279,7 +278,7 @@ ul li {
   .search input::placeholder {
     font-size: 15px;
   }
-  .search .search-icon{
+  .search .search-icon {
     font-size: 20px;
   }
 }
@@ -435,7 +434,7 @@ ul li {
     font-size: 10px;
   } */
 }
-.item_nav a{
+.item_nav a {
   color: black;
 }
 @media (max-width: 480px) {

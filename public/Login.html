@@ -50,17 +50,8 @@
         </form>
       </div>
     </div>
-    <script>
-      const showPassword = document.querySelector("#showPassword");
-      const password = document.querySelector("#password");
-
-      showPassword.addEventListener("click", function (e) {
-        const type =
-          password.getAttribute("type") === "password" ? "text" : "password";
-        password.setAttribute("type", type);
-      });
-    </script>
     <footer class="footer"></footer>
+    <script src="./js/show-password.js"></script>
     <script src="js/nav.js"></script>
     <script src="js/footer.js"></script>
   </body>

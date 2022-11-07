@@ -31,28 +31,17 @@
         </div>
         <div>
           <p class="product-sub-heading">colors</p>
-          <div class="s">
-            <label for="s-size" class="radio_btn color_btn color_red check"></label>
-            <input type="radio" name="color" value="red" hidden id="m-size" />
-            <label for="m-size" class="radio_btn color_btn color_yellow"></label>
-            <input
-              type="radio"
-              name="color"
-              value="yellow"
-              hidden
-              id="l-size"
-            />
-            <label for="l-size" class="radio_btn color_btn color_black"></label>
-            <input
-              type="radio"
-              name="color"
-              value="brown"
-              hidden
-              id="xl-size"
-            />
-            <label for="xl-size" class="radio_btn color_btn"></label>
-            <input type="radio" name="color" value="xxl" hidden id="xxl-size" />
-            <label for="xxl-size" class="size-radio-btn"></label>
+          <div class="radio_color">
+            <label
+              for="yellow"
+              class="radio_btn color_btn color_yellow"
+            ></label>
+            <input type="radio" name="color" value="yellow" hidden />
+            <label for="m-size" class="radio_btn color_btn color_black"></label>
+            <input type="radio" name="color" value="yellow" hidden />
+            <label for="white" class="radio_btn color_btn"></label>
+            <input type="radio" name="color" value="white" hidden />
+            <label for="red" class="radio_btn color_btn color_red"></label>
           </div>
         </div>
 
@@ -95,15 +84,21 @@
         </div>
         <div class="product_details_item">
           <div class="product_info">
-            <span class="pargragh_one" >Price: <span id="discount_price" >15 </span>JOD</span>
+            <span class="pargragh_one"
+              >Price: <span id="discount_price">15 </span>JOD</span
+            >
             <p class="product_info_p"><span>Availability :</span>In stock</p>
-            <p class="product-actual-price" ><span id="actual-price">30</span> JOD</p>
+            <p class="product-actual-price">
+              <span id="actual-price">30</span> JOD
+            </p>
             <p class="product_info_p"><span>Brand :</span> Suede</p>
           </div>
           <hr />
 
           <div class="addtional_info">
-            <p class="saved_money">You Saved <span id="k"></span> JOD</p>
+            <p class="saved_money">
+              You Saved <span id="saved_price"></span> JOD
+            </p>
             <div class="product_action">
               <div class="counter">
                 <input type="text" id="counter_input" value="1" />
@@ -120,7 +115,7 @@
                   ></iconify-icon>
                 </div>
               </div>
-          <button class="btn_add_cart">Add to Cart</button>
+              <button type="button" class="btn_add_cart">Add to Cart</button>
             </div>
           </div>
         </div>
@@ -135,25 +130,24 @@
         </div>
       </div>
     </section>
-     <section class="similar_product container">
-      <hr>
+    <section class="similar_product container">
+      <hr />
       <div class="similar_product_title">
-        <h3>Similar product</h3><a href="./computer-product.html">see more</a>
+        <h3>Similar product</h3>
+        <a href="./computer-product.html">see more</a>
       </div>
-  
+
       <div class="product_details sub_product ss" id="countList">
         <div class="sub_product_item">
           <a href="./Single-product-computer.html">
-            <img src="./images/shoes_product/sandal.png" /></a>
-          <h2>
-            ASUS ROG Strix GeForce RTX 3070 GDDR6 OC Edition Graphic Card
-          </h2>
+            <img src="./images/shoes_product/sandal.png"
+          /></a>
+          <h2>ASUS ROG Strix GeForce RTX 3070 GDDR6 OC Edition Graphic Card</h2>
           <p>
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-            diam nonumy eirmod tempor invidunt ut labore et dolore magna
-            aliquyam erat, sed diam voluptua. At vero eos et accusam et
-            justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
-            takimata
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+            erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+            et ea rebum. Stet clita kasd gubergren, no sea takimata
           </p>
           <span class="after_discount">1500 JOD</span>
           <span>99900 JOD</span>
@@ -161,15 +155,12 @@
         </div>
         <div class="sub_product_item">
           <img src="./images/shoes_product/sandal4.png" />
-          <h2>
-            ASUS ROG Strix GeForce RTX 3070 GDDR6 OC Edition Graphic Card
-          </h2>
+          <h2>ASUS ROG Strix GeForce RTX 3070 GDDR6 OC Edition Graphic Card</h2>
           <p>
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-            diam nonumy eirmod tempor invidunt ut labore et dolore magna
-            aliquyam erat, sed diam voluptua. At vero eos et accusam et
-            justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
-            takimata
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+            erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+            et ea rebum. Stet clita kasd gubergren, no sea takimata
           </p>
           <!-- <span class="after_discount">1500 JOD</span> -->
           <span class="before_discount">99900 JOD</span>
@@ -177,15 +168,12 @@
         </div>
         <div class="sub_product_item">
           <img src="./images/shoes_product/sandal6.png" />
-          <h2>
-            ASUS ROG Strix GeForce RTX 3070 GDDR6 OC Edition Graphic Card
-          </h2>
+          <h2>ASUS ROG Strix GeForce RTX 3070 GDDR6 OC Edition Graphic Card</h2>
           <p>
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-            diam nonumy eirmod tempor invidunt ut labore et dolore magna
-            aliquyam erat, sed diam voluptua. At vero eos et accusam et
-            justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
-            takimata
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+            erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+            et ea rebum. Stet clita kasd gubergren, no sea takimata
           </p>
           <!-- <span class="after_discount">1500 JOD</span> -->
           <span class="before_discount">99900 JOD</span>
@@ -193,15 +181,12 @@
         </div>
         <div class="sub_product_item">
           <img src="./images/shoes_product/sandal6.png" />
-          <h2>
-            ASUS ROG Strix GeForce RTX 3070 GDDR6 OC Edition Graphic Card
-          </h2>
+          <h2>ASUS ROG Strix GeForce RTX 3070 GDDR6 OC Edition Graphic Card</h2>
           <p>
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-            diam nonumy eirmod tempor invidunt ut labore et dolore magna
-            aliquyam erat, sed diam voluptua. At vero eos et accusam et
-            justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
-            takimata
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+            erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+            et ea rebum. Stet clita kasd gubergren, no sea takimata
           </p>
           <!-- <span class="after_discount">1500 JOD</span> -->
           <span class="before_discount">99900 JOD</span>
@@ -209,12 +194,12 @@
         </div>
       </div>
     </section>
-  
+
     <script>
       const productImages = document.querySelectorAll(".product-images img");
-      const productImageSlide = document.querySelector(".image-main"); 
+      const productImageSlide = document.querySelector(".image-main");
 
-      let activeImageSlide = 0; 
+      let activeImageSlide = 0;
 
       productImages.forEach((item, i) => {
         item.addEventListener("click", () => {
@@ -250,9 +235,6 @@
           input.value = value;
         }
       }
-      
-   
-  
     </script>
     <footer class="footer"></footer>
     <script src="js/nav.js"></script>

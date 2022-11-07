@@ -20,14 +20,38 @@
   border: 1px solid #c7c7c7;
 }
 .register_form_item input::placeholder {
-   color:   #9b9b9b;
-  }
+  color: #9b9b9b;
+}
 .register_form_item label {
   font-size: 15px;
   font-weight: 600;
   padding-bottom: 10px;
 }
-
+.register_password label {
+  font-size: 15px;
+  font-weight: 600;
+}
+.register_password {
+  padding: 15px 30px;
+}
+.register_eye {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #c7c7c7;
+  height: 40px;
+  margin-top: 7px;
+  padding-left: 10px;
+}
+.eye_icon {
+  font-size: 25px;
+  padding: 7px 10px;
+}
+.register_eye input {
+  border: none;
+}
+.register_eye input::placeholder {
+  padding-left: 10px;
+}
 .register_form_btn {
   text-align: right;
   margin: 25px 50px;
@@ -43,29 +67,27 @@
   border: none;
 }
 .register_form_number {
-    border: 1px solid #c7c7c7;
-     font-size: 12px;
-     color: #9b9b9b;
+  border: 1px solid #c7c7c7;
+  font-size: 12px;
+  color: #9b9b9b;
 }
-   
+
 @media (max-width: 769px) {
-    .register_form {
-        display: grid;
-        grid-template-columns: repeat(2, 370px);
-      }
-      .register_form_number {
-       display: flex;
-    }
-    .register_form_number span{
-        display: flex;
-        padding-top: 12px;
-     }
-     
+  .register_form {
+    display: grid;
+    grid-template-columns: repeat(2, 370px);
   }
-  @media (max-width: 480px) {
-    .register_form {
-        display: grid;
-        grid-template-columns: repeat(1, 324px);
-      }
-    
+  .register_form_number {
+    display: flex;
   }
+  .register_form_number span {
+    display: flex;
+    padding-top: 12px;
+  }
+}
+@media (max-width: 480px) {
+  .register_form {
+    display: grid;
+    grid-template-columns: repeat(1, 324px);
+  }
+}
