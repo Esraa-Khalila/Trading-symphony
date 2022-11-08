@@ -2,6 +2,7 @@ const createNav = () => {
   let nav = document.querySelector(".navbar");
 
   nav.innerHTML = `
+
   <nav class="responsive_menu">
   <div class="nav_mobile">
     <div class="nav_item brand_logo">
@@ -142,7 +143,6 @@ const createNav = () => {
   `;
 };
 createNav();
-
 const burgerIcon = document.getElementById("hamburger-icon");
 const navItem = document.getElementById("nav-content");
 burgerIcon.addEventListener("click", function () {
@@ -156,4 +156,3 @@ burgerIcon.addEventListener("click", function () {
     navItem.classList.remove("js-close");
   }
 });
-console.log(window.innerWidth);

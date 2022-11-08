@@ -36,13 +36,13 @@ const productImages = document.querySelectorAll(".product-images img");
     // quantity increase and decrease number
       
     var input = document.getElementById("counter_input");
-    function increaseCount(a, b) {
+    function increaseCount() {
       var value = parseInt(input.value, 10);
       value = isNaN(value) ? 0 : value;
       value++;
       input.value = value;
     }
-    function decreaseCount(a, b) {
+    function decreaseCount() {
       var value = parseInt(input.value, 10);
       if (value > 1) {
         value = isNaN(value) ? 0 : value;

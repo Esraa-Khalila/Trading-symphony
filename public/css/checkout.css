@@ -1,17 +1,138 @@
-@import './layouts.css';
+@import "./layouts.css";
 
-
-.checkout_item{
-    display: flex;
-    justify-content: space-between;
-    border: 1px solid #f1f1f1;
-    width: 100%;
-    margin:50px 0 ;  
-    padding: 10px;
-    background-color: #f1f1f1;
-    font-size: 26px;
+.checkout_item {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #f1f1f1;
+  width: 100%;
+  margin: 50px 0;
+  padding: 10px;
+  background-color: #f1f1f1;
+  font-size: 26px;
 }
-.checkout{
 
+.product {
+ display: none;
+}
+.product_item{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  display: none;
+}
+.payment_item{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  display: none;
+}
+.product_details {
+  display: flex;
+  margin-left: 25px;
+}
+.product_details img {
+  width: 164px;
+  height: 124px;
+}
+.product_details h5 {
+  width: 458px;
+  font-size: 20px;
+  margin-bottom: 15px;
+  margin-left: 20px;
+}
+.product_details span {
+  font-size: 16px;
+  margin-left: 20px;
+}
+.hide {
+  display: none;
+}
+.show {
+  display: grid;
+}
+.up_arrow {
+  display: none;
+}
+.payment {
+  margin-right: 200px;
+  margin-left: 20px;
+}
+.payment input {
+  margin-right: 20px;
+}
+.checkout_location {
+  font-size: 20px;
+}
+.input_location {
+  width: 559px;
+  height: 58px;
+  color: #9b9b9b;
+  padding-left: 10px;
+  font-size: 20px;
+  margin: 15px 50px;
+}
+.location_item {
+  padding: 15px 10px;
+}
+.location_item input {
+  margin: 15px 15px;
+}
+.location_item span {
+  font-size: 20px;
+}
+#new_location {
+  display: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 30px 20px;
+}
 
+.new_item {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.new_item label {
+  font-size: 20px;
+  padding-bottom: 12px;
+}
+.new_item input {
+  width: 385px;
+  height: 58px;
+}
+.confirm {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 30px 20px;
+
+}
+.confirm input {
+  width: 559px;
+  padding-left: 10px;
+  height: 58px;
+  font-size: 20px;
+}
+.confirm_form_number #number {
+  border: none;
+}
+
+.confirm_form_number {
+  border: 1px solid #c7c7c7;
+  font-size: 20px;
+  color: #9b9b9b;
+  padding-left: 10px;
+  padding-top: 10px;
+  width: 559px;
+  height: 58px;
+}
+.confirm_form_number input {
+  width: 400px;
+  height: 40px;
+}
+.confirm_btn {
+  float: right;
+  width: 286px;
+  height: 57px;
+  font-size: 20px;
+  color: var(--text-white);
+  background-color: var(--secondary-color);
+  border: 1px solid var(--secondary-color);
 }

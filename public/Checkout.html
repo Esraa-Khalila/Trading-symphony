@@ -13,21 +13,151 @@
     <section class="container checkout">
       <h2>Checkout</h2>
       <div>
-        <div class="checkout_item">
+        <div class="btn checkout_item">
           <span>items</span>
-          <iconify-icon icon="ep:arrow-down-bold"></iconify-icon>
+          <iconify-icon icon="ep:arrow-up-bold" class="up_arrow"></iconify-icon>
+          <iconify-icon
+            icon="ep:arrow-down-bold"
+            class="down_arrow"
+          ></iconify-icon>
         </div>
-        <div class="checkout_item">
-          <span>Payment Method</span> <iconify-icon icon="ep:arrow-down-bold"></iconify-icon>
+        <div class="product product_item">
+          <div class="product_details">
+            <img src="./images/computer-product/speaker1.png" />
+            <div>
+              <h5>
+                ASUS ROG Strix GeForce RTX 3070 V2 8GB GDDR6 OC Edition Graphic
+                Card
+              </h5>
+              <span>99900 JOD </span>
+            </div>
+          </div>
+          <div class="product_details">
+            <img src="./images/computer-product/keyboard.png" />
+            <div>
+              <h5>ASUS Mechanical Keyboard - RGB</h5>
+              <span>1556 JOD </span>
+            </div>
+          </div>
+          <div class="product_details">
+            <img src="./images/computer-product/speaker5.png" />
+            <div>
+              <h5>HP Speaker V4</h5>
+              <span>1556 JOD</span>
+            </div>
+          </div>
         </div>
-        <div class="checkout_item">
-          <span></span> <iconify-icon icon="ep:arrow-down-bold"></iconify-icon>
+        <div class="btn checkout_item">
+          <span>Payment Method</span>
+          <iconify-icon icon="ep:arrow-up-bold" class="up_arrow"></iconify-icon>
+          <iconify-icon
+            icon="ep:arrow-down-bold"
+            class="down_arrow"
+          ></iconify-icon>
         </div>
-        <div class="checkout_item">
-          <span></span> <iconify-icon icon="ep:arrow-down-bold"></iconify-icon>
+        <div class="product payment_item">
+          <div class="payment">
+            <input type="radio" /><img src="./images/payment/download.png" />
+          </div>
+          <div class="payment">
+            <input type="radio" /><img
+              src="./images/payment/download (1).png"
+            />
+          </div>
+          <div class="payment">
+            <input type="radio" /><img
+              src="./images/payment/zain-cash-opt.png"
+            />
+          </div>
+          <div class="payment">
+            <input type="radio" /><img
+              src="./images/payment/MClogo-c823e495.png"
+            />
+          </div>
+        </div>
+        <div class="btn checkout_item">
+          <span>Location</span>
+          <iconify-icon icon="ep:arrow-up-bold" class="up_arrow"></iconify-icon>
+          <iconify-icon
+            icon="ep:arrow-down-bold"
+            class="down_arrow"
+          ></iconify-icon>
+        </div>
+
+        <div class="product">
+          <div class="location_item">
+            <input type="radio" name="location" id="exist_location" /><span
+              >Choose delivery location as entered in my account - Primary
+              location -
+            </span>
+          </div>
+          <input
+            class="input_location"
+            type="text"
+            disabled
+            placeholder="Irbid, Al-nozha , 150 street"
+          />
+          <div class="location_item">
+            <input type="radio" id="show_new_location" name="location" /><span
+              >Choose new Location location -</span
+            >
+          </div>
+          <div id="new_location">
+            <div class="new_item">
+              <label for="">Address</label
+              ><input type="text" placeholder="Enter here" />
+            </div>
+            <div class="new_item">
+              <label for="">Neighborhood </label
+              ><input type="text" placeholder="Enter here. ex: Swaifeyia" />
+            </div>
+            <div class="new_item">
+              <label for="">Building</label
+              ><input type="text" placeholder="Enter here " />
+            </div>
+            <div class="new_item">
+              <label for="">Floor</label
+              ><input type="text" placeholder="Enter here " />
+            </div>
+          </div>
+        </div>
+        <div class="btn checkout_item">
+          <span>Confirm Order</span>
+          <iconify-icon icon="ep:arrow-up-bold" class="up_arrow"></iconify-icon>
+          <iconify-icon
+            icon="ep:arrow-down-bold"
+            class="down_arrow"
+          ></iconify-icon>
+        </div>
+        <div class="product">
+          <div class="confirm">
+            <div class="new_item">
+              <label for="">Address</label
+              ><input type="text" placeholder="Mohammad Ali Faisal Mohammad" />
+            </div>
+            <div class="new_item">
+              <label for="">Phone Number</label>
+              <div class="confirm_form_number">
+                <span>
+                  <iconify-icon
+                    icon="twemoji:flag-jordan"
+                    class="confirm_item"
+                  ></iconify-icon
+                  >+962 |</span
+                >
+                <input type="text" placeholder="ex: 785962541" id="number" />
+              </div>
+            </div>
+            <div class="new_item">
+              <label for="">Building</label
+              ><input type="text" placeholder="Enter here " />
+            </div>
+          </div>
         </div>
       </div>
+      <button type="button" class="confirm_btn">Confirm</button>
     </section>
     <script src="./js/nav.js"></script>
+    <script src="./js/checkout.js"></script>
   </body>
 </html>

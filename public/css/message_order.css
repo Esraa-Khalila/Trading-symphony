@@ -1,0 +1,22 @@
+@import "./layouts.css";
+
+.message h1 {
+  font-size: 40px;
+  padding: 50px;
+}
+.message p {
+  font-size: 24px;
+  padding: 15px 50px;
+  width: 1333px;
+}
+.message_img {
+  display: flex;
+  justify-content: center;
+  padding: 100px;
+}
+.succes {
+  color: #008716;
+}
+.error {
+  color: #ce0000;
+}

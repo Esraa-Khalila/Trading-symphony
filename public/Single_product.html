@@ -195,47 +195,8 @@
       </div>
     </section>
 
-    <script>
-      const productImages = document.querySelectorAll(".product-images img");
-      const productImageSlide = document.querySelector(".image-main");
 
-      let activeImageSlide = 0;
-
-      productImages.forEach((item, i) => {
-        item.addEventListener("click", () => {
-          productImages[activeImageSlide].classList.remove("active");
-          item.classList.add("active");
-          productImageSlide.src = item.src;
-          activeImageSlide = i;
-        });
-      });
-      const colorBtns = document.querySelectorAll(".color_btn");
-      const sizeBtns = document.querySelectorAll(".size_btn");
-      let checkedBtn = 0;
-      let checkedBtns = 0;
-      sizeBtns.forEach((item, i) => {
-        item.addEventListener("click", () => {
-          sizeBtns[checkedBtn].classList.remove("check");
-          item.classList.add("check");
-          checkedBtn = i;
-        });
-      });
-      var input = document.getElementById("counter_input");
-      function increaseCount(a, b) {
-        var value = parseInt(input.value, 10);
-        value = isNaN(value) ? 0 : value;
-        value++;
-        input.value = value;
-      }
-      function decreaseCount(a, b) {
-        var value = parseInt(input.value, 10);
-        if (value > 1) {
-          value = isNaN(value) ? 0 : value;
-          value--;
-          input.value = value;
-        }
-      }
-    </script>
+   <script src="./js/single-product.js"></script>
     <footer class="footer"></footer>
     <script src="js/nav.js"></script>
     <script src="js/footer.js"></script>

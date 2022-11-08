@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
+    <link rel="stylesheet" href="./css/cart.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav class="navbar"></nav>
+    <section class="cart_section container">
+      <div class="cart ">
+        <div class="cart_details">
+          <h5>item (3)</h5>
+          <div class="all_products">
+            <img src="./images/computer-product/speaker1.png" />
+            <div class="cart_items">
+              <span class="cart_brand">Asus</span>
+              <h4 class="cart_title">
+                ASUS ROG Strix GeForce RTX 3070 V2 8GB GDDR6 OC Edition Graphic
+                Card
+              </h4>
+              <span class="actual_price">99900 JOD</span>
+            </div>
+            <div>
+              <div class="cart_actions">
+                <iconify-icon
+                  icon="bx:trash"
+                  style="color: #6c6c6c"
+                  class="remove_item"
+                ></iconify-icon>
+                <span>Remove</span>
+              </div>
+              <div class="cart_actions counter">
+                <input type="text" value="1" />
+                <div>
+                  <iconify-icon
+                    icon="dashicons:arrow-up-alt2"
+                    class="quantity_icon up"
+                    onClick="increaseCount(event, this)"
+                  ></iconify-icon>
+                  <iconify-icon
+                    icon="ep:arrow-down-bold"
+                    class="quantity_icon"
+                    onClick="decreaseCount(event, this)"
+                  ></iconify-icon>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr />
+          <div class="all_products">
+            <img src="./images/computer-product/keyboard.png" />
+            <div class="cart_items">
+              <span class="cart_brand">Asus</span>
+              <h4 class="cart_title">
+                ASUS ROG Strix GeForce RTX 3070 V2 8GB GDDR6 OC Edition Graphic
+                Card
+              </h4>
+              <span>99900 JOD</span>
+            </div>
+            <div>
+              <div class="cart_actions">
+                <iconify-icon
+                  icon="bx:trash"
+                  style="color: #6c6c6c"
+                  class="remove_item"
+                ></iconify-icon>
+                <span>Remove</span>
+              </div>
+              <div class="cart_actions counter">
+                <input type="text"  value="1" />
+                <div>
+                  <iconify-icon
+                    icon="dashicons:arrow-up-alt2"
+                    class="quantity_icon up"
+                    onClick="increaseCount(event, this)"
+                  ></iconify-icon>
+                  <iconify-icon
+                    icon="ep:arrow-down-bold"
+                    class="quantity_icon"
+                    onClick="decreaseCount(event, this)"
+                  ></iconify-icon>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr />
+          <div class="all_products">
+            <img src="./images/computer-product/speaker5.png" />
+            <div class="cart_items">
+              <span class="cart_brand">Asus</span>
+              <h4 class="cart_title">
+                ASUS ROG Strix GeForce RTX 3070 V2 8GB GDDR6 OC Edition Graphic
+                Card
+              </h4>
+              <span>99900 JOD</span>
+            </div>
+            <div>
+              <div class="cart_actions">
+                <iconify-icon
+                  icon="bx:trash"
+                  style="color: #6c6c6c"
+                  class="remove_item"
+                ></iconify-icon>
+                <span>Remove</span>
+              </div>
+              <hr />
+              <div class="cart_actions counter">
+                <input type="text" value="1" />
+                <div>
+                  <iconify-icon
+                    icon="dashicons:arrow-up-alt2"
+                    class="quantity_icon up"
+                    onClick="increaseCount(event, this)"
+                  ></iconify-icon>
+                  <iconify-icon
+                    icon="ep:arrow-down-bold"
+                    class="quantity_icon"
+                    onClick="decreaseCount(event, this)"
+                  ></iconify-icon>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr />
+        </div>
+        
+        <div>
+        <div class="price_details">
+          <h4 class="price_item">Order Summery</h4>
+
+          <div class="sub-total price_item">
+            <span >Subtotal</span><span id="sub_total"></span><span>Delivery</span
+            ><span class="free_delivery">Free</span>
+          </div>
+          <hr />
+          <div class="total"><span>Total</span><span>1030.12 JOD</span></div>
+    
+          <a href="./Checkout.html"><button class="price_btn ">Checkout</button></a>
+        </div> 
+        <div class="payment_method">
+        <h6>Payment accepted through</h6><img src="./images/payment/download.png" alt="">
+        <img src="./images/payment/download (1).png" alt="">
+        <img src="./images/payment/zain-cash-opt.png" alt="">
+        <img src="./images/payment/MClogo-c823e495.png" alt="">
+        </div>
+      </div>
+   
+    </section>
+    <footer class="footer"></footer>
+    <script src="./js/cart.js"></script>
+    <script src="./js/nav.js"></script>
+    <script src="./js/footer.js"></script>
+  </body>
+</html>
