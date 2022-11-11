@@ -288,6 +288,10 @@ hr {
 .radio_color .color_black{
   background-color: black;
 }
+.Announcements_icon{
+  font-size: 15px;
+  padding-right: 15px;
+}
 @media (max-width: 1550px) {
   .sub_product {
     display: grid;

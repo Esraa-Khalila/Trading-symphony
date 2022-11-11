@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/account.css" />
+    <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
+    <title>Orders</title>
+  </head>
+  <body>
+    <nav class="navbar"></nav>
+    <main class="orders">
+      <div class="sidebar_nav"></div>
+      <section class="profile_section">
+        <h3 class="setting_title">Settings</h3>
+        <h3 class="setting_title">change password</h3>
+        <div class="settings">
+          <form>
+            <div class="settings_input">
+              <input
+                type="text"
+                placeholder="Enter current password"
+                class="password_old"
+              />
+              <input type="text" placeholder="Enter new password" />
+              <input type="text" placeholder="Re-enter new password" />
+              <button type="button" class="save_btn">Save</button>
+            </div>
+          </form>
+          <hr />
+          <h3 class="language_title">Choose Language</h3>
+          <div class="languages">
+            <div>
+              <input type="radio" name="language" />
+              <label>English</label>
+            </div>
+            <div>
+              <input type="radio" name="language" />
+              <label>اللغة العربية</label>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer"></footer>
+    <script src="js/nav.js"></script>
+    <script src="./js/sidebar.js"></script>
+    <script src="js/footer.js"></script>
+  </body>
+</html>

@@ -81,12 +81,27 @@ const createNav = () => {
   <div class="nav_item nav_content">
     <ul class="nav_menu">
       <li><a>اللغة العربية</a></li>
-      <li><a href='./Empty-cart.html'class="nav_menu_item">Cart</a></li>
+      <li><a href='./Empty-cart.html'class="nav_menu_item cart" value='3'>Cart</a></li>
       <li><a href='../Sell-with-us.html' class="nav_menu_item">Sell with Us</a></li>
       <li>
         <a href="./login.html"
           ><button type="button" class="btn_nav">Sign in</button></a
         >
+      </li>
+       <li class='dropdown-list'>
+      <p class='welcome_name'>Hello Mohammad</p>
+      <a class='account_item ' id='dropdown_container'
+        > My Account <iconify-icon
+        icon="ep:arrow-down-bold"
+        class="dropdown_icon"
+      ></iconify-icon>
+      </a
+      > <ul class="dropdown-item" id='dropdown_item'>
+       <a href='Orders.html'><li>Orders</li></a> 
+        <a href='Address.html'><li>Address</li></a>
+        <a href='Profile.html'><li>my profile</li><a/>
+        <a href='Settings.html'><li>settings</li></a>
+      </ul>
       </li>
     </ul>
   </div>
@@ -135,7 +150,7 @@ const createNav = () => {
       class="sub_nav_item sub_nav_price"
       placeholder="Highest"
     />
-    <button class="btn_search" type="button">Search</button>
+   <a href='./Search-result.html'> <button class="btn_search" type="button">Search</button></a>
     </form>
   </div>
 </div>
@@ -156,3 +171,13 @@ burgerIcon.addEventListener("click", function () {
     navItem.classList.remove("js-close");
   }
 });
+const dropdown = document.getElementById("dropdown_container");
+const dropdownClass = document.getElementById("dropdown_item");
+dropdown.addEventListener("click", function () {
+  if (dropdownClass.style.display=='none') {
+    dropdownClass.style.display='block'
+  }else
+  {
+    dropdownClass.style.display='none'
+  }
+})

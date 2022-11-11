@@ -15,10 +15,10 @@
     background-color: #fefefe;
     margin: 12% auto;
     border: 1px solid #888;
-    width: 30%;
-    height: 45%;
+    width: 35%;
+
   }
-  
+
   .close {
     color: black;
     float: right;
@@ -51,14 +51,14 @@
   }
   .button_item {
     width: 100%;
-    height: 17%;
+    padding: 15px;
     background-color: #707070;
     color: white;
     border: 1px solid #707070;
     font-size: 15px;
   }
   .modal-content img{
-    width: 50%;
+    width: 40%;
     padding-left: 15px;
   }
   .modal-content h2 {
@@ -70,3 +70,44 @@
   .added_item{
     color: black;
   }
+.date_order{
+  display: flex;
+  justify-content: space-around;
+}
+.date_order p{
+  font-size: 20px;
+}
+.order_details{
+  display: flex;
+  margin: 50px;
+}
+.order_info{
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  margin-left: 50px;
+}
+.order_details img{
+  width: 25%;
+}
+.order_details .price{
+margin-top: 15px;
+}
+.expected_date{
+  text-align: center;
+  color: #008716;
+  font-size: 20px;
+}
+.ok_button{
+display: flex;
+justify-content: flex-end;
+margin: 15px;
+}
+.ok_button button{
+background-color:#707070 ;
+border: 1px solid #707070 ;
+color: var(--text-white);
+width: 142px;
+height: 44px;
+font-size: 20px;
+}

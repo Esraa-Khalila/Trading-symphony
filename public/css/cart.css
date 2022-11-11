@@ -118,6 +118,36 @@
 .free_delivery {
   color: #ce0000;
 }
+@media (max-width: 1550px) {
+  .all_products {
+    margin-left: 15px;
+}
+  .cart {
+    display: grid;
+    grid-template-columns: repeat(2, 750px);
+    gap: 190px;
+  }
+  .cart_details img {
+    width: 200px;
+    height: 200px;
+}
+.cart_title {
+  overflow: hidden;
+  width: 354px;
+}
+.payment_method {
+  text-align: start;
+}
+.price_details {
+  width: 470px;
+}
+.price_btn {
+  width: 350px;}
+  .cart_details {
+    margin-top: 0px;
+}
+  }
+
 @media (max-width: 1440px) {
   .cart {
     display: grid;

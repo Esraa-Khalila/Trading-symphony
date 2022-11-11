@@ -4,17 +4,17 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 500px;
+  height: 50rem;
 }
 .reset_password_details {
   box-shadow: 5px 5px 5px rgb(249, 243, 243);
   border: 1.5px solid rgb(249, 243, 243);
-  border-radius: 10px;
-  width: 600px;
+  border-radius: 1rem;
+  width: 60rem;
 }
 .reset_password_title {
-  font-size: 25px;
-  padding: 25px 35px;
+  font-size: 2.5rem;
+  padding: 2.5rem 3.5rem;
   border-bottom: 1px solid #d1d1d1;
 }
 .reset_password_info {
@@ -26,48 +26,48 @@
     border-bottom: none;
 }
 .reset_password_info label {
-  font-size: 14px;
-  margin:25px  40px 0 40px;
+  font-size: 1.4rem;
+  margin:2.5rem  4rem 0 4rem;
 }
 .reset_password_info input {
-  height: 40px;
-  padding-left: 10px;
+  height: 4rem;
+  padding-left: 1rem;
   border: 1px solid #c7c7c7;
   border-radius: 4px;
-  margin:20px 40px 50px 40px;
+  margin:2rem 4rem 5rem 4rem;
 }
 .reset_password_info .step_one_input {
-  width: 340px;
+  width: 30.4rem;
 }
 .reset_password_info .step_two_input {
-  width: 205px;
+  width: 20.5rem;
 }
 .reset_password_info .step_three_input {
-    width: 355px;
+    width: 35.5rem;
   }
   .reset_password_info .step_four_input1 {
-    width: 365px;
-    margin:5px 5px 0 40px;
+    width: 3.65rem;
+    margin:.5rem .5rem 0 4rem;
   }
   .reset_password_info .step_four_input2 {
-    width: 365px;
-    margin-bottom: 30px;
-    margin-top: 8px;
+    width: 30.5rem;
+    margin-bottom: 3rem;
+    margin-top: .8rem;
   }
 
 .reset_password_btn {
   text-align: right;
-  margin: 25px 30px;
+  margin: 2.5rem 3rem;
 }
 .reset_password_btn button {
   border-radius: 4px;
-  padding: 5px 13px;
+  padding: .5rem 1.3rem;
   border: 1px solid #c7c7c7;
 }
 
 .reset_password_btn .btn_cancel {
   background-color: white;
-  margin-right: 15px;
+  margin-right: 1.5rem;
 }
 .reset_password_btn .btn_ok {
   background-color: #707070;
@@ -95,13 +95,13 @@
 @media (max-width: 480px) {
   .reset_password_details {
 
-  width: 300px;
+  width: 38rem;
 }
 .reset_password_title{
-  font-size: 15px;
-  text-align: center;
+  font-size: 1.5rem;
+
 }
 .reset_password_info label{
-  font-size: 10px;
+  font-size: 1.3rem;
 }
 }

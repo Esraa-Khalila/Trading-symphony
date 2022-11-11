@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/account.css" />
+    <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
+    <title>Orders</title>
+  </head>
+  <body>
+    <nav class="navbar"></nav>
+    <main class="orders">
+      <div class="sidebar_nav"></div>
+      <section class="container order">
+        <div class="order_title">
+          <h3>Addresses</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+            erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+            et ea rebum. Stet clita kasd gubergren, no sea
+          </p>
+        </div>
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Items</th>
+              <th>Price</th>
+              <th>Delivery to</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="popup-data">
+              <td>125698</td>
+              <td class="items">ASUS Graphic card v2, keyboard, hp speaker</td>
+              <td>1030.12 JOD</td>
+              <td>Amman, Lorem Ipsum</td>
+              <td class="selected_td" onclick="event.stopPropagation()">
+                <div class="selected">
+                  <input
+                    type="radio"
+                    class="selected_input"
+                    name="select1"
+                  />
+                  <label class="select_label">Selected</label>
+                </div>
+                <div class="selected">
+                  <input type="radio" class="selected_input" name="select1" />
+                  <label class="select_label">Unselected</label>
+                </div>
+              </td>
+            </tr>
+            <tr class="popup-data">
+              <td>125698</td>
+              <td class="items">Samsung TV 52'</td>
+              <td>500 JOD</td>
+              <td>Irbid, Al-sheikh khalil</td>
+              <td class="selected_td" onclick="event.stopPropagation()">
+                <div class="selected">
+                  <input type="radio" class="selected_input" name="select2" checked/>
+                  <label class="active">Selected</label>
+                </div>
+                <div class="selected">
+                  <input type="radio" class="selected_input" name="select2" />
+                  <label>Unselected</label>
+                </div>
+              </td>
+            </tr>
+            <tr class="popup-data">
+              <td>125698</td>
+              <td class="items">ASUS Graphic card v2, keyboard, hp speaker</td>
+              <td>1030.12 JOD</td>
+              <td>Amman, Lorem Ipsum</td>
+              <td class="selected_td" onclick="event.stopPropagation()">
+                <div class="selected">
+                  <input type="radio" class="selected_input" name="select3" />
+                  <label>Selected</label>
+                </div>
+                <div class="selected">
+                  <input type="radio" class="selected_input" name="select3" />
+                  <label>Unselected</label>
+                </div>
+              </td>
+            </tr>
+            <tr class="popup-data">
+              <td>125698</td>
+              <td class="items">ASUS Graphic card v2, keyboard, hp speaker</td>
+              <td>1030.12 JOD</td>
+              <td>Amman, Lorem Ipsum</td>
+              <td class="selected_td" onclick="event.stopPropagation()">
+                <div class="selected">
+                  <input type="radio" class="selected_input" name="select4" />
+                  <label>Selected</label>
+                </div>
+                <div class="selected">
+                  <input type="radio" class="selected_input" name="select4" />
+                  <label>Unselected</label>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <div id="popup" class="popup">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+
+            <h4>Order Details</h4>
+            <div class="date_order">
+              <p>Order 12345</p>
+              <p>Date of checkout 10th Oct 2022</p>
+            </div>
+            <div class="order_details">
+              <img src="./images/computer-product/speaker1.png" alt="" />
+              <div class="order_info">
+                <span>item</span>
+                <h6>ASUS Graphic card v2, keyboard</h6>
+                <span>price</span>
+                <h6>99900 JOD</h6>
+              </div>
+            </div>
+
+            <div class="order_details">
+              <img src="./images/computer-product/speaker1.png" alt="" />
+              <div class="order_info">
+                <span>item</span>
+                <h6>ASUS Graphic card v2, keyboard</h6>
+                <span class="price">price</span>
+                <h6>99900 JOD</h6>
+              </div>
+            </div>
+            <p class="expected_date">
+              Expected delivery date 20th Oct - 30th Oct 2022
+            </p>
+            <div class="ok_button">
+              <a href="./Orders.html"><button>ok</button></a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer"></footer>
+    <script src="js/nav.js"></script>
+    <script src="./js/sidebar.js"></script>
+    <script src="./js/modal.js"></script>
+    <script src="js/footer.js"></script>
+  </body>
+</html>

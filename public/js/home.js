@@ -48,3 +48,24 @@ function AutoShow() {
   dot[slide - 1].className += " active";
   setTimeout(AutoShow, 5000); 
 }
+
+const productContainers = [...document.querySelectorAll('.category')];
+const nxtBtn = [...document.querySelectorAll('.nxt-btn')];
+const preBtn = [...document.querySelectorAll('.pre-btn')];
+
+productContainers.forEach((item, i) => {
+    let containerDimenstions = item.getBoundingClientRect();
+    let containerWidth = containerDimenstions.width;
+
+    nxtBtn[i].addEventListener('click', () => {
+        item.scrollLeft += containerWidth;
+        nxtBtn[i].classList.add('changeColor')
+        preBtn[i].classList.remove('changeColor')
+    })
+
+    preBtn[i].addEventListener('click', () => {
+        item.scrollLeft -= containerWidth;
+        preBtn[i].classList.add('changeColor')
+        nxtBtn[i].classList.remove('changeColor')
+    })
+})

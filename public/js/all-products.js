@@ -2,6 +2,7 @@
 const productContainers = [...document.querySelectorAll(".category_container")];
 const nxtBtn = [...document.querySelectorAll(".nxt-btn")];
 const preBtn = [...document.querySelectorAll(".pre-btn")];
+const preIcon = [...document.querySelectorAll(".pre_icon")];
 
 productContainers.forEach((item, i) => {
   let containerDimenstions = item.getBoundingClientRect();
@@ -30,26 +31,27 @@ for (var i = 0; i < btns.length; i++) {
 }
 var grid = document.getElementsByClassName("grid");
 var list = document.getElementsByClassName("list");
+var h = document.getElementsByClassName("m");
 function choose_btn() {
   var btn = choose_style.getElementsByClassName("btn1");
 
   btn[0].addEventListener("click", function () {
     list[0].classList.remove("show");
     grid[0].classList.add("show");
+    h[0].style.display='grid'
   });
 
   var btn2 = choose_style.getElementsByClassName("btn2");
 
   btn2[0].addEventListener("click", function () {
-
-
     list[0].classList.add("show");
     grid[0].classList.remove("show");
     grid[0].classList.add("hide");
+    h[0].style.display='none'
   });
 }
 
-// change page number every 12 items 
+// change page number every 12 items
 
 const productItems = document.querySelector(".sub_product").children;
 const prev = document.querySelector(".prev");
@@ -67,7 +69,6 @@ function Numpage() {
   for (let i = 1; i <= count; i++) {
     pageNumbers = pageNumbers + `<span>${i}</span>`;
   }
-
 }
 
 prev.addEventListener("click", function () {
@@ -105,13 +106,13 @@ function showItems() {
       productItems[i].classList.remove("hide");
       productItems[i].classList.add("show");
     }
-    page.innerHTML=index
+    page.innerHTML = index;
   }
 }
 
 window.onload = function () {
-    showItems();
-    check();
-    Numpage();
-    choose_btn();
-  };
+  showItems();
+  check();
+  Numpage();
+  choose_btn();
+};

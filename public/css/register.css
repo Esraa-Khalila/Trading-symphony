@@ -1,93 +1,112 @@
 @import "./layouts.css";
-.register {
-  margin: 100px 0;
-}
-.register h1 {
-  padding: 25px;
-}
-.register_form {
-  display: grid;
-  grid-template-columns: repeat(3, 350px);
-}
-.register_form_item {
-  margin: 15px 30px;
-  display: flex;
-  flex-direction: column;
-}
-.register_form_item input {
-  height: 40px;
-  padding-left: 10px;
-  border: 1px solid #c7c7c7;
-}
-.register_form_item input::placeholder {
-  color: #9b9b9b;
-}
-.register_form_item label {
-  font-size: 15px;
-  font-weight: 600;
-  padding-bottom: 10px;
-}
-.register_password label {
-  font-size: 15px;
-  font-weight: 600;
-}
-.register_password {
-  padding: 15px 30px;
-}
-.register_eye {
-  display: flex;
-  justify-content: space-between;
-  border: 1px solid #c7c7c7;
-  height: 40px;
-  margin-top: 7px;
-  padding-left: 10px;
-}
-.eye_icon {
-  font-size: 25px;
-  padding: 7px 10px;
-}
-.register_eye input {
-  border: none;
-}
-.register_eye input::placeholder {
-  padding-left: 10px;
-}
-.register_form_btn {
-  text-align: right;
-  margin: 25px 50px;
-}
+
 .register_form_btn button {
-  background-color: #707070;
+  background-color: var(--secondary-color);
   border: none;
-  padding: 7px 20px;
+  padding: 0.7rem 2rem;
   color: var(--text-white);
-  font-size: 15px;
+  font-size: 1.5rem;
 }
 .register_form_number #number {
   border: none;
 }
 .register_form_number {
-  border: 1px solid #c7c7c7;
-  font-size: 12px;
+  border: 1px solid var(--border-color);
+  font-size: 1.2rem;
   color: #9b9b9b;
 }
+.register {
+  margin: 10rem 0;
+}
+.register h1 {
+  padding: 2.5rem;
+  margin-left: 5rem;
+}
+.register_form {
+  display: grid;
+  grid-template-columns: repeat(3, 30.5rem);
+  margin-left: 5rem;
+}
+.register_form_item {
+  margin: 1.5rem 3rem;
+  display: flex;
+  flex-direction: column;
+}
+.register_form_item input {
+  height: 4rem;
+  padding-left: 1rem;
+  border: 1px solid var(--border-color);
+}
+.register_form_item input::placeholder {
+  color: #9b9b9b;
+}
+.register_form_item label {
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding-bottom: 1rem;
+}
+.register_password label {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.register_password {
+  padding: 1.5rem 3rem;
+}
+.register_eye {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid var(--border-color);
+  height: 4rem;
+  margin-top: 0.7rem;
+  padding-left: 1rem;
+}
+.eye_icon {
+  font-size: 2.5rem;
+  padding: 0.7rem 1rem;
+}
+.register_eye input {
+  border: none;
+}
+.register_eye input::placeholder {
+  padding-left: 1rem;
+}
+.register_form_btn {
+  text-align: right;
+  margin: 2.5rem 5rem;
+}
+.flag_icon {
+  padding-left: 0.2rem;
+}
+/* input::-ms-reveal,
+input::-ms-clear {
+  display: none;
+} */
 
 @media (max-width: 769px) {
   .register_form {
     display: grid;
-    grid-template-columns: repeat(2, 370px);
+    grid-template-columns: repeat(2, 38rem);
   }
   .register_form_number {
     display: flex;
   }
   .register_form_number span {
     display: flex;
-    padding-top: 12px;
+    padding-top: 1.4rem;
   }
 }
 @media (max-width: 480px) {
   .register_form {
     display: grid;
-    grid-template-columns: repeat(1, 324px);
+    grid-template-columns: repeat(1, 40rem);
+  }
+  .register h1 {
+    margin-left: 0;
+  }
+  .register_form{
+    margin-left: 0;
+  }
+  .register {
+    margin: 2.5rem 0;
   }
 }

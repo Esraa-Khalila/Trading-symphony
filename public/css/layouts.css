@@ -17,6 +17,9 @@
   --text-white: #ffffff;
   --text-black: black;
   --third-color: #cbcbcb;
+  --border-color:#c7c7c7;
+  --placeholder-color:#9b9b9b;
+  --after-discount:#9a0000
 }
 html {
   font-size: 62.5%;
@@ -27,33 +30,35 @@ a {
 ul li {
   list-style-type: none;
 }
+button{
+  cursor: pointer;
+}
 /* dropdown list for all dropdown in header */
-/* .dropdown-list {
+.dropdown-list {
   position: relative;
-  display: inline-block;
 }
 
 .dropdown-item {
   display: none;
   position: absolute;
   background-color: var(--text-white);
-  min-width: 200px;
+  min-width: 170px;
   top: 100%;
   left: 20%;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  padding: 12px 20px;
+  padding: 12px 10px;
   z-index: 1;
   border-radius: 5px;
   font-size: 12px;
 }
 .dropdown-item li {
-  padding: 0.7rem;
+  padding: 0.7rem !important;
   font-size: 15px;
   border-bottom: 1px solid var(--third-color);
 }
 .dropdown-list:hover .dropdown-item {
   display: block;
-} */
+}
 /*start nav section style */
 .navbar {
   background-color: var(--primary-color);
@@ -67,7 +72,6 @@ ul li {
 .container {
   max-width: 1920px;
   margin: 0 auto;
-  padding: 0 114px;
 }
 .nav {
   display: flex;
@@ -75,7 +79,18 @@ ul li {
   align-items: center;
   padding: 30px;
 }
-
+.cart:after {
+  content: attr(value);
+  font-size: 12px;
+  color: var(--text-black);
+  background: var(--text-white);
+  border-radius: 50%;
+  padding: 2px 8px;
+  position: relative;
+  left: -3px;
+  top: 7px;
+  opacity: 0.9;
+}
 .brand_logo a {
   color: var(--text-black);
   font-size: 20px;
@@ -141,6 +156,14 @@ ul li {
 .nav_menu_item {
   font-weight: 500;
 }
+.welcome_name {
+  font-size: 15px;
+  padding-bottom: 10px;
+}
+.account_item {
+  font-size: 20px;
+  font-weight: 600;
+}
 .btn_nav {
   background-color: var(--secondary-color);
   border: none;
@@ -150,6 +173,7 @@ ul li {
   color: var(--text-white);
   font-size: 20px;
   cursor: pointer;
+  display: none;
 }
 .bg_sub_nav {
   background-color: var(--text-white);
@@ -341,6 +365,9 @@ ul li {
   .nav {
     display: none;
   }
+  .sub_nav{
+    display: none;
+  }
   .responsive_menu {
     display: block;
   }
@@ -419,9 +446,9 @@ ul li {
   .sub_nav {
     grid-template-columns: none;
   }
-  span {
+  /* span {
     display: none;
-  }
+  } */
   .btn_search {
     margin: 0 70px;
   }

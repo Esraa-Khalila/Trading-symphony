@@ -19,7 +19,7 @@
         <div class="hero fade">
           <div class="hero_item">
             <div class="discount">
-              <div class="discount-item item">Discount</div>
+              <div class="discount-item discount_border">Discount</div>
               <div class="discount-price">35%</div>
               <div class="off">OFF</div>
               <a><button class="discount-item order">ORDER NOW</button></a>
@@ -34,7 +34,7 @@
         <div class="hero fade">
           <div class="hero_item">
             <div class="discount">
-              <div class="discount-item item">Discount</div>
+              <div class="discount-item discount_border">Discount</div>
               <div class="discount-price">35%</div>
               <div class="off">OFF</div>
               <a><button class="discount-item order">ORDER NOW</button></a>
@@ -49,7 +49,7 @@
         <div class="hero fade">
           <div class="hero_item">
             <div class="discount">
-              <div class="discount-item item">Discount</div>
+              <div class="discount-item discount_border">Discount</div>
               <div class="discount-price">35%</div>
               <div class="off">OFF</div>
               <a><button class="discount-item order">ORDER NOW</button></a>
@@ -61,7 +61,7 @@
             <a class="next" onclick="incrseSlides(1)">❯</a>
           </div>
         </div>
-        <div class="slider">
+        <div class="slider hero_slider">
           <span class="shape_slider" onclick="currentSlide(1)"></span>
           <span class="shape_slider" onclick="currentSlide(2)"></span>
           <span class="shape_slider" onclick="currentSlide(3)"></span>
@@ -88,11 +88,10 @@
         <div class="container category">
           <div class="category_item">
             <div class="category_details">
-              <h6>
-                Computers,<br />
-                Accessories
-              </h6>
-            <a href="./computer-product.html"><button type="button" class="btn_shop">Shop Now</button></a>  
+              <h6>Computers, Accessories</h6>
+              <a href="./computer-product.html"
+                ><button type="button" class="btn_shop">Shop Now</button></a
+              >
             </div>
             <div class="category_img">
               <img class="category_img_one" src="./images/category/head.png" />
@@ -117,7 +116,7 @@
           </div>
           <div class="category_item">
             <div class="category_details">
-              <h6>Health,<br />Care</h6>
+              <h6>Health, Care</h6>
               <button class="btn_shop">Shop Now</button>
               <div class="category_img">
                 <img
@@ -147,9 +146,14 @@
               </div>
             </div>
           </div>
+
+          <div class="category_slider">
+            <span class="pre-btn" onclick="currentSlide(1)"></span>
+            <span class="nxt-btn" onclick="currentSlide(2)"></span>
+          </div>
         </div>
       </section>
-      <section class="">
+      <section>
         <div class="container">
           <div class="check_product">
             <h2>Check Our Products</h2>
@@ -172,15 +176,50 @@
                 kasd gubergren, no sea takimata
               </p>
               <a href="./Categories.html">
-              <button
-                type="button"
-                class="btn_other_product other_product_details"
+                <button
+                  type="button"
+                  class="btn_other_product other_product_details"
+                >
+                  Shop Now
+                </button></a
               >
-                Shop Now
-              </button></a>
             </div>
           </div>
         </div>
+      </section>
+      <section class="container">
+        <div class="check_product">
+          <h2>Special announcements</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+            erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+            et ea rebum. Stet clita kasd gubergren
+          </p></div>
+          <div class="Special_Announcements">
+            
+            <div class="Announcements">
+              <h2 class="other_product_details ">
+                Check Our Special Announcements
+              </h2>
+              <p class="other_product_details">
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                diam nonumy eirmod tempor invidunt<br />
+                ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+                vero eos et accusam et justo duo dolores et ea rebum. Stet clita
+                kasd gubergren, no sea takimata
+              </p>
+              <a href="./Announcements.html">
+                <button
+                  type="button"
+                  class="btn_other_product other_product_details btn_Announcements "
+                >
+                  Check Now
+                </button></a
+              >
+            </div>
+          </div>
+        
       </section>
     </main>
     <footer class="footer"></footer>

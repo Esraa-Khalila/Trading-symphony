@@ -96,7 +96,7 @@
 @media (max-width: 769px) {
   .categories_item {
     display: grid;
-    grid-template-columns: repeat(3, 200px);
+    grid-template-columns: repeat(3, 235px);
     gap: 15px;
     margin: 30px 10px;
   }
@@ -104,11 +104,11 @@
     text-align: center;
   }
   .category_cover {
-    width: 100%;
+    width:100%;
     padding: 0 30px;
   }
   .categories_img {
-    width: 140px;
+    width: 200px;
     position: relative;
     text-align: center;
     height: 174px;
@@ -120,7 +120,7 @@
 @media (max-width: 480px) {
   .categories_item {
     display: grid;
-    grid-template-columns: repeat(2, 100px);
+    grid-template-columns: repeat(3, 52px);
     padding-left: 0;
     gap: 50px;
     margin: 30px 5px;
@@ -131,5 +131,18 @@
 
   .categories_title p {
     font-size: 10px;
+  }
+  .categories_img .categories_img_two {
+    width: 48px;
+  }
+  .categories_img {
+    width: 97px;
+  }
+  .categories_details h6 {
+    padding: 0;
+    font-size: 8px;
+  }
+  .category_cover {
+    padding: 0 15px;
   }
 }

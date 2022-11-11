@@ -13,8 +13,10 @@
   <body>
     <nav class="navbar"></nav>
     <div class="choose_title">
-      <span class="btn btn1">My Items</span>
-      <span class="btn btn2 active">+ Add product</span>
+      <span class="btn btn1">Requests</span>
+      <span class="btn btn2 active">+ Add Product</span>
+      <span class="btn btn3">Added Items</span>
+      <span class="btn btn4">Actions Panel</span>
     </div>
     <form>
       <section class="add_product container">
@@ -204,16 +206,17 @@
               <div class="add_color">
                 <label for="">Add color</label>
                 <div class="add">
-                <div class="add_color_input">
-                  <input type="color" value="#880000" />
-                  <input type="color" value="#0027c1" />
-                  <input type="color" class="color_input_three" />
-                  <input type="color" value="#ffffff" />
+                  <div class="add_color_input">
+                    <input type="color" value="#880000" />
+                    <input type="color" value="#0027c1" />
+                    <input type="color" class="color_input_three" />
+                    <input type="color" value="#ffffff" />
+                  </div>
+                  <iconify-icon
+                    icon="ant-design:plus-outlined"
+                    id="add_color_input"
+                  ></iconify-icon>
                 </div>
-                <iconify-icon
-                  icon="ant-design:plus-outlined"
-                  id="add_color_input"
-                ></iconify-icon></div>
               </div>
             </div>
           </div>
@@ -223,7 +226,7 @@
         >
       </section>
     </form>
-    <section class="sell_item container" id="sell_item">
+    <section class="sell_item container">
       <p class="main_title">
         Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
         eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
@@ -281,21 +284,495 @@
         </tbody>
       </table>
       <div id="popup" class="popup">
-        <div class="modal-content">
+        <div class="modal-content cart_popup">
           <span class="close">&times;</span>
 
           <h4>Product Details</h4>
           <div class="item_details">
-            <p>Product ID 2569</p>
-            <p>
-              Product Name
-              <iconify-icon icon="ci:edit" style="color: #a5a5a5"></iconify-icon
-              ><span>Dell Monitor 24 inch</span>
-            </p>
-            <p>Status <span class="progress">In progress</span></p>
+            <div class="edit_item">
+              <label>Product Name</label>
+              <div class="confirm_form_number edit_profile">
+                <input
+                  type="text"
+                  value="Dell Monitor  24 inch"
+                  class="number"
+                  disabled
+                />
+                <iconify-icon
+                  icon="clarity:edit-solid"
+                  style="color: #ababab"
+                  class="edit_icon"
+                ></iconify-icon>
+              </div>
+            </div>
+            <div class="edit_item">
+              <label>Category</label>
+              <div class="confirm_form_number edit_profile">
+                <input type="text" value="Computer" class="number" disabled />
+                <iconify-icon
+                  icon="clarity:edit-solid"
+                  style="color: #ababab"
+                  class="edit_icon"
+                ></iconify-icon>
+              </div>
+            </div>
+            <div class="edit_item">
+              <label>Sub-category</label>
+              <div class="confirm_form_number edit_profile">
+                <input type="text" value="Monitors " class="number" disabled />
+                <iconify-icon
+                  icon="clarity:edit-solid"
+                  style="color: #ababab"
+                  class="edit_icon"
+                ></iconify-icon>
+              </div>
+            </div>
+            <div class="edit_item">
+              <label>Price</label>
+              <div class="confirm_form_number edit_profile">
+                <input type="text" value="589" class="number" disabled />
+                <iconify-icon
+                  icon="clarity:edit-solid"
+                  style="color: #ababab"
+                  class="edit_icon"
+                ></iconify-icon>
+              </div>
+            </div>
+            <div class="edit_item">
+              <label>Status</label>
+              <div class="confirm_form_number edit_profile">
+                <input
+                  type="text"
+                  value="In Progress"
+                  class="number"
+                  disabled
+                />
+              </div>
+            </div>
+            <div class="edit_item">
+              <label>Description</label>
+              <div class="confirm_form_number description">
+                <input
+                  type="text"
+                  value="Lorem ipsum dolor sit amet,  onsetetur diLorem ipsum dolor sit amet, onsetetur dipscing elitr, sed  nonumy eirmod pscing elitr, sed  "
+                  class="number description_input"
+                  disabled
+                />
+                <iconify-icon
+                  icon="clarity:edit-solid"
+                  style="color: #ababab"
+                  class="edit_icon"
+                ></iconify-icon>
+              </div>
+            </div>
+            <div class="product_img">
+              <img src="./images/monitor.png" />
+              <img src="./images/monitor.png" />
+              <img src="./images/monitor.png" />
+              <img src="./images/monitor.png" />
+            </div>
           </div>
-          <button class="delete_item">Delete this Product</button>
+          <a class="delete_requset">Delete Request</a>
+          <button class="button_item">OK</button>
         </div>
+      </div>
+    </section>
+    <section class="sell_item container" id="added_item">
+      <p class="main_title">
+        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+        eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+        voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+        clita kasd gubergren
+      </p>
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Product Name</th>
+            <th>Category</th>
+            <th>Sub-category</th>
+            <th>Price</th>
+            <th>Quantity</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="popup-data">
+            <td>2569</td>
+            <td>Dell Monitor 24 inch</td>
+            <td>Computer</td>
+            <td>Monitors</td>
+            <td>589</td>
+            <td>500</td>
+            <td>
+              <div class="action_icons">
+                <iconify-icon
+                  icon="bx:trash"
+                  style="color: #db0000"
+                  class="icon_item"
+                ></iconify-icon>
+                <iconify-icon
+                  icon="clarity:edit-solid"
+                  style="color: #a5a5a5"
+                  class="icon_item edit_icon"
+                ></iconify-icon>
+                <span class="f"></span>
+              </div>
+            </td>
+          </tr>
+          <tr class="popup-data">
+            <td>2569</td>
+            <td>Dell Monitor 24 inch</td>
+            <td>Computer</td>
+            <td>Monitors</td>
+            <td>589</td>
+            <td>
+              500
+              <!-- <div class="counter">
+                <input type="text" id="counter_input" value="1" />
+                <div>
+                  <iconify-icon icon="dashicons:arrow-up-alt2" class="quantity_icon up"
+                    onClick="increaseCount(event, this)"></iconify-icon>
+                  <iconify-icon icon="ep:arrow-down-bold" class="quantity_icon" onClick="decreaseCount(event, this)">
+                  </iconify-icon>
+                </div>
+              </div> -->
+            </td>
+            <td>
+              <div class="action_icons">
+                <iconify-icon
+                  icon="bx:trash"
+                  style="color: #db0000"
+                  class="icon_item"
+                ></iconify-icon>
+                <iconify-icon
+                  icon="clarity:edit-solid"
+                  style="color: #a5a5a5"
+                  class="icon_item edit_icon"
+                ></iconify-icon>
+              </div>
+            </td>
+          </tr>
+          <tr class="popup-data">
+            <td>2569</td>
+            <td>Dell Monitor 24 inch</td>
+            <td>Computer</td>
+            <td>Monitors</td>
+            <td>589</td>
+            <td>500</td>
+            <td>
+              <div class="action_icons">
+                <iconify-icon
+                  icon="bx:trash"
+                  style="color: #db0000"
+                  class="icon_item"
+                ></iconify-icon>
+                <iconify-icon
+                  icon="clarity:edit-solid"
+                  style="color: #a5a5a5"
+                  class="icon_item"
+                ></iconify-icon>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <div id="popup" class="popup">
+        <div class="modal-content cart_popup">
+          <span class="close">&times;</span>
+
+          <h4>Product Details</h4>
+          <div class="item_details">
+            <div class="edit_item">
+              <label>Product Name</label>
+              <div class="confirm_form_number edit_profile">
+                <input
+                  type="text"
+                  value="Dell Monitor  24 inch"
+                  class="number"
+                  disabled
+                />
+                <iconify-icon
+                  icon="clarity:edit-solid"
+                  style="color: #ababab"
+                  class="edit_icon"
+                ></iconify-icon>
+              </div>
+            </div>
+            <div class="edit_item">
+              <label>Category</label>
+              <div class="confirm_form_number edit_profile">
+                <input type="text" value="Computer" class="number" disabled />
+                <iconify-icon
+                  icon="clarity:edit-solid"
+                  style="color: #ababab"
+                  class="edit_icon"
+                ></iconify-icon>
+              </div>
+            </div>
+            <div class="edit_item">
+              <label>Sub-category</label>
+              <div class="confirm_form_number edit_profile">
+                <input type="text" value="Monitors " class="number" disabled />
+                <iconify-icon
+                  icon="clarity:edit-solid"
+                  style="color: #ababab"
+                  class="edit_icon"
+                ></iconify-icon>
+              </div>
+            </div>
+            <div class="edit_item">
+              <label>Price</label>
+              <div class="confirm_form_number edit_profile">
+                <input type="text" value="589" class="number" disabled />
+                <iconify-icon
+                  icon="clarity:edit-solid"
+                  style="color: #ababab"
+                  class="edit_icon"
+                ></iconify-icon>
+              </div>
+            </div>
+            <div class="edit_item">
+              <label>Status</label>
+              <div class="confirm_form_number edit_profile">
+                <input
+                  type="text"
+                  value="In Progress"
+                  class="number"
+                  disabled
+                />
+              </div>
+            </div>
+            <div class="edit_item">
+              <label>Description</label>
+              <div class="confirm_form_number description">
+                <input
+                  type="text"
+                  value="Lorem ipsum dolor sit amet,  onsetetur diLorem ipsum dolor sit amet, onsetetur dipscing elitr, sed  nonumy eirmod pscing elitr, sed  "
+                  class="number description_input"
+                  disabled
+                />
+                <iconify-icon
+                  icon="clarity:edit-solid"
+                  style="color: #ababab"
+                  class="edit_icon"
+                ></iconify-icon>
+              </div>
+            </div>
+            <div class="product_img">
+              <img src="./images/monitor.png" />
+              <img src="./images/monitor.png" />
+              <img src="./images/monitor.png" />
+              <img src="./images/monitor.png" />
+            </div>
+          </div>
+          <a class="delete_requset">Delete Request</a>
+          <button class="button_item">OK</button>
+        </div>
+      </div>
+    </section>
+    <section class="sell_item container" id="action_panel">
+      <p class="main_title">
+        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+        eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+        voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+        clita kasd gubergren
+      </p>
+      <div class="action_panel_btn">
+        <button type="button" class="actions actions_one choose">
+          Upcoming Orders
+        </button>
+        <button type="button" class="actions actions_two">
+          Executed Orders
+        </button>
+      </div>
+      <div class="Upcoming_orders">
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Product Name</th>
+              <th>Category</th>
+              <th>Price</th>
+              <th>Quantity</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="popup-data">
+              <td>2569</td>
+              <td>Dell Monitor 24 inch</td>
+              <td>Computer</td>
+              <td>589</td>
+              <td>1</td>
+
+              <td class="selected_td" onclick="event.stopPropagation()">
+                <div class="selected">
+                  <input type="radio" class="selected_input" name="progress" />
+                  <label>Done</label>
+                </div>
+                <div class="selected">
+                  <input type="radio" class="selected_input" name="progress" />
+                  <label>In progress</label>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>2569</td>
+              <td>Dell Monitor 24 inch</td>
+              <td>Computer</td>
+              <td>589</td>
+              <td>1</td>
+
+              <td class="selected_td" onclick="event.stopPropagation()">
+                <div class="selected">
+                  <input
+                    type="radio"
+                    class="selected_input popup-data"
+                    name="progress1"
+                  />
+                  <label>Done</label>
+                </div>
+                <div class="selected">
+                  <input type="radio" class="selected_input" name="progress1" />
+                  <label>In progress</label>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <div id="popup" class="popup">
+          <div class="modal-content cart_popup">
+            <span class="close">&times;</span>
+
+            <h4>Product Details</h4>
+            <div class="item_details">
+              <div class="edit_item">
+                <label>Product Name</label>
+                <div class="confirm_form_number edit_profile">
+                  <input
+                    type="text"
+                    value="Dell Monitor  24 inch"
+                    class="number"
+                    disabled
+                  />
+                  <iconify-icon
+                    icon="clarity:edit-solid"
+                    style="color: #ababab"
+                    class="edit_icon"
+                  ></iconify-icon>
+                </div>
+              </div>
+              <div class="edit_item">
+                <label>Category</label>
+                <div class="confirm_form_number edit_profile">
+                  <input type="text" value="Computer" class="number" disabled />
+                  <iconify-icon
+                    icon="clarity:edit-solid"
+                    style="color: #ababab"
+                    class="edit_icon"
+                  ></iconify-icon>
+                </div>
+              </div>
+              <div class="edit_item">
+                <label>Sub-category</label>
+                <div class="confirm_form_number edit_profile">
+                  <input
+                    type="text"
+                    value="Monitors "
+                    class="number"
+                    disabled
+                  />
+                  <iconify-icon
+                    icon="clarity:edit-solid"
+                    style="color: #ababab"
+                    class="edit_icon"
+                  ></iconify-icon>
+                </div>
+              </div>
+              <div class="edit_item">
+                <label>Price</label>
+                <div class="confirm_form_number edit_profile">
+                  <input type="text" value="589" class="number" disabled />
+                  <iconify-icon
+                    icon="clarity:edit-solid"
+                    style="color: #ababab"
+                    class="edit_icon"
+                  ></iconify-icon>
+                </div>
+              </div>
+              <div class="edit_item">
+                <label>Status</label>
+                <div class="confirm_form_number edit_profile">
+                  <input
+                    type="text"
+                    value="In Progress"
+                    class="number"
+                    disabled
+                  />
+                </div>
+              </div>
+              <div class="edit_item">
+                <label>Description</label>
+                <div class="confirm_form_number description">
+                  <input
+                    type="text"
+                    value="Lorem ipsum dolor sit amet,  onsetetur diLorem ipsum dolor sit amet, onsetetur dipscing elitr, sed  nonumy eirmod pscing elitr, sed  "
+                    class="number description_input"
+                    disabled
+                  />
+                  <iconify-icon
+                    icon="clarity:edit-solid"
+                    style="color: #ababab"
+                    class="edit_icon"
+                  ></iconify-icon>
+                </div>
+              </div>
+              <div class="product_img">
+                <img src="./images/monitor.png" />
+                <img src="./images/monitor.png" />
+                <img src="./images/monitor.png" />
+                <img src="./images/monitor.png" />
+              </div>
+            </div>
+            <a class="delete_requset">Delete Request</a>
+            <button class="button_item">OK</button>
+          </div>
+        </div>
+      </div>
+      <div class="Executed_orders">
+        <table >
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Product Name</th>
+              <th>Category</th>
+              <th>Price</th>
+              <th>Quantity</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="popup-data">
+              <td>2569</td>
+              <td>Dell Monitor 24 inch</td>
+              <td>Computer</td>
+              <td>589</td>
+              <td>1</td>
+
+              <td class="success_order">Ready to be delivered</td>
+            </tr>
+            <tr>
+              <td>2569</td>
+              <td>Dell Monitor 24 inch</td>
+              <td>Computer</td>
+              <td>589</td>
+              <td>1</td>
+
+              <td class="success_order">Ready to be delivered</td>
+            </tr>
+          </tbody>
+        </table>
+        <button class=" action_panel_btn print_btn" onclick="window.print()">Print sales</button>
       </div>
     </section>
     <div class="copy_right">@ 2022 tading Symphoney. All Rights Reserved</div>

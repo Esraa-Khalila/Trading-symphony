@@ -10,18 +10,21 @@
   background-color: #f1f1f1;
   font-size: 26px;
 }
-
-.product {
- display: none;
+.checkout h2 {
+  font-size: 2.5rem;
+  margin: 10px;
 }
-.product_item{
-  display: grid;
-  grid-template-columns: repeat(3,1fr);
+.product {
   display: none;
 }
-.payment_item{
+.product_item {
   display: grid;
-  grid-template-columns: repeat(4,1fr);
+  grid-template-columns: repeat(3, 1fr);
+  display: none;
+}
+.payment_item {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   display: none;
 }
 .product_details {
@@ -97,12 +100,12 @@
 .new_item input {
   width: 385px;
   height: 58px;
+  padding-left: 10px;
 }
 .confirm {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   margin: 30px 20px;
-
 }
 .confirm input {
   width: 559px;
@@ -135,4 +138,43 @@
   color: var(--text-white);
   background-color: var(--secondary-color);
   border: 1px solid var(--secondary-color);
+}
+@media (max-width: 1550px) {
+  .checkout_item {
+    width: 90%;
+    margin: 50px 50px;
+    padding: 10px;
+    font-size: 26px;
+  }
+  .checkout h2 {
+    margin: 50px;
+  }
+  .product_details h5 {
+    width: 350px;
+    font-size: 15px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+  }
+  .payment_item {
+    margin-left: 50px;
+  }
+  .input_location {
+    margin: 15px 70px;
+  }
+  .location_item {
+    padding: 15px 34px;
+  }
+  #new_location {
+    margin: 30px 50px;
+  }
+  .confirm {
+    margin: 30px 56px;
+  }
+  .confirm_btn {
+    width: 200px;
+    margin: 0 50px 20px 0;
+  }
+}
+#new_location {
+  display: none;
 }

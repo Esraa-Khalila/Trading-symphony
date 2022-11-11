@@ -1,0 +1,255 @@
+@import "./layouts.css";
+@import "./modal.css";
+.orders {
+  display: flex;
+  background-color: rgb(241, 241, 241);
+}
+.sidebar_nav {
+  background: #ffff;
+  width: 438px;
+}
+
+.sidebar_nav li {
+  font-size: 30px;
+}
+.sidebar_nav span {
+  font-size: 18px;
+  display: block;
+  text-align: center;
+}
+.sidebar_item {
+  padding-top: 30px;
+}
+.sidebar_menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 60px;
+}
+.account_menu {
+  margin: 70px 0;
+}
+.account_icon {
+  border: 1px solid black;
+  border-radius: 50%;
+  font-size: 30px;
+  width: 42px;
+  height: 42px;
+  margin-right: 10px;
+  background-color: var(--primary-color);
+  padding: 5px 5px;
+}
+.sidebar_out {
+  margin-top: 50px;
+}
+.order table {
+  border-collapse: separate;
+  border-spacing: 0 4em;
+}
+.order thead {
+  text-align: center;
+  box-shadow: 0.1em 0.1em 1em 0.1em rgb(184, 180, 180);
+  border-radius: 7px;
+  height: 55px;
+  font-size: 20px;
+}
+.order tbody tr {
+  text-align: center;
+  box-shadow: 0.2em 0.2em 1em rgb(184, 180, 180);
+  border-radius: 5px;
+  height: 100px;
+  font-size: 20px;
+}
+.order th,
+td {
+  padding: 0 50px;
+  background-color: #ffffff;
+}
+.order_title {
+  margin-top: 50px;
+}
+.order_title h3 {
+  font-size: 24px;
+  padding-bottom: 15px;
+}
+.order_title p {
+  font-size: 16px;
+}
+/* Account page start */
+.selected {
+  margin-top: 15px;
+  display: flex;
+}
+.selected_input {
+  margin-right: 10px;
+}
+.selected input[type="radio"]:checked + label {
+  color: #0040d4;
+}
+/* profile page start */
+.profile {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.personal_item {
+  padding: 50px;
+}
+.profile_section {
+  margin: 50px;
+}
+.profile_section h3 {
+  font-size: 24px;
+}
+.personal_item {
+  display: flex;
+  flex-direction: column;
+}
+.personal_item input {
+  width: 385px;
+  height: 58px;
+  font-size: 20px;
+}
+.personal_item label {
+  font-size: 20px;
+  padding-bottom: 15px;
+}
+.confirm_form_number {
+  border: 1px solid #c7c7c7;
+  font-size: 20px;
+  color: #9b9b9b;
+  padding-left: 10px;
+  padding-top: 10px;
+  width: 385px;
+  height: 58px;
+  background-color: var(--text-white);
+}
+.confirm_form_number input {
+  width: 250px;
+  height: 40px;
+  background-color: white;
+}
+
+.confirm_form_number .number {
+  border: none;
+}
+.title {
+  padding: 50px 0 0 50px;
+}
+.edit_btn {
+  width: 114px;
+  height: 44px;
+  margin: 100px;
+  float: right;
+  background-color: var(--secondary-color);
+  border: 1px solid var(--secondary-color);
+  color: var(--text-white);
+  font-size: 20px;
+}
+.edit_profile {
+  display: flex;
+  justify-content: space-between;
+}
+.edit_icon {
+  padding-right: 10px;
+  padding-top: 7px;
+}
+/* settings page style start */
+.settings_input {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  margin: 15px;
+}
+.settings_input input {
+  width: 385px;
+  height: 58px;
+  font-size: 20px;
+  margin: 15px 100px;
+  padding-left: 10px;
+  border: 1px solid #c7c7c7;
+}
+.setting_title {
+  padding: 10px 20px;
+}
+.password_old {
+  grid-column: 1/4;
+}
+.save_btn {
+  width: 114px;
+  height: 44px;
+  background-color: var(--secondary-color);
+  color: var(--text-white);
+  border: 1px solid var(--secondary-color);
+  font-size: 20px;
+}
+.languages {
+  display: flex;
+  margin: 10px 50px;
+  font-size: 24px;
+}
+.languages input {
+  margin-left: 70px;
+}
+.languages label {
+  margin-left: 10px;
+}
+.language_title {
+  margin: 40px;
+}
+
+@media (max-width: 1550px) {
+  .sidebar_nav {
+    width: 400px;
+  }
+  .order {
+    margin-left: 70px;
+  }
+  .sidebar_nav li {
+    font-size: 19px;
+  }
+  .order th,
+  td {
+    padding: 0 30px;
+  }
+
+  .order_title h3 {
+    font-size: 15px;
+  }
+
+  .order thead {
+    font-size: 15px;
+  }
+  .order tbody tr {
+    height: 100px;
+    font-size: 15px;
+  }
+  .personal_item input {
+    width: 320px;
+    height: 58px;
+  }
+  .personal_item {
+    padding: 20px;
+  }
+  .confirm_form_number {
+    width: 300px;
+    height: 58px;
+  }
+  .confirm_form_number input {
+    width: 200px;
+    height: 40px;
+    border: none;
+  }
+  .save_btn{
+    float: right;
+  }
+  .settings_input {
+    display: grid;
+    grid-template-columns: repeat(3,370px);
+    margin: 5px;
+  }
+  .settings_input input {
+    width: 250px;
+    height: 42px;
+}
+}
