@@ -26,7 +26,7 @@ const createNav = () => {
 
   <ul class="nav_menu overlay-content ">
     <li>
-      <div class="nav_item ">
+      <div class="nav_item mobile_search_div">
         <input type="search" placeholder="What are you looking for?" />
         <button class="mobile_search_btn">search</button>
       </div>
