@@ -1,88 +1,92 @@
 @import "./layouts.css";
 @import "./modal.css";
-.orders {
+.my_account {
   display: flex;
   background-color: rgb(241, 241, 241);
+  gap: 8rem;
 }
 .sidebar_nav {
   background: #ffff;
-  width: 438px;
+  width: 40.3rem;
 }
 
 .sidebar_nav li {
-  font-size: 30px;
+  font-size: 3rem;
 }
 .sidebar_nav span {
-  font-size: 18px;
+  font-size: 1.8rem;
   display: block;
   text-align: center;
 }
 .sidebar_item {
-  padding-top: 30px;
+  padding-top: 3rem;
 }
 .sidebar_menu {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 60px;
+  margin-top: 6rem;
 }
 .account_menu {
-  margin: 70px 0;
+  margin: 7rem 0;
 }
 .account_icon {
   border: 1px solid black;
   border-radius: 50%;
-  font-size: 30px;
-  width: 42px;
-  height: 42px;
+  font-size: 3rem;
+  width: 4.2rem;
+  height: 4.2rem;
   margin-right: 10px;
   background-color: var(--primary-color);
-  padding: 5px 5px;
+  padding: 0.5rem 0.5rem;
 }
 .sidebar_out {
-  margin-top: 50px;
+  margin-top: 5rem;
 }
-.order table {
+.welcome_mobile {
+  display: none;
+}
+.account table {
   border-collapse: separate;
   border-spacing: 0 4em;
 }
-.order thead {
+.account thead {
   text-align: center;
   box-shadow: 0.1em 0.1em 1em 0.1em rgb(184, 180, 180);
-  border-radius: 7px;
-  height: 55px;
-  font-size: 20px;
+  border-radius: 0.7rem;
+  height: 5.5rem;
+  font-size: 2rem;
 }
-.order tbody tr {
+.account tbody tr {
   text-align: center;
   box-shadow: 0.2em 0.2em 1em rgb(184, 180, 180);
-  border-radius: 5px;
-  height: 100px;
-  font-size: 20px;
+  border-radius: 0.5rem;
+  height: 10rem;
+  font-size: 2rem;
 }
-.order th,
+.account th,
 td {
-  padding: 0 50px;
+  padding: 0 5rem;
   background-color: #ffffff;
 }
-.order_title {
-  margin-top: 50px;
+.account_title {
+  margin-top: 5rem;
 }
-.order_title h3 {
-  font-size: 24px;
-  padding-bottom: 15px;
+.account_title h3 {
+  font-size: 2.4rem;
+  padding-bottom: 1.5rem;
 }
-.order_title p {
-  font-size: 16px;
+.account_title p {
+  font-size: 1.6rem;
 }
 /* Account page start */
 .selected {
-  margin-top: 15px;
+  margin-top: 1.5rem;
   display: flex;
 }
 .selected_input {
-  margin-right: 10px;
+  margin-right: 1rem;
 }
 .selected input[type="radio"]:checked + label {
   color: #0040d4;
@@ -93,163 +97,302 @@ td {
   grid-template-columns: repeat(3, 1fr);
 }
 .personal_item {
-  padding: 50px;
+  padding: 5rem;
 }
 .profile_section {
-  margin: 50px;
+  margin: 5rem;
 }
 .profile_section h3 {
-  font-size: 24px;
+  font-size: 2.5rem;
 }
 .personal_item {
   display: flex;
   flex-direction: column;
 }
 .personal_item input {
-  width: 385px;
-  height: 58px;
-  font-size: 20px;
+  width: 30.85rem;
+  height: 5.8rem;
+  font-size: 2rem;
+  padding-left: 1.5rem;
 }
 .personal_item label {
-  font-size: 20px;
-  padding-bottom: 15px;
+  font-size: 2rem;
+  padding-bottom: 1.5rem;
 }
 .confirm_form_number {
-  border: 1px solid #c7c7c7;
-  font-size: 20px;
-  color: #9b9b9b;
-  padding-left: 10px;
-  padding-top: 10px;
-  width: 385px;
-  height: 58px;
+  border: 1px solid var(--border-color);
+  font-size: 2rem;
+  color: var(--placeholder-color);
+  padding-left: 1rem;
+  padding-top: 1rem;
+  width: 30.85rem;
+  height: 5.8rem;
   background-color: var(--text-white);
 }
 .confirm_form_number input {
-  width: 250px;
-  height: 40px;
-  background-color: white;
-}
-
-.confirm_form_number .number {
+  width: 20.5rem;
+  height: 4rem;
+  background-color: var(--text-white);
   border: none;
 }
 .title {
-  padding: 50px 0 0 50px;
+  padding: 5rem 0 0 5rem;
 }
 .edit_btn {
-  width: 114px;
-  height: 44px;
-  margin: 100px;
+  width: 10.14rem;
+  height: 4.4rem;
+  margin: 10rem;
   float: right;
   background-color: var(--secondary-color);
   border: 1px solid var(--secondary-color);
   color: var(--text-white);
-  font-size: 20px;
+  font-size: 2rem;
 }
 .edit_profile {
   display: flex;
   justify-content: space-between;
 }
 .edit_icon {
-  padding-right: 10px;
-  padding-top: 7px;
+  padding-right: 1rem;
+  padding-top: 0.7rem;
+}
+.profile_edit {
+  display: flex;
+  justify-content: flex-end;
 }
 /* settings page style start */
 .settings_input {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
-  margin: 15px;
+  margin: 1.5rem;
 }
 .settings_input input {
-  width: 385px;
-  height: 58px;
-  font-size: 20px;
-  margin: 15px 100px;
-  padding-left: 10px;
-  border: 1px solid #c7c7c7;
+  width: 30.85rem;
+  height: 5.8rem;
+  font-size: 2rem;
+  margin: 1.5rem 10rem;
+  padding-left: 1rem;
+  border: 1px solid var(--border-color);
 }
 .setting_title {
-  padding: 10px 20px;
+  padding: 1rem 2rem;
 }
 .password_old {
   grid-column: 1/4;
 }
 .save_btn {
-  width: 114px;
-  height: 44px;
+  width: 10.14rem;
+  height: 4.4rem;
   background-color: var(--secondary-color);
   color: var(--text-white);
   border: 1px solid var(--secondary-color);
-  font-size: 20px;
+  font-size: 2rem;
+  margin-top: 1.5rem;
 }
 .languages {
   display: flex;
-  margin: 10px 50px;
-  font-size: 24px;
+  margin: 1rem 5rem;
+  font-size: 2.4rem;
 }
 .languages input {
-  margin-left: 70px;
+  margin-left: 7rem;
 }
 .languages label {
-  margin-left: 10px;
+  margin-left: 1rem;
 }
 .language_title {
-  margin: 40px;
+  margin: 4rem;
 }
 
 @media (max-width: 1550px) {
   .sidebar_nav {
-    width: 400px;
+    width: 40rem;
   }
-  .order {
-    margin-left: 70px;
+  .my_account {
+    display: flex;
+    background-color: rgb(241, 241, 241);
   }
   .sidebar_nav li {
-    font-size: 19px;
+    font-size: 1.9rem;
   }
-  .order th,
+  .account th,
   td {
-    padding: 0 30px;
+    padding: 0 3rem;
   }
 
-  .order_title h3 {
-    font-size: 15px;
+  .account_title h3 {
+    font-size: 1.5rem;
   }
 
-  .order thead {
-    font-size: 15px;
+  .account thead {
+    font-size: 1.5rem;
   }
-  .order tbody tr {
-    height: 100px;
-    font-size: 15px;
+  .account tbody tr {
+    height: 10rem;
+    font-size: 1.5rem;
   }
   .personal_item input {
-    width: 320px;
-    height: 58px;
+    width: 100%;
+    height: 5.8rem;
   }
   .personal_item {
-    padding: 20px;
+    padding: 2rem;
   }
   .confirm_form_number {
-    width: 300px;
-    height: 58px;
+    width: 30rem;
+    height: 5.8rem;
   }
   .confirm_form_number input {
-    width: 200px;
-    height: 40px;
+    width: 20rem;
+    height: 4rem;
     border: none;
   }
-  .save_btn{
-    float: right;
+
+  .settings_input {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0.5rem;
+  }
+  .settings_input input {
+    width: 25.5rem;
+    height: 4.2rem;
+  }
+  .save_btn {
+    margin-top: 0.1rem;
+  }
+  .title {
+    padding: 5rem 0 0 2.8rem;
+  }
+}
+@media (max-width: 1024px) {
+  .profile {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .my_account {
+    display: flex;
+    background-color: rgb(241, 241, 241);
+    gap: 2rem;
+  }
+  .save_btn {
+    margin-top: 0;
+    margin-left: 1rem;
   }
   .settings_input {
     display: grid;
-    grid-template-columns: repeat(3,370px);
-    margin: 5px;
+    grid-template-columns: repeat(3, 1fr);
   }
   .settings_input input {
-    width: 250px;
-    height: 42px;
+    font-size: 2rem;
+    margin: 1.5rem 2.6rem;
+  }
+  .modal-content {
+    width: 52%;
+  }
+  .personal_item input {
+    font-size: 1.5rem;
+  }
 }
+@media (max-width: 769px) {
+  .sidebar_nav {
+    display: none;
+  }
+  .account thead {
+    font-size: 1.2rem;
+  }
+
+  .account thead {
+    font-size: 1.2rem;
+  }
+  .account {
+    margin-left: 2rem;
+  }
+  .order_details {
+    margin: 1.5rem;
+  }
+  .order_details img {
+    width: 39%;
+  }
+  .date_order p {
+    font-size: 1.5rem;
+  }
+  .account tbody tr {
+    font-size: 1.2rem;
+  }
+  .welcome_mobile {
+    display: block;
+  }
+  .welcome_mobile h3 {
+    color: var(--third-color);
+  }
+  .save_btn {
+    margin-top: 1rem;
+    margin-left: 7rem;
+  }
+  .settings_input input {
+    margin: 1.5rem 0.6rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .account th,
+  td {
+    padding: 0 0.6rem;
+  }
+  .account tbody tr {
+    font-size: 0.7rem;
+  }
+  .account thead {
+    font-size: 0.8rem;
+  }
+  .account {
+    margin-left: 1rem;
+  }
+  .order_details {
+    margin: 1.5rem;
+  }
+  .order_details img {
+    width: 39%;
+  }
+  .date_order p {
+    font-size: 1.5rem;
+  }
+  .profile {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .settings_input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 350px;
+  }
+  .welcome_mobile{
+    margin: 15px;
+  }
+  .profile_edit {
+    justify-content: center;
+  }
+  .profile_section hr {
+    width: 90%;
+  }
+  .personal_item {
+    padding: 1rem;
+  }
+  .profile_section {
+    margin: 0;
+  }
+  .languages{
+    flex-direction: column;
+  }
+  .languages h3 {
+    font-size: 1.5rem;
+    text-align: center;
+}
+.welcome_mobile h3 {
+  font-size: 1rem;
+}
+.settings_input input {
+  width: 30rem;}
 }

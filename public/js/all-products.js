@@ -38,6 +38,7 @@ function choose_btn() {
   btn[0].addEventListener("click", function () {
     list[0].classList.remove("show");
     grid[0].classList.add("show");
+    grid[0].classList.remove("hide");
     h[0].style.display='grid'
   });
 

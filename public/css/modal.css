@@ -111,3 +111,13 @@ width: 142px;
 height: 44px;
 font-size: 20px;
 }
+@media (max-width:769px){
+    
+  .modal-content {
+    background-color: #fefefe;
+    margin: 80% auto;
+    border: 1px solid #888;
+    width: 80%;
+
+  }
+}

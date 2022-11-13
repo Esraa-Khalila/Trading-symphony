@@ -433,3 +433,13 @@ th{
   background-color: var(--primary-color);
   border: 1px solid var(--primary-color);
 }
+@media (max-width:480px){
+  .register_form {
+    display: grid;
+    grid-template-columns: repeat(1, 350px);
+}
+.form_info {
+  padding: 20px 31px;
+}
+
+}

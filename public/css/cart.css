@@ -239,5 +239,10 @@
   width: 40px;
 }
 
-
+@media (max-width: 1029px) {
+  .cart {
+    display: grid;
+    grid-template-columns: repeat(1, 500px);
+  }
+}
 }
