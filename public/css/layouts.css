@@ -42,7 +42,7 @@ button {
   display: none;
   position: absolute;
   background-color: var(--text-white);
-  min-width: 17rem;
+  min-width: 100%;
   top: 100%;
   left: 20%;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
@@ -167,11 +167,11 @@ button {
 .btn_nav {
   background-color: var(--secondary-color);
   border: none;
-  width: 114px;
-  height: 44px;
-  border-radius: 5px;
+  width: 100%;
+  height: 4.4rem;
+  border-radius: 0.5rem;
   color: var(--text-white);
-  font-size: 20px;
+  font-size: 2rem;
   cursor: pointer;
   display: none;
 }
@@ -181,41 +181,44 @@ button {
 }
 .sub_nav {
   display: grid;
-  grid-template-columns: 299px 320px 300px 300px 84px 1% 84px 114px;
+  grid-template-columns: 2fr 2fr 1fr 1fr 1fr 1% 1fr 1fr;
   align-items: center;
-  gap: 24px;
-  padding-left: 68px;
+  gap: 2.4rem;
+  padding-left: 6.8rem;
+  padding: 2rem 0;
 }
 
 .sub_nav_item {
   box-shadow: 5px 5px 5px rgb(241, 236, 236);
   border: none;
-  margin: 10px;
+  margin: 1rem;
 }
 .sub_nav_item select {
-  font-size: 20px;
-  padding: 15px;
+  font-size: 2rem;
+  padding: 1.5rem;
   border: none;
   color: #959595;
 }
 .sub_nav_price {
-  height: 55px;
+  height: 80%;
+  padding-left: 1rem;
 }
 .sub_nav input:hover,
 :focus {
   outline: none;
 }
 .sub_nav input::placeholder {
-  font-size: 14px;
-  padding: 5px;
+  font-size: 1.4rem;
+  padding: 0.5rem;
 }
 .btn_search {
-  height: 35px;
   border: none;
   background-color: var(--secondary-color);
   color: var(--text-white);
-  border-radius: 5px;
-  margin-left: 35px;
+  border-radius: 0.5rem;
+  margin-left: 3.5rem;
+  padding: 1rem 1rem;
+  font-size: 2rem;
 }
 
 /* footer style section */
@@ -223,7 +226,8 @@ button {
   background-color: #fbfaea;
 }
 .footer_item li {
-  padding-top: 13px;
+  padding-top: 1.3rem;
+  font-size: 2.5rem;
 }
 .footer-main {
   display: grid;
@@ -231,22 +235,23 @@ button {
   padding: 5rem;
 }
 .footer-details {
-  font-size: 1.3rem;
+  font-size: 3rem;
 }
 .footer-details div {
   margin-bottom: 1.7rem;
 }
 .footer-menu {
   display: grid;
-  grid-template-columns: repeat(3, 200px);
-  gap: 10rem;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5rem;
 }
 .footer-icon {
   font-size: 3rem;
 }
 .copy-right {
   text-align: center;
-  padding-bottom: 15px;
+  padding-bottom: 1.5rem;
+  font-size: 2rem;
 }
 .select1 {
   appearance: none;
@@ -261,115 +266,99 @@ button {
 .mobile_social {
   display: none;
 }
-@media (max-width: 1536px) {
-  .footer-main {
-    display: grid;
-    grid-template-columns: repeat(3, 550px);
-    padding: 5rem;
-  }
-
-  .footer-menu li {
-    font-size: 13px;
-  }
-  .brand_logo a {
-    font-size: 17px;
-  }
-  .delivery_item {
-    font-size: 15px;
-  }
+@media (max-width: 1600px) {
   .search input {
-    width: 550px;
-  }
-  .nav_menu {
-    font-size: 18px;
-  }
-  .btn_nav {
-    width: 80px;
-    font-size: 15px;
-  }
-  .location {
-    font-size: 25px;
-  }
-  .sub_nav {
-    display: grid;
-    grid-template-columns: 250px 320px 250px 250px 85px 1px 85px 120px;
-    gap: 10px;
-    padding: 0 15px;
-  }
-  .sub_nav_item select {
-    font-size: 15px;
+    width: 50rem;
   }
   .search input::placeholder {
-    font-size: 15px;
+    font-size: 1.5rem;
   }
-  .search .search-icon {
-    font-size: 20px;
+  .sub_nav_item select {
+    font-size: 1.5rem;
+  }
+  .footer-details {
+    font-size: 2rem;
+  }
+  .footer_item li {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 1440px) {
+  .nav_menu li:not(:first-child) {
+    padding-left: 1.5rem;
+  }
+  .sub_nav {
+    gap: 0.4rem;
   }
 }
 
 @media (max-width: 1024px) {
-  .footer-main {
-    display: grid;
-    grid-template-columns: repeat(3, 188px);
-    gap: 4rem;
-  }
   .welcome_name {
-    font-size: 10px;
+    font-size: 1rem;
   }
 
-  .nav_menu li:not(:first-child) {
-    padding-left: 15px;
-  }
   .account_item {
-    font-size: 15px;
-  }
-  .footer-menu {
-    padding-left: 20px;
-    gap: 60px;
+    font-size: 1.5rem;
   }
   .brand_logo a {
-    font-size: 12px;
+    font-size: 1.2rem;
   }
   .delivery_item {
-    font-size: 12px;
+    font-size: 1.2rem;
   }
   .search input {
-    width: 338px;
+    width: 30.3rem;
   }
   .nav_menu {
-    font-size: 14px;
-    padding-left: 10px;
+    font-size: 1.4rem;
+    padding-left: 1rem;
   }
-  .btn_nav {
-    width: 80px;
-    font-size: 15px;
-  }
+
   .dropdown_icon {
-    font-size: 14px;
+    font-size: 1.4rem;
   }
   .search .search-icon {
-    font-size: 24px;
+    font-size: 2.4rem;
   }
   .search input::placeholder {
-    font-size: 15px;
+    font-size: 1.5rem;
   }
   .location {
-    font-size: 22px;
+    font-size: 2.2rem;
+  }
+
+  .sub_nav_item select {
+    font-size: 1.4rem;
+  }
+  .sub_nav input::placeholder {
+    font-size: 0.9rem;
+  }
+  .sub_nav_item select {
+    font-size: 1rem;
   }
   .sub_nav {
     display: grid;
-    grid-template-columns: 192px 240px 180px 180px 70px 1px 70px 85px;
-    gap: 0;
-    padding: 0;
+    grid-template-columns: 16rem 20rem 10rem 10rem 10rem 1% 10rem 5rem;
+    align-items: center;
+    gap: 2.4rem;
+    padding-left: 6.8rem;
+    padding: 2rem 0;
   }
-  .sub_nav_item select {
-    font-size: 14px;
+  .btn_search {
+    margin-left: 0.5rem;
+    font-size: 1.5rem;
   }
-  .sub_nav input::placeholder {
-    font-size: 9px;
+  .footer-details {
+    font-size: 1.5rem;
   }
-  .sub_nav_item select {
-    font-size: 10px;
+  .footer-menu {
+    gap: 4rem;
+  }
+  .footer_item li {
+    font-size: 1.5rem;
+  }
+  .copy-right {
+    font-size: 1.5rem;
   }
 }
 @media (max-width: 769px) {
@@ -388,14 +377,14 @@ button {
   .nav_mobile {
     display: flex;
     justify-content: space-between;
-    padding: 20px;
+    padding: 2rem;
   }
   .brand_logo a {
-    font-size: 20px;
+    font-size: 2rem;
   }
   .toggle .icon_search {
-    font-size: 30px;
-    margin-right: 25px;
+    font-size: 3rem;
+    margin-right: 2.5rem;
   }
   .toggle {
     display: flex;
@@ -403,7 +392,7 @@ button {
 
   .hamburger-icon {
     display: block;
-    font-size: 30px;
+    font-size: 3rem;
   }
   .nav_menu {
     flex-direction: column;
@@ -414,17 +403,17 @@ button {
     color: #0061ab;
     display: flex;
     justify-content: space-between;
-    width: 280px;
+    width: 500px;
   }
   .category_search iconify-icon {
-    font-size: 20px;
+    font-size: 2rem;
   }
   .mobile_search_btn {
     background-color: var(--secondary-color);
-    font-size: 17px;
+    font-size: 1.7rem;
     color: var(--text-white);
     border: none;
-    padding: 4px;
+    padding: 0.4rem;
   }
   .overlay {
     height: 100%;
@@ -453,28 +442,28 @@ button {
   }
   .overlay-content {
     position: relative;
-    top: 25%;
+    top: 15%;
     width: 100%;
   }
 
   .overlay .item_nav {
     text-decoration: none;
     transition: 0.3s;
-    margin-left: 10px;
+    margin-left: 1rem;
   }
   .overlay hr {
     width: 100%;
   }
-  .nav_menu li:not(:first-child) {
+  /* .nav_menu li:not(:first-child) {
     padding-left: 0;
-  }
+  } */
   .mobile_title {
     display: flex;
     justify-content: space-around;
-    font-size: 20px;
+    font-size: 2rem;
   }
   .mobile_title span {
-    padding-top: 25px;
+    padding-top: 2.5rem;
   }
   .overlay .item_nav:hover,
   .overlay .item_nav:focus {
@@ -484,7 +473,7 @@ button {
   .overlay .closebtn {
     position: absolute;
     top: 0;
-    right: 20px;
+    right: 2rem;
     font-size: 50px;
     color: var(--text-black);
   }
@@ -494,69 +483,30 @@ button {
   .show_category_input input {
     background-color: rgba(237, 197, 12, 0.30196078431372547);
     border: none;
-    margin-left: 10px;
-    padding: 5px 12px;
-    width: 250px;
+    margin-left: 1rem;
+    padding: 0.5rem 1.2rem;
+    width: 100%;
   }
   .nav_content {
     border: 1px solid var(--border-color);
   }
   .nav_menu li {
-    padding: 15px;
+    padding: 1.5rem;
   }
   .sub_nav {
     grid-template-columns: none;
   }
   .mobile_icon {
-    font-size: 15px;
-    padding-right: 15px;
+    font-size: 1.5rem;
+    padding-right: 1.5rem;
   }
 
-  .footer-menu {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
-  }
   .footer-details {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 700px;
-  }
-  .desktop_social {
-    display: none;
-  }
-  .footer-main {
-    display: grid;
-    grid-template-columns: repeat(1, 664px);
-    gap: 2rem;
-  }
-  .shopping_icon {
-    font-size: 30px;
-    color: black;
-  }
-  .footer-menu {
-    padding-left: 0;
-  }
-  .item_nav a {
-    color: black;
-  }
-  .mobile_search_div{
-    display: flex;
-  }
-}
-@media (max-width: 480px) {
-  .footer-menu {
-    display: grid;
-    grid-template-columns: repeat(3, 70px);
-  }
-  .footer-details {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 250px;
+    width: 100%;
   }
   .desktop_social {
     display: none;
@@ -564,9 +514,42 @@ button {
   .footer-main {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
   }
   .shopping_icon {
-    font-size: 30px;
-    color: black;
+    font-size: 3rem;
+    color: var(--text-black);
+  }
+  .footer-menu {
+    padding: 2rem 5rem;
+    gap: 10rem;
+  }
+  .item_nav a {
+    color: var(--text-black);
+  }
+  .mobile_search_div {
+    display: flex;
+  }
+}
+@media (max-width: 480px) {
+  .footer-menu {
+    gap: 3rem;
+  }
+  .desktop_social {
+    display: none;
+  }
+  .footer-menu {
+    padding: 2rem 0;
+    gap: 5rem;
+  }
+  .footer_item li {
+    font-size: 1.2rem;
+  }
+  .shopping_icon {
+    font-size: 3rem;
+    color: var(--text-black);
+  }
+  .category_search div {
+    width: 240px;
   }
 }

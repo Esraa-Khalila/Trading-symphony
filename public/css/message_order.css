@@ -1,22 +1,47 @@
 @import "./layouts.css";
 
 .message h1 {
-  font-size: 40px;
-  padding: 50px;
+  font-size: 4rem;
+  padding: 5rem;
 }
 .message p {
-  font-size: 24px;
-  padding: 15px 50px;
-  width: 1333px;
+  font-size: 2.4rem;
+  padding: 1.5rem 5rem;
 }
 .message_img {
   display: flex;
   justify-content: center;
-  padding: 100px;
+  align-items: center;
+  margin: 5rem 0;
 }
+.message_img img{
+    width: 30%;
+  }
 .succes {
   color: #008716;
 }
 .error {
   color: #ce0000;
+}
+@media (max-width: 1024px) {
+  .message h1 {
+    font-size: 2.5rem;
+  }
+  .message p {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 769px) {
+  .message_img img{
+    width: 40%;
+  }
+}
+@media (max-width: 480px) {
+  .message h1 {
+    font-size: 1.5rem;
+  }
+  .message p {
+    font-size: 1.5rem;
+
+  }
 }

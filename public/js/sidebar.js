@@ -10,48 +10,50 @@ const createSidebar = () => {
       <a href='../Orders.html'>
         <iconify-icon
           icon="lucide:package"
-          style="color: #707070"
+          style="color:  #000000"
           class="account_icon"
         ></iconify-icon>
-        Orders
+        <span>Orders</span>
         </a>
       </li>
       <li class="sidebar_item"><a href='../Address.html'>
         <iconify-icon
           icon="fa-solid:route"
-          style="color: #707070"
+          style="color: #000000"
           class="account_icon"
         ></iconify-icon
-        >Address
+        ><span>Address</span>
       </a></li>
       <li class="sidebar_item">
       <a href='../Profile.html'>
         <iconify-icon
           icon="mdi:account"
-          style="color: #707070"
+          style="color:#000000"
           class="account_icon"
         ></iconify-icon>
-        My profile
+       <span> My profile</span>
         </a>
       </li>
       <li class="sidebar_item">
       <a href='../settings.html'>
         <iconify-icon
           icon="ant-design:setting-outlined"
-          style="color: #707070"
+          style="color: #000000"
           class="account_icon"
         ></iconify-icon
-        >Settings
+        ><span>Settings</span>
         </a>
       </li>
     </div>
-    <li class="sidebar_out">
+    <li class=" sidebar_item sidebar_out">
+    <a>
       <iconify-icon
         icon="entypo:log-out"
-        style="color: #707070"
+        style="color: #000000"
         class="account_icon"
       ></iconify-icon
-      >Sign out
+      ><span>Sign out</span>
+      </a>
     </li>
   </ul>
     `;

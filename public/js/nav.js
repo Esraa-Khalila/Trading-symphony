@@ -117,7 +117,7 @@ const createNav = () => {
   </div>
   <div class="nav_item nav_content">
     <ul class="nav_menu">
-      <li><a>اللغة العربية</a></li>
+      <li id='s'><a>اللغة العربية</a></li>
       <li><a href='./Empty-cart.html' class="nav_menu_item cart" value='3'>Cart</a></li>
       <li><a href='../Sell-with-us.html' class="nav_menu_item">Sell with Us</a></li>
       <li>
@@ -148,7 +148,7 @@ const createNav = () => {
 
 </div>
 <div class="bg_sub_nav">
-  <div>
+  <div class='container'>
     <form class=" sub_nav" method='post'>
       <div class="sub_nav_item">
         <select class="select1">
@@ -194,7 +194,7 @@ const createNav = () => {
    };
  createNav();
 function openNav() {
-  document.getElementById("nav-content").style.width = "75%";
+  document.getElementById("nav-content").style.width = "80%";
   document.getElementById("nav-content").style.display = "block";
 }
 
@@ -205,7 +205,7 @@ const dropdown = document.getElementById("dropdown_container");
 const dropdownClass = document.getElementById("dropdown_item");
 dropdown.addEventListener("click", function () {
   if (dropdownClass.style.display == "none") {
-    dropdownClass.style.display = "flex";
+    dropdownClass.style.display = "block";
   } else {
     dropdownClass.style.display = "none";
   }
@@ -220,4 +220,12 @@ show_category.forEach((item, i) => {
     showCategory[i].style.display = "none";
   }
 });
+})
+var s=document.getElementById('s')
+s.addEventListener("click", function(){
+var children = document.children;
+var i;
+for (i = 0; i < children.length; i++) {
+   children[i].style.direction = "rtl";
+}
 })

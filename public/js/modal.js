@@ -11,3 +11,16 @@ btnData.forEach((item, i) => {
 span.onclick = function () {
   popup.style.display = "none";
 };
+
+var popup_action = document.getElementById("popup_action");
+var popup_data_action = document.querySelectorAll(".popup-data_action");
+var span = document.getElementsByClassName("close_action")[0]; 
+
+popup_data_action.forEach((item, i) => {
+  item.addEventListener("click", () => {
+    popup_action.style.display = "block";
+  });
+});
+span.onclick = function () {
+  popup_action.style.display = "none";
+};

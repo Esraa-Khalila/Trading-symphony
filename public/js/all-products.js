@@ -31,7 +31,6 @@ for (var i = 0; i < btns.length; i++) {
 }
 var grid = document.getElementsByClassName("grid");
 var list = document.getElementsByClassName("list");
-var h = document.getElementsByClassName("m");
 function choose_btn() {
   var btn = choose_style.getElementsByClassName("btn1");
 
@@ -39,7 +38,6 @@ function choose_btn() {
     list[0].classList.remove("show");
     grid[0].classList.add("show");
     grid[0].classList.remove("hide");
-    h[0].style.display='grid'
   });
 
   var btn2 = choose_style.getElementsByClassName("btn2");
@@ -48,7 +46,7 @@ function choose_btn() {
     list[0].classList.add("show");
     grid[0].classList.remove("show");
     grid[0].classList.add("hide");
-    h[0].style.display='none'
+    // h[0].style.display='none'
   });
 }
 
@@ -60,7 +58,7 @@ const next = document.querySelector(".next");
 const page = document.querySelector(".page-num");
 const maxItem = 12;
 let index = 1;
-let item = 28;
+let item = 28;  //all product for this category from database
 let count = 0;
 const pagination = Math.ceil(productItems.length / maxItem);
 function Numpage() {

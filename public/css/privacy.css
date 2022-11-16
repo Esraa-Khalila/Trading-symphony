@@ -1,0 +1,87 @@
+@import "./layouts.css";
+.privacy_section {
+  width: 85%;
+  border-radius: 5px;
+  box-shadow: 0.1em 0.1em 1em 0.1em rgb(184, 180, 180);
+  margin: 5rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+.privacy.header {
+  display: flex;
+  align-items: center;
+  padding: 2.5rem 0 0 2.5rem;
+}
+
+.privacy.icon {
+  font-size: 5rem;
+}
+.privacy.title {
+  font-size: 3rem;
+  padding: 3rem;
+}
+.privacy.contant {
+  padding: 3rem 2rem;
+  font-size: 2.7rem;
+}
+.privacy .contant p {
+  margin: 1.5rem;
+}
+body {
+  position: relative;
+}
+.icon_images img {
+  position: absolute;
+  bottom: 50%;
+  right: 0;
+  z-index: -1;
+  width: 12%;
+}
+.contact_section {
+  padding: 10rem;
+  width: 50%;
+}
+.contact {
+  display: flex;
+  padding-top: 2rem;
+}
+@media (max-width: 1550px) {
+  .privacy.contant {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 1440px) {
+  .privacy_section {
+    width: 80%;
+  }
+  .privacy.contant {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 769px) {
+  .privacy.contant {
+    font-size: 1.3rem;
+  }
+  .privacy.icon {
+    font-size: 4rem;
+  }
+  .privacy.title {
+    font-size: 2rem;
+  }
+  .icon_images img {
+    width: 18%;
+  }
+  .privacy.title {
+    padding: 1rem;
+  }
+  .privacy.header {
+    padding: 0;
+  }
+  .privacy.title {
+    font-size: 1rem;
+}
+
+}

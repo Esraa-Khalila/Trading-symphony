@@ -1,25 +1,32 @@
 @import "./layouts.css";
 @import "./modal.css";
 .my_account {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 25% 70%);
   background-color: rgb(241, 241, 241);
   gap: 8rem;
 }
 .sidebar_nav {
   background: #ffff;
-  width: 40.3rem;
+  width: 100%;
 }
 
 .sidebar_nav li {
-  font-size: 3rem;
+  font-size: 4rem;
 }
 .sidebar_nav span {
-  font-size: 1.8rem;
+  font-size: 2.8rem;
   display: block;
   text-align: center;
 }
 .sidebar_item {
   padding-top: 3rem;
+}
+.sidebar_item a {
+  display: flex;
+}
+.sidebar_item span {
+  padding-top: 1rem;
 }
 .sidebar_menu {
   display: flex;
@@ -32,18 +39,17 @@
   margin: 7rem 0;
 }
 .account_icon {
-  border: 1px solid black;
+  border: 1px solid var(--text-black);
   border-radius: 50%;
   font-size: 3rem;
-  width: 4.2rem;
-  height: 4.2rem;
   margin-right: 10px;
   background-color: var(--primary-color);
-  padding: 0.5rem 0.5rem;
+  padding: 0.5rem 1rem;
 }
 .sidebar_out {
   margin-top: 5rem;
 }
+
 .welcome_mobile {
   display: none;
 }
@@ -68,7 +74,7 @@
 .account th,
 td {
   padding: 0 5rem;
-  background-color: #ffffff;
+  background-color: var(--text-white);
 }
 .account_title {
   margin-top: 5rem;
@@ -99,6 +105,7 @@ td {
 .personal_item {
   padding: 5rem;
 }
+
 .profile_section {
   margin: 5rem;
 }
@@ -110,10 +117,9 @@ td {
   flex-direction: column;
 }
 .personal_item input {
-  width: 30.85rem;
-  height: 5.8rem;
   font-size: 2rem;
   padding-left: 1.5rem;
+  padding: 1rem;
 }
 .personal_item label {
   font-size: 2rem;
@@ -125,24 +131,29 @@ td {
   color: var(--placeholder-color);
   padding-left: 1rem;
   padding-top: 1rem;
-  width: 30.85rem;
-  height: 5.8rem;
+  width: 100%;
   background-color: var(--text-white);
+  padding: 1rem;
 }
 .confirm_form_number input {
-  width: 20.5rem;
-  height: 4rem;
+  width: 95%;
   background-color: var(--text-white);
   border: none;
+}
+.confirm_form_number .number {
+  width: 60%;
+}
+.confirm_form_number span {
+  padding-top: 1rem;
 }
 .title {
   padding: 5rem 0 0 5rem;
 }
 .edit_btn {
-  width: 10.14rem;
-  height: 4.4rem;
-  margin: 10rem;
+  width: 20%;
   float: right;
+  margin: 5rem;
+  padding: 1rem;
   background-color: var(--secondary-color);
   border: 1px solid var(--secondary-color);
   color: var(--text-white);
@@ -168,10 +179,10 @@ td {
   margin: 1.5rem;
 }
 .settings_input input {
-  width: 30.85rem;
-  height: 5.8rem;
+  width: 100%;
+  padding: 2rem;
   font-size: 2rem;
-  margin: 1.5rem 10rem;
+  margin: 1.5rem 2rem;
   padding-left: 1rem;
   border: 1px solid var(--border-color);
 }
@@ -182,7 +193,7 @@ td {
   grid-column: 1/4;
 }
 .save_btn {
-  width: 10.14rem;
+  width: 100%;
   height: 4.4rem;
   background-color: var(--secondary-color);
   color: var(--text-white);
@@ -206,15 +217,11 @@ td {
 }
 
 @media (max-width: 1550px) {
-  .sidebar_nav {
-    width: 40rem;
-  }
-  .my_account {
-    display: flex;
-    background-color: rgb(241, 241, 241);
-  }
   .sidebar_nav li {
     font-size: 1.9rem;
+  }
+  .sidebar_nav span {
+    font-size: 2rem;
   }
   .account th,
   td {
@@ -232,23 +239,10 @@ td {
     height: 10rem;
     font-size: 1.5rem;
   }
-  .personal_item input {
-    width: 100%;
-    height: 5.8rem;
-  }
-  .personal_item {
-    padding: 2rem;
-  }
-  .confirm_form_number {
-    width: 30rem;
-    height: 5.8rem;
-  }
-  .confirm_form_number input {
-    width: 20rem;
-    height: 4rem;
-    border: none;
-  }
 
+  .personal_item {
+    padding: 1rem;
+  }
   .settings_input {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -265,13 +259,21 @@ td {
     padding: 5rem 0 0 2.8rem;
   }
 }
+@media (max-width: 1440px) {
+  .my_account {
+    gap: 5rem;
+  }
+  .confirm_form_number .number {
+    width: 54%;
+  }
+}
+
 @media (max-width: 1024px) {
   .profile {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
   .my_account {
-    display: flex;
     background-color: rgb(241, 241, 241);
     gap: 2rem;
   }
@@ -284,17 +286,24 @@ td {
     grid-template-columns: repeat(3, 1fr);
   }
   .settings_input input {
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin: 1.5rem 2.6rem;
   }
-  .modal-content {
-    width: 52%;
+  .settings_input input {
+    width: 22.5rem;
   }
   .personal_item input {
     font-size: 1.5rem;
   }
+  .sidebar_menu {
+    padding: 50px;
+  }
 }
 @media (max-width: 769px) {
+  .my_account {
+    display: grid;
+    grid-template-columns: repeat(1, 100%);
+  }
   .sidebar_nav {
     display: none;
   }
@@ -320,18 +329,25 @@ td {
   .account tbody tr {
     font-size: 1.2rem;
   }
+  .profile_section h3 {
+    text-align: center;
+  }
   .welcome_mobile {
     display: block;
+    text-align: center;
   }
   .welcome_mobile h3 {
     color: var(--third-color);
   }
-  .save_btn {
-    margin-top: 1rem;
-    margin-left: 7rem;
+  .account_title h3 {
+    text-align: center;
   }
-  .settings_input input {
-    margin: 1.5rem 0.6rem;
+  .account_title p {
+    text-align: center;
+  }
+
+  .languages {
+    margin: 1rem 14rem;
   }
 }
 
@@ -341,7 +357,7 @@ td {
     padding: 0 0.6rem;
   }
   .account tbody tr {
-    font-size: 0.7rem;
+    font-size: 1rem;
   }
   .account thead {
     font-size: 0.8rem;
@@ -363,13 +379,12 @@ td {
     grid-template-columns: repeat(1, 1fr);
   }
   .settings_input {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 310px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
-  .welcome_mobile{
-    margin: 15px;
+  .welcome_mobile {
+    margin: 1.5rem;
   }
   .profile_edit {
     justify-content: center;
@@ -383,19 +398,23 @@ td {
   .profile_section {
     margin: 0;
   }
-  .languages{
+  .languages {
     flex-direction: column;
-    margin: 1rem 2rem;
+    margin: 1rem 8rem;
     font-size: 2rem;
   }
   .languages h3 {
     font-size: 1.5rem;
     text-align: center;
-}
-.welcome_mobile h3 {
-  font-size: 1rem;
-}
-.settings_input input {
-  width: 30rem;
-}
+  }
+  .welcome_mobile h3 {
+    font-size: 1rem;
+  }
+  .settings_input input {
+    width: 30rem;
+  }
+  .edit_btn {
+    width: 100%;
+    margin: 5rem 0;
+  }
 }

@@ -8,14 +8,17 @@
     <link rel="stylesheet" href="./css/cart.css" />
     <title>Cart</title>
   </head>
+
   <body>
     <nav class="navbar"></nav>
     <section class="cart_section container">
-      <div class="cart ">
+      <div class="cart_info">
         <div class="cart_details">
           <h5>item (3)</h5>
           <div class="all_products">
+            <div class="cart_image">
             <img src="./images/computer-product/speaker1.png" />
+          </div>
             <div class="cart_items">
               <span class="cart_brand">Asus</span>
               <h4 class="cart_title">
@@ -34,7 +37,7 @@
                 <span>Remove</span>
               </div>
               <div class="cart_actions counter">
-                <input type="text" value="1" />
+                <input type="number" value="1"class='counter_input' />
                 <div>
                   <iconify-icon
                     icon="dashicons:arrow-up-alt2"
@@ -45,14 +48,16 @@
                     icon="ep:arrow-down-bold"
                     class="quantity_icon"
                     onClick="decreaseCount(event, this)"
-                  ></iconify-icon>
+                  >
+                  </iconify-icon>
                 </div>
               </div>
             </div>
           </div>
           <hr />
           <div class="all_products">
-            <img src="./images/computer-product/keyboard.png" />
+            <div class="cart_image">
+            <img src="./images/computer-product/keyboard.png" /></div>
             <div class="cart_items">
               <span class="cart_brand">Asus</span>
               <h4 class="cart_title">
@@ -71,7 +76,7 @@
                 <span>Remove</span>
               </div>
               <div class="cart_actions counter">
-                <input type="text" id="counter_input"  value="1" />
+                <input type="number" value="1"class='counter_input' />
                 <div>
                   <iconify-icon
                     icon="dashicons:arrow-up-alt2"
@@ -82,14 +87,16 @@
                     icon="ep:arrow-down-bold"
                     class="quantity_icon"
                     onClick="decreaseCount(event, this)"
-                  ></iconify-icon>
+                  >
+                  </iconify-icon>
                 </div>
               </div>
             </div>
           </div>
           <hr />
           <div class="all_products">
-            <img src="./images/computer-product/speaker5.png" />
+            <div class="cart_image">
+            <img src="./images/computer-product/speaker5.png" /></div>
             <div class="cart_items">
               <span class="cart_brand">Asus</span>
               <h4 class="cart_title">
@@ -107,9 +114,8 @@
                 ></iconify-icon>
                 <span>Remove</span>
               </div>
-              <hr />
               <div class="cart_actions counter">
-                <input type="text" value="1" />
+                <input type="number" value="1"class='counter_input' />
                 <div>
                   <iconify-icon
                     icon="dashicons:arrow-up-alt2"
@@ -120,39 +126,47 @@
                     icon="ep:arrow-down-bold"
                     class="quantity_icon"
                     onClick="decreaseCount(event, this)"
-                  ></iconify-icon>
+                  >
+                  </iconify-icon>
                 </div>
               </div>
             </div>
           </div>
           <hr />
         </div>
-        
-        <div>
-        <div class="price_details">
-          <h4 class="price_item">Order Summery</h4>
 
-          <div class="sub-total price_item">
-            <span >Subtotal</span><span id="sub_total"></span><span>Delivery</span
-            ><span class="free_delivery">Free</span>
+        <div>
+          <div class="price_details">
+            <h4 class="price_item">Order Summery</h4>
+
+            <div class="total price_item">
+              <span>Subtotal</span><span>1030.12 JOD</span>
+            </div>
+            <div class="total delivery_order">
+              <span>Delivery</span><span class="free_delivery">Free</span>
+            </div>
+
+            <hr />
+            <div class="total"><span>Total</span><span>1030.12 JOD</span></div>
+
+            <a href="./Checkout.html"
+              ><button class="price_btn">Checkout</button></a
+            >
           </div>
-          <hr />
-          <div class="total"><span>Total</span><span>1030.12 JOD</span></div>
-    
-          <a href="./Checkout.html"><button class="price_btn ">Checkout</button></a>
-        </div> 
-        <div class="payment_method">
-        <h6>Payment accepted through</h6><img src="./images/payment/download.png" alt="">
-        <img src="./images/payment/download (1).png" alt="">
-        <img src="./images/payment/zain-cash-opt.png" alt="">
-        <img src="./images/payment/MClogo-c823e495.png" alt="">
+          <div class="payment_method">
+            <h6>Payment accepted through</h6>
+            <img src="./images/payment/download.png" alt="" />
+            <img src="./images/payment/download (1).png" alt="" />
+            <img src="./images/payment/zain-cash-opt.png" alt="" />
+            <img src="./images/payment/MClogo-c823e495.png" alt="" />
+          </div>
         </div>
       </div>
-   
     </section>
-    <footer class="footer"></footer>   <script src="./js/single-product.js"></script>
-    <script src="./js/cart.js"></script>
- 
+    <footer class="footer"></footer>
+    <script src="./js/single-product.js"></script>
+  
+
     <script src="./js/nav.js"></script>
     <script src="./js/footer.js"></script>
   </body>

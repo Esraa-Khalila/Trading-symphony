@@ -1,123 +1,129 @@
 .popup {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgb(0, 0, 0);
-    background-color: rgba(0, 0, 0, 0.4);
-  }
-  
-  .modal-content {
-    background-color: #fefefe;
-    margin: 12% auto;
-    border: 1px solid #888;
-    width: 35%;
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
 
-  }
+.modal-content {
+  background-color: #fefefe;
+  margin: 12% auto;
+  border: 1px solid #888;
+  width: 35%;
+}
 
-  .close {
-    color: black;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-    padding: 20px;
-  }
-  
-  .close:hover,
-  .close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-  }
-  .item_details {
-    margin: 60px 40px;
-  }
-  .modal-content h4 {
-    text-align: center;
-    font-size: 15px;
-    margin: 35px;
-  }
-  .modal-content p {
-    padding: 6px;
-    font-size: 12px;
-    font-weight: bold;
-  }
-  .modal-content .progress {
-    display: block;
-  }
-  .button_item {
-    width: 100%;
-    padding: 15px;
-    background-color: #707070;
-    color: white;
-    border: 1px solid #707070;
-    font-size: 15px;
-  }
-  .modal-content img{
-    width: 40%;
-    padding-left: 15px;
-  }
-  .modal-content h2 {
-   
-    font-size: 15px;
-    margin: 35px;
-    color: var(--secondary-color);
-  }
-  .added_item{
-    color: black;
-  }
-.date_order{
+.close {
+  color: var(--text-black);
+  float: right;
+  font-size: 2.8rem;
+  font-weight: bold;
+  padding: 2rem;
+}
+
+.close:hover,
+.close:focus {
+  color: var(--text-black);
+  text-decoration: none;
+  cursor: pointer;
+}
+.item_details {
+  margin: 6rem 4rem;
+}
+.modal-content h4 {
+  text-align: center;
+  font-size: 1.5rem;
+  margin: 3.5rem;
+}
+.modal-content p {
+  padding: 0.6rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.modal-content .progress {
+  display: block;
+}
+.button_item {
+  width: 100%;
+  padding: 15px;
+  background-color: var(--secondary-color);
+  color: var(--text-white);
+  border: 1px solid var(--secondary-color);
+  font-size: 1.5rem;
+}
+.modal-content img {
+  width: 25%;
+  padding-left: 1, 5rem;
+}
+.modal-content h2 {
+  font-size: 1.5rem;
+  margin: 3.5rem;
+  color: var(--secondary-color);
+}
+.added_item {
+  color: var(--text-black);
+}
+.date_order {
   display: flex;
   justify-content: space-around;
 }
-.date_order p{
-  font-size: 20px;
+.date_order p {
+  font-size: 2rem;
 }
-.order_details{
+.order_details {
   display: flex;
   margin: 50px;
 }
-.order_info{
+.order_info {
   display: flex;
   flex-direction: column;
-  font-size: 20px;
-  margin-left: 50px;
+  font-size: 2rem;
+  margin-left: 5rem;
 }
-.order_details img{
+.order_details img {
   width: 25%;
 }
-.order_details .price{
-margin-top: 15px;
+.order_details .price {
+  margin-top: 1.5rem;
 }
-.expected_date{
+.expected_date {
   text-align: center;
   color: #008716;
-  font-size: 20px;
+  font-size: 2rem;
 }
-.ok_button{
-display: flex;
-justify-content: flex-end;
-margin: 15px;
+.ok_button {
+  display: flex;
+  justify-content: flex-end;
+  margin: 1.5rem;
 }
-.ok_button button{
-background-color:#707070 ;
-border: 1px solid #707070 ;
-color: var(--text-white);
-width: 142px;
-height: 44px;
-font-size: 20px;
+.ok_button button {
+  background-color: var(--secondary-color);
+  border: 1px solid var(--secondary-color);
+  color: var(--text-white);
+  width: 142px;
+  padding: 1.5rem;
+  font-size: 2rem;
 }
-@media (max-width:769px){
-    
-  .modal-content {
-    background-color: #fefefe;
-    margin: 80% auto;
-    border: 1px solid #888;
-    width: 80%;
 
+@media (max-width: 1024px) {
+  .modal-content {
+    width: 52%;
   }
+}
+@media (max-width: 769px) {
+  .modal-content {
+    width: 80%;
+  }
+  .modal-content h2 {
+    font-size: 1rem;
+    margin: 2rem;
+  }
+  .modal-content img {
+    width: 35%;
+}
 }
