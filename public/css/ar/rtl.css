@@ -16,11 +16,12 @@ html[dir="rtl"] .other_product_item p {
   width: 40%;
   text-align: right;
 }
-html[dir="rtl"] h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  text-align: right;
-}
+html[dir="rtl"] .Announcements {
+    margin-right: 75rem;
+    text-align: right;
+  }
+  html[dir="rtl"] .Announcements p{
+   width: 100%;
+  }
+  
+
