@@ -75,7 +75,7 @@
 .category_container {
   display: flex;
   overflow-x: auto;
-  scroll-behavior: smooth;
+  scroll-behavior: auto;
   margin: 0 5rem;
 }
 .category_container::-webkit-scrollbar {
