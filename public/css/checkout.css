@@ -84,11 +84,13 @@ input::placeholder {
 }
 #new_location {
   display: none;
-  display: grid;
+
+}
+.new_location{
+    display: grid;
   grid-template-columns: repeat(3, 1fr);
   margin: 3rem 2rem;
 }
-
 .new_item {
   margin: 2rem;
   display: flex;

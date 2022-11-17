@@ -1,3 +1,4 @@
+@import './ar/rtl.css';
 @font-face {
   font-family: "Bookerly";
   src: /* Pretty Modern Browsers */ url("../font/Bookerly.ttf")

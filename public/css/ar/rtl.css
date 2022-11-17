@@ -1,0 +1,26 @@
+html[dir="rtl"] p {
+  text-align: right;
+}
+html[dir="rtl"] .btn_shop {
+  margin-right: 12rem;
+  text-align: right;
+}
+html[dir="rtl"] .search input {
+  padding-right: 4rem;
+}
+html[dir="rtl"] .other_product {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+html[dir="rtl"] .other_product_item p {
+  width: 40%;
+  text-align: right;
+}
+html[dir="rtl"] h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-align: right;
+}

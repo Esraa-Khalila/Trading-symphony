@@ -226,6 +226,6 @@ s.addEventListener("click", function(){
 var children = document.children;
 var i;
 for (i = 0; i < children.length; i++) {
-   children[i].style.direction = "rtl";
+   children[i].setAttribute('dir','rtl');
 }
 })

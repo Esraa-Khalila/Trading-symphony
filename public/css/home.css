@@ -221,9 +221,6 @@
   border: 1px solid var(--secondary-color);
   font-size: 1.5rem;
 }
-html[dir="rtl"] .btn_shop{
-  margin-top: 50rem;
-}
 .category_img img {
   position: absolute;
 }
