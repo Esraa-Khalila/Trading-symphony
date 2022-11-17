@@ -553,4 +553,7 @@ button {
   .category_search div {
     width: 240px;
   }
+  .overlay-content {
+    top:5%;
+  }
 }
