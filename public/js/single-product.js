@@ -76,29 +76,26 @@ var mainContainer = document.querySelector("#picture");
 var rect = document.querySelector("#rect");
 
 var zoom = document.querySelector("#zoom");
-
 picList = [picture1, picture2, picture3, picture4, picture5, picture6];
-
 let picActive = 1;
-
-picture1.classList.add("active");
 
 function changeColor(imgSrc, n) {
   picture.src = imgSrc;
 
   zoom.style.backgroundImage = "url(" + imgSrc + ")";
-
+  console.log(zoom.style.backgroundImage);
+  console.log(imgSrc);
   picList[picActive - 1].classList.remove("active");
 
   picList[n - 1].classList.add("active");
 
   picActive = n;
 }
-
+changeColor(picture1.src, 1);
 let w1 = mainContainer.offsetWidth;
 let h1 = mainContainer.offsetHeight;
 
-let ratio = 3;
+let ratio = 2.7;
 
 zoom.style.backgroundSize = w1 * ratio + "px " + h1 * ratio + "px";
 
@@ -106,9 +103,6 @@ let x, y, xx, yy;
 
 let w2 = rect.offsetWidth;
 let h2 = rect.offsetHeight;
-
-zoom.style.width = w2 * ratio + "px";
-zoom.style.height = h2 * ratio + "px";
 
 w2 = w2 / 2;
 h2 = h2 / 2;
