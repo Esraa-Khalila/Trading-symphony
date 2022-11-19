@@ -325,6 +325,7 @@ hr {
 
 .radio_color {
   display: flex;
+  align-items: center;
 }
 
 .Announcements_icon {
