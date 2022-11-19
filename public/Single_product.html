@@ -40,18 +40,39 @@
         </div>
         <div class="single_product_info">
           <div class="image-slider details_mobile">
-            <div class="image">
-              <a href="original.jpg">
-                <img src="" class="image-main active" alt="" />
-              </a>
-            </div>
-            <div class="zoom">
-              <img class="zoom-image" src="" alt="" />
-            </div>
-            <div class="product-images">
-              <img src="./images/shoes_product/sandal.png" alt="" />
-              <img src="./images/shoes_product/sandal1.png" alt="" />
-              <img src="./images/shoes_product/sandal2.png" alt="" />
+            <div class="zoom" id="zoom"></div>
+            <div class="container_image">
+              <div class="picture" id="picture" onmousemove="move(event)" >
+                <div class="rect" id="rect"></div>
+                <img
+                  src="./images/Announcements-/Announcements-one.png"
+                  id="pic"
+                  class="image-main"
+                 
+                />
+              </div>
+              <div class="pictures product-images">
+                <img
+                  id="pic1"
+                  onmousemove="changeColor('./images/shoes_product/sandal.png',1)"
+                  src="./images/shoes_product/sandal.png"
+                  alt=""
+                />
+
+                <img
+                  id="pic2"
+                  onClick="changeColor('./images/shoes_product/sandal.png',2)"
+                  src="./images/shoes_product/sandal.png"
+                  alt=""
+                />
+                <img
+                  src="./images/shoes_product/sandal1.png"
+                  id="pic3"
+                  onClick="changeColor('./images/new-product.jpg',3) "
+                  alt=""
+                />
+                <img src="./images/shoes_product/sandal2.png" alt="" />
+              </div>
             </div>
           </div>
           <div class="details_mobile">
@@ -60,16 +81,26 @@
               <label
                 for="yellow"
                 class="radio_btn color_btn color_yellow"
+                data-color="#7D5799"
               ></label>
               <input type="radio" name="color" value="yellow" hidden />
               <label
                 for="m-size"
                 class="radio_btn color_btn color_black"
+                data-color="#00FFFF"
               ></label>
               <input type="radio" name="color" value="yellow" hidden />
-              <label for="white" class="radio_btn color_btn"></label>
+              <label
+                for="white"
+                class="radio_btn color_btn"
+                data-color="#761A1F"
+              ></label>
               <input type="radio" name="color" value="white" hidden />
-              <label for="red" class="radio_btn color_btn color_red"></label>
+              <label
+                for="red"
+                class="radio_btn color_btn color_red"
+                data-color="#BBEEBB"
+              ></label>
             </div>
           </div>
 
@@ -90,6 +121,7 @@
         </div>
       </div>
       <div>
+        
         <div class="product_details_item des desktop">
           <h3>Description</h3>
           <p>
@@ -233,10 +265,16 @@
       <div id="popup" class="popup">
         <div class="modal-content">
           <span class="close">&times;</span>
-          <h2> ASUS ROG Strix GeForce RTX 3070 GDDR6 OC Edition Graphic Card <span class="added_item">Has been added to
-              your cart</span></h2>
+          <h2>
+            ASUS ROG Strix GeForce RTX 3070 GDDR6 OC Edition Graphic Card
+            <span class="added_item">Has been added to your cart</span>
+          </h2>
           <img src="./images/computer-product/printer.png" />
-          <a href="cart.html"><button class="button_item" type="button">Go to Shopping Cart</button></a>
+          <a href="cart.html"
+            ><button class="button_item" type="button">
+              Go to Shopping Cart
+            </button></a
+          >
         </div>
       </div>
     </section>

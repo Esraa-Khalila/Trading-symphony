@@ -47,148 +47,123 @@ var discount = document.getElementById("discount_price").innerHTML;
 var actual = document.getElementById("actual-price").innerHTML;
 document.getElementById("saved_price").innerHTML = actual - discount;
 
-const image = document.querySelectorAll(".image")[0];
-const zoom = document.querySelectorAll(".zoom")[0];
-const zoomImage = document.querySelectorAll(".zoom-image")[0];
+// zoom image
 
-let clearSrc;
-let zoomLevel = 1;
-
-const images = [
-  {
-    thumb:
-      "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZHVjdHxlbnwwfHwwfHw%3D&w=1000&q=80",
-    hires:
-      "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZHVjdHxlbnwwfHwwfHw%3D&w=1000&q=80",
-  },
-  {
-    thumb: "../images/Announcements-/Announcements-four.png",
-    hires: "../images/Announcements-/Announcements-four.png",
-  },
-];
-function e(x) {
-  // set to random image
-  let img = images[x];
-
-  image.getElementsByTagName("a")[0].setAttribute("href", img.hires);
-  image.getElementsByTagName("img")[0].setAttribute("src", img.thumb);
-
-  const preloadImage = (url) => {
-    let img = new Image();
-    img.src = url;
-  };
-
-  preloadImage(img.hires);
-
-  const enterImage = function (e) {
-    zoom.classList.add("show", "loading");
-    clearTimeout(clearSrc);
-
-    let posX,
-      posY,
-      touch = false;
-
-    if (e.touches) {
-      posX = e.touches[0].clientX;
-      posY = e.touches[0].clientY;
-      touch = true;
-    } else {
-      posX = e.clientX;
-      posY = e.clientY;
-    }
-
-    touch
-      ? (zoom.style.top = `${posY - zoom.offsetHeight / 1.25}px`)
-      : (zoom.style.top = `${posY - zoom.offsetHeight / 2}px`);
-    zoom.style.left = `${posX - zoom.offsetWidth / 2}px`;
-
-    let originalImage = this.getElementsByTagName("a")[0].getAttribute("href");
-
-    zoomImage.setAttribute("src", originalImage);
-
-    // remove the loading class
-    zoomImage.onload = function () {
-      console.log("hires image loaded!");
-      setTimeout(() => {
-        zoom.classList.remove("loading");
-      }, 500);
-    };
-  };
-
-  const leaveImage = function () {
-    // remove scaling to prevent non-transition
-    zoom.style.transform = null;
-    zoomLevel = 1;
-    zoom.classList.remove("show");
-    clearSrc = setTimeout(() => {
-      zoomImage.setAttribute("src", "");
-    }, 250);
-  };
-
-  const move = function (e) {
-    e.preventDefault();
-
-    let posX,
-      posY,
-      touch = false;
-
-    if (e.touches) {
-      posX = e.touches[0].clientX;
-      posY = e.touches[0].clientY;
-      touch = true;
-    } else {
-      posX = e.clientX;
-      posY = e.clientY;
-    }
-
-    // move the zoom a little bit up on mobile (because of your fat fingers :<)
-    touch
-      ? (zoom.style.top = `${posY - zoom.offsetHeight / 1.25}px`)
-      : (zoom.style.top = `${posY - zoom.offsetHeight / 2}px`);
-    zoom.style.left = `${posX - zoom.offsetWidth / 2}px`;
-
-    let percX = (posX - this.offsetLeft) / this.offsetWidth,
-      percY = (posY - this.offsetTop) / this.offsetHeight;
-
-    let zoomLeft = -percX * zoomImage.offsetWidth + zoom.offsetWidth / 2,
-      zoomTop = -percY * zoomImage.offsetHeight + zoom.offsetHeight / 2;
-
-    zoomImage.style.left = `${zoomLeft}px`;
-    zoomImage.style.top = `${zoomTop}px`;
-  };
-
-  image.addEventListener("mouseover", enterImage);
-  image.addEventListener("touchstart", enterImage);
-
-  image.addEventListener("mouseout", leaveImage);
-  image.addEventListener("touchend", leaveImage);
-
-  image.addEventListener("mousemove", move);
-  image.addEventListener("touchmove", move);
-
-  image.addEventListener("mouseover", (e) => {
-    e.preventDefault();
-    e.deltaY > 0 ? zoomLevel-- : zoomLevel++;
-
-    if (zoomLevel < 1) zoomLevel = 1;
-    if (zoomLevel > 2) zoomLevel = 2;
-
-    console.log(`zoom level: ${zoomLevel}`);
-    zoom.style.transform = `scale(${zoomLevel})`;
-  });
-}
 const productImages = document.querySelectorAll(".product-images img");
 const productImageSlide = document.querySelector(".image-main");
 
-let activeImageSlide = 0;
+// change color
+var color = document.querySelectorAll(".color_btn");
+console.log(color);
 
-productImages.forEach((item, i) => {
-  item.addEventListener("click", () => {
-    productImages[activeImageSlide].classList.remove("active");
-    item.classList.add("active");
-    productImageSlide.src = item.src;
-    activeImageSlide = i;
-    e(item.getAttribute("data-image"));
-  });
+color.forEach((item) => {
+  const colorData = item.getAttribute("data-color");
+  item.style.background = colorData;
 });
-e(0);
+// zoom image
+var picture = document.querySelector("#pic");
+
+// side pictures
+var picture1 = document.querySelector("#pic1");
+var picture2 = document.querySelector("#pic2");
+var picture3 = document.querySelector("#pic3");
+var picture4 = document.querySelector("#pic4");
+var picture5 = document.querySelector("#pic5");
+var picture6 = document.querySelector("#pic6");
+
+var mainContainer = document.querySelector("#picture");
+
+var rect = document.querySelector("#rect");
+
+var zoom = document.querySelector("#zoom");
+
+picList = [picture1, picture2, picture3, picture4, picture5, picture6];
+
+let picActive = 1;
+
+picture1.classList.add("active");
+
+function changeColor(imgSrc, n) {
+  picture.src = imgSrc;
+
+  zoom.style.backgroundImage = "url(" + imgSrc + ")";
+
+  picList[picActive - 1].classList.remove("active");
+
+  picList[n - 1].classList.add("active");
+
+  picActive = n;
+}
+
+let w1 = mainContainer.offsetWidth;
+let h1 = mainContainer.offsetHeight;
+
+let ratio = 3;
+
+zoom.style.backgroundSize = w1 * ratio + "px " + h1 * ratio + "px";
+
+let x, y, xx, yy;
+
+let w2 = rect.offsetWidth;
+let h2 = rect.offsetHeight;
+
+zoom.style.width = w2 * ratio + "px";
+zoom.style.height = h2 * ratio + "px";
+
+w2 = w2 / 2;
+h2 = h2 / 2;
+
+function move(event) {
+  x = event.offsetX;
+
+  y = event.offsetY;
+
+  xx = x - w2;
+  yy = y - h2;
+
+  if (x < w2) {
+    x = w2;
+
+    xx = 0;
+  }
+
+  if (x > w1 - w2) {
+    x = w1 - w2;
+    xx = x - w2;
+  }
+
+  if (y < h2) {
+    y = h2;
+    yy = 0;
+  }
+
+  if (y > h1 - h2) {
+    y = h1 - h2;
+  }
+
+  xx = xx * ratio;
+  yy = yy * ratio;
+
+  rect.style.left = x + "px";
+  rect.style.top = y + "px";
+
+  zoom.style.backgroundPosition = "-" + xx + "px " + "-" + yy + "px";
+}
+
+mainContainer.addEventListener("mousemove", function () {
+  move(event);
+  addOpacity();
+});
+
+function addOpacity() {
+  rect.classList.add("rect-active");
+  zoom.classList.add("rect-active");
+}
+
+function removeOpacity() {
+  zoom.classList.remove("rect-active");
+}
+
+mainContainer.addEventListener("mouseout", function () {
+  removeOpacity();
+});

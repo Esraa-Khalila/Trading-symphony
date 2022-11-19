@@ -31,25 +31,24 @@ for (var i = 0; i < btns.length; i++) {
 }
 var grid = document.getElementsByClassName("grid");
 var list = document.getElementsByClassName("list");
+var product_details = document.getElementById("countList");
+
 function choose_btn() {
   var btn = choose_style.getElementsByClassName("btn1");
 
   btn[0].addEventListener("click", function () {
-    list[0].classList.remove("show");
-    grid[0].classList.add("show");
-    grid[0].classList.remove("hide");
+    product_details.classList.remove("show_as_list");
+  
   });
+
 
   var btn2 = choose_style.getElementsByClassName("btn2");
 
   btn2[0].addEventListener("click", function () {
-    list[0].classList.add("show");
-    grid[0].classList.remove("show");
-    grid[0].classList.add("hide");
-    // h[0].style.display='none'
+    product_details.classList.add("show_as_list");
   });
-}
 
+}
 // change page number every 12 items
 
 const productItems = document.querySelector(".sub_product").children;

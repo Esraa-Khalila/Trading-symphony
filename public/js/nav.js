@@ -1,4 +1,5 @@
 const createNav = () => {
+
  let nav = document.querySelector(".navbar");
 
  nav.innerHTML = `
@@ -117,7 +118,7 @@ const createNav = () => {
   </div>
   <div class="nav_item nav_content">
     <ul class="nav_menu">
-      <li id='s'><a>اللغة العربية</a></li>
+      <li id='arabic'><a>اللغة العربية</a></li>
       <li><a href='./Empty-cart.html' class="nav_menu_item cart" value='3'>Cart</a></li>
       <li><a href='../Sell-with-us.html' class="nav_menu_item">Sell with Us</a></li>
       <li>
@@ -221,8 +222,9 @@ show_category.forEach((item, i) => {
   }
 });
 })
-var s=document.getElementById('s')
-s.addEventListener("click", function(){
+// rtl arabic
+var arabic=document.getElementById('arabic')
+arabic.addEventListener("click", function(){
 var children = document.children;
 var i;
 for (i = 0; i < children.length; i++) {
