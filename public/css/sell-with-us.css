@@ -34,14 +34,14 @@
   font-weight: 600;
   padding-bottom: 1rem;
 }
-.register_form_btn button{
+.register_form_btn button {
   width: 15%;
   font-size: 2rem;
   padding: 1rem;
 }
 .register_form_btn {
-display: flex;
-justify-content: flex-end;
+  display: flex;
+  justify-content: flex-end;
   margin: 2.5rem 5rem;
 }
 .register_form_btn button {
@@ -52,7 +52,6 @@ justify-content: flex-end;
   width: 15%;
   font-size: 2rem;
   padding: 1rem;
-  
 }
 .register_form_number #number {
   border: none;
@@ -495,7 +494,7 @@ th {
 @media (max-width: 769px) {
   .sell_product {
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(1, 100%);
   }
   .register_form {
     display: grid;
@@ -511,7 +510,7 @@ th {
 
   .add_details {
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(1, 100%);
   }
   .add_price {
     width: 100%;
@@ -522,9 +521,7 @@ th {
   .add_date input {
     width: 100%;
   }
-  .add_color_input input {
-    margin-left: 3rem;
-  }
+
   .colorpick-eyedropper-input-trigger {
     display: none;
   }
@@ -557,8 +554,13 @@ th {
     width: 15%;
     font-size: 1.5rem;
   }
-  .register_form_btn button{
+  .register_form_btn button {
     width: 20%;
+  }
+  .btn-file input[type="file"] {
+    position: absolute;
+
+    font-size: 0;
   }
 }
 @media (max-width: 480px) {
@@ -577,12 +579,12 @@ th {
     padding: 0.6rem;
     font-size: 1rem;
   }
-  .register_form_btn button{
+  .register_form_btn button {
     width: 100%;
   }
 
   .btn-file {
-    font-size: .8rem;
+    font-size: 0.8rem;
   }
   .upload_info {
     font-size: 0.9rem;
@@ -614,17 +616,18 @@ th {
     grid-row: auto;
   }
   .sell_item table th {
-    padding: 0.8rem;
+    padding: 0.5rem;
     font-size: 1rem;
   }
   .sell_item table {
     margin: 1rem;
   }
   td {
-    padding: 0.7rem;
+    padding: 0.6rem;
     text-align: center;
     font-size: 1rem;
   }
+
   .add_product_btn button {
     width: 100%;
   }
@@ -650,5 +653,29 @@ th {
   .print_btn button {
     width: 20%;
     font-size: 1rem;
+  }
+  .add_product_item {
+    margin: 4rem 1rem;
+  }
+}
+@media (max-width: 320px) {
+  td {
+    padding: 0.4rem;
+    text-align: center;
+    font-size: 0.7rem;
+  }
+  .sell_item table th {
+    padding: 0.5rem;
+    font-size: 0.7rem;
+  }
+  .choose_title {
+    margin: 5rem 0.1rem;
+  }
+  .choose_title .btn {
+    font-size: 1rem;
+  }
+  .action_panel_btn button {
+    padding: 0.5rem;
+    font-size: 1rem
   }
 }

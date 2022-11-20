@@ -265,6 +265,9 @@
     margin: 2rem 2rem;
     gap: 4rem;
   }
+  .category_details {
+    padding: 1rem;
+  }
 }
 @media (max-width: 769px) {
   .category_img .category_img_one {
@@ -304,8 +307,12 @@
     overflow-x: auto;
   }
   .category_img .category_img_one {
-    width: 31%;
-    top: 25%;
+    width: 35%;
+    top: 40%;
+  }
+  .category_img .category_img_two {
+    width: 49%;
+    top: 58%;
   }
   .category::-webkit-scrollbar {
     display: none;
@@ -313,16 +320,19 @@
   .category_item {
     position: relative;
     margin-left: 1rem;
-    height: 12rem;
+    height: 20rem;
   }
   .category h6 {
     font-size: 1rem;
   }
   .category_details {
-    padding: 0 0.5rem;
+    padding: 1rem 0.5rem;
   }
   .btn_shop {
     padding: 0.5rem 1rem;
+    width: 100%;
+    background-color: var(--third-color);
+    border: 1px solid var(--border-color);
   }
   .nxt-btn,
   .pre-btn {
@@ -345,7 +355,7 @@
 /* other product section style start */
 .other_product {
   display: grid;
-  grid-template-columns: 1fr 1.4fr;
+  grid-template-columns: 1fr 1.2fr;
   background-image: url("../images/other-product.png");
   background-repeat: no-repeat;
   object-fit: contain;
@@ -400,6 +410,9 @@
 }
 
 @media (max-width: 1550px) {
+  .other_product {
+    height: 50rem;
+  }
   .other_product_item p {
     margin-left: 7rem;
   }
@@ -409,11 +422,9 @@
   .Special_Announcements {
     margin: 2rem 10rem;
   }
-  .other_product {
-    height: 50rem;
-  }
+
   .other_product_item h2 {
-    font-size: 4rem;
+    font-size: 3rem;
   }
 }
 @media (max-width: 1440px) {
@@ -460,8 +471,6 @@
     padding: 0.2rem 1.5rem;
     margin-left: 0.5rem;
   }
-
-
 }
 @media (max-width: 769px) {
   .other_product {
@@ -479,11 +488,10 @@
   .Special_Announcements {
     margin: 2rem 0rem;
   }
-
 }
 @media (max-width: 480px) {
   .other_product_item h2 {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     width: 15rem;
   }
   .other_product_item p {
@@ -498,13 +506,11 @@
     padding: 0.4rem 0.7rem;
   }
   .other_product_details {
-    margin-top: 3px;
+    margin-top: .1rem;
   }
   .other_product {
     height: 16rem;
     margin: 0;
-    display: grid;
-    grid-template-columns: 1fr 1.5fr;
   }
   .check_product p {
     font-size: 1rem;
@@ -527,5 +533,8 @@
   }
   .Announcements {
     padding: 8%;
+  }
+  .other_product_item{
+    margin-bottom: 2rem;
   }
 }

@@ -39,7 +39,7 @@
 }
 
 .product_details {
-  margin: 5rem;
+  margin: 4rem;
 }
 .product {
   display: flex;
@@ -115,6 +115,7 @@
 }
 .product_sort_item {
   border: 1px solid var(--border-color);
+  
 }
 .sort_by {
   display: flex;
@@ -191,34 +192,7 @@
   padding: 1rem 3rem;
 }
 
-/* .list {
-  display: none;
-}
-.list_design {
-  display: flex;
-  border-bottom: 1px solid var(--border-color);
-}
-.list_details {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 3rem;
-  width: 100%;
-  margin-left: 1.5rem;
-}
-.list_item {
-  padding: 1.5rem;
-}
-.list_design_image img {
-  margin-left: 5rem;
-  width: 100%;
-}
-.list_details h2 {
-  font-size: 2.4rem;
-}
-.list_details p {
-  font-size: 1.6rem;
-} */
+
 .product_design {
   display: flex;
 }
@@ -228,36 +202,21 @@
   color: var(--primary-color);
   font-weight: 800;
 }
-
-.pagination div {
-  display: inline-block;
-  margin: 0 1rem;
-  font-size: 1.5rem;
-  color: var(--primary-color);
-}
-.pagination_section {
+.pagination{
   display: flex;
   justify-content: center;
-  margin-bottom: 5rem;
-  margin-top: 2rem;
-}
 
-.pagination .prev,
-.pagination .next {
-  color: var(--text-black);
-  border: 1px solid var(--border-color);
-  font-size: 1.5rem;
-  padding: 0.7rem 1.5rem;
-  cursor: pointer;
 }
+.pagination li{
+  padding-left: 3rem;
 
-.pagination .prev.disabled,
-.pagination .next.disabled {
-  border-color: var(--border-color);
-  color: var(--third-color);
-  pointer-events: none;
 }
-
+.page-link{
+  font-size: 2.5rem;  
+}
+a.page-link{
+  color: black;
+}
 .sub_product_item .hide {
   display: none;
 }
@@ -422,15 +381,14 @@
   .sub_product_item h2 {
     font-size: 1.5rem;
   }
-  .list_design img {
-    margin-left: 2rem;
+  .product_sort_item select{
+    padding-right: 3rem;
+    padding-left: .5rem;
   }
-  .list_details h2 {
-    font-size: 1.5rem;
+  .product_sort_by .show {
+    padding-left: 1rem;
   }
-  .list_details p {
-    font-size: 1.2rem;
-  }
+
   /* ad section responsive style start */
   .container_ad_search h6 {
     font-size: 2rem;
@@ -620,4 +578,13 @@
   .sub_product_item:hover {
     transform: none;
   }
+  .pagination{
+    margin-bottom: 1.7rem;
+  }
+  .pagination li {
+    padding-left: 2rem;
+}
+.page-link{
+  font-size: 1.5rem;
+}
 }

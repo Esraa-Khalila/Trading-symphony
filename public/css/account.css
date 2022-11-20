@@ -4,7 +4,7 @@
   display: grid;
   grid-template-columns: repeat(2, 25% 70%);
   background-color: rgb(241, 241, 241);
-  gap: 8rem;
+  gap: 5rem;
 }
 .sidebar_nav {
   background: #ffff;
@@ -200,6 +200,7 @@ td {
   border: 1px solid var(--secondary-color);
   font-size: 2rem;
   margin-top: 1.5rem;
+  padding: 1rem;
 }
 .languages {
   display: flex;
@@ -252,9 +253,6 @@ td {
     width: 25.5rem;
     height: 4.2rem;
   }
-  .save_btn {
-    margin-top: 0.1rem;
-  }
   .title {
     padding: 5rem 0 0 2.8rem;
   }
@@ -278,7 +276,6 @@ td {
     gap: 2rem;
   }
   .save_btn {
-    margin-top: 0;
     margin-left: 1rem;
   }
   .settings_input {

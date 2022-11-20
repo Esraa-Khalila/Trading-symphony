@@ -2,7 +2,7 @@ html[dir="rtl"] p {
   text-align: right;
 }
 html[dir="rtl"] .btn_shop {
-  margin-right: 60%;
+  margin-right: 55%;
   text-align: right;
 }
 html[dir="rtl"] .search input {
@@ -26,7 +26,13 @@ html[dir="rtl"] .Announcements p {
 html[dir="rtl"] .check_product {
   padding: 5rem 14rem;
 }
-html[dir="rtl"] .select1 {
+html[dir="rtl"] .sub_nav .select1 {
+  text-align: left;
+  background-position: calc(5px - 0%) center !important;
+  text-align: right;
+}
+
+html[dir="rtl"] .form_info .select1 {
   text-align: left;
   background-position: calc(5px - 0%) center !important;
   text-align: right;
@@ -41,28 +47,57 @@ html[dir="rtl"].image-slider .image-main {
 html[dir="rtl"] .btn_add_cart {
   margin-right: 2rem;
 }
-html[dir="rtl"]  .zoom {
+html[dir="rtl"] .zoom {
   top: 198px;
-    right: 14px;
+  right: 14px;
 }
-html[dir="rtl"]  .payment input {
+html[dir="rtl"] .payment input {
   margin-left: 2rem;
 }
 html[dir="rtl"].form_info label {
   padding: 2rem;
 }
-html[dir="rtl"] .btn-file{
+html[dir="rtl"] .btn-file {
   padding: 0rem;
 }
 html[dir="rtl"] .languages input {
   margin-left: 3rem;
+}
+html[dir="rtl"] .product_details .price_details {
+  display: flex;
+}
+html[dir="rtl"] .nav_menu_item.cart {
+  padding-right: 2.5rem;
+}
+html[dir="rtl"] .category_details {
+  padding: 2rem;
+}
+html[dir="rtl"] .category h6 {
+  padding-right: 2rem;
+}
+html[dir="rtl"] .price_btn {
+  margin: 8rem 0rem 1rem 0;
+}
+html[dir="rtl"] .confirm_form_number {
+  padding-right: 1rem;
+}
+html[dir="rtl"] .checkout_image img {
+  width: 79%;
 }
 @media (max-width: 1550px) {
   html[dir="rtl"] .btn_shop {
     margin-right: 52%;
   }
   html[dir="rtl"] .Announcements {
-    margin-right: 45rem;
+    margin-right: 50rem;
+  }
+  html[dir="rtl"] .other_product {
+    display: grid;
+    grid-template-columns: 1fr 8fr;
+  }
+
+  html[dir="rtl"] .other_product_item h2 {
+    font-size: 3.5rem;
   }
 }
 
@@ -87,29 +122,54 @@ html[dir="rtl"] .languages input {
     margin-right: 18%;
   }
   html[dir="rtl"] .category_item {
-    height: 35rem;
+    height: 30rem;
   }
 
   html[dir="rtl"] .Announcements {
     margin-right: 27rem;
   }
+  html[dir="rtl"] .other_product_item h2 {
+    font-size: 2.5em;
+    width: 50rem;
+  }
+  html[dir="rtl"] .category_details {
+    padding: 1rem;
+  }
 }
 @media (max-width: 769px) {
-
-
   html[dir="rtl"] .check_product {
-      padding: 5rem 5rem;
+    padding: 5rem 5rem;
   }
   html[dir="rtl"] .category_item {
     height: 20rem;
-}
+  }
+  html[dir="rtl"] .toggle .icon_search {
+    margin-left: 2.5rem;
+  }
+  html[dir="rtl"] .other_product_item h2 {
+    font-size: 1.5rem;
+    width: 20rem;
+  }
+  html[dir="rtl"] .sub_product_item {
+    text-align: center;
+  }
+  .categories_name_mobile label {
+    padding-right: 1rem;
+  }
+  html[dir="rtl"] .single_product_info {
+    margin-left: 0;
+    padding-left: 0;
+  }
+  html[dir="rtl"] .hamburger-icon {
+    padding-left: 1.5rem;
+  }
 }
 @media (max-width: 480px) {
   html[dir="rtl"] .category_img .category_img_two {
-    width: 70%;
+    width: 50%;
   }
   html[dir="rtl"] .category_img .category_img_one {
-    width: 50%;
+    width: 30%;
   }
   html[dir="rtl"] .check_product {
     padding: 5rem 1rem;
@@ -122,9 +182,36 @@ html[dir="rtl"] .languages input {
   }
   html[dir="rtl"] .Announcements {
     margin-right: 13.5rem;
-}
+  }
   html[dir="rtl"].other_product {
-    height: 16rem;
+    height: 14rem;
+  }
+  html[dir="rtl"] .btn_shop {
+    margin-right: 0;
+  }
+  html[dir="rtl"] .category_details {
+    width: 60%;
+  }
+  html[dir="rtl"] .image-main {
+    width: 100%;
+  }
+  html[dir="rtl"] .product-images {
+    margin-right: 2rem;
+  }
+  html[dir="rtl"] .product-images img {
+    width: 32%;
+  }
+  html[dir="rtl"] .product-sub-heading {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  html[dir="rtl"] .btn-file input[type="file"] {
+    font-size: 0;
+  }
+  html[dir="rtl"] .form_info label {
+    font-size: 1.2rem;
+  }
+  html[dir="rtl"] .main_title {
+    text-align: center;
   }
 }
-
