@@ -349,6 +349,7 @@ hr {
     font-size: 1.7rem;
     padding-top: 1rem;
   }
+
 }
 
 @media (max-width: 1024px) {
@@ -481,5 +482,8 @@ hr {
   }
   .image-slider .image-main {
     padding: 0;
+  }
+  .zoom{
+    width: 80%;
   }
 }

@@ -322,6 +322,9 @@ a.page-link{
     grid-template-columns: repeat(3, 1fr);
     gap: 4rem;
   }
+  .search_product {
+    width: 96% !important;
+  }
   .price_details {
     padding: 1rem 3rem;
   }
@@ -336,9 +339,9 @@ a.page-link{
     font-size: 1.2rem;
     padding: 1.5rem 1rem;
   }
-  .price_details {
+  /* .price_details {
     padding: 1rem 1rem;
-  }
+  } */
   .price {
     font-size: 1.2rem;
   }
@@ -357,7 +360,7 @@ a.page-link{
 @media (max-width: 1440px) {
   .search_product {
     display: grid;
-    grid-template-columns: repeat(4, 21.5%) !important;
+    grid-template-columns: repeat(4, 22%) !important;
   }
 }
 @media (max-width: 1024px) {
@@ -422,6 +425,7 @@ a.page-link{
     border: none;
     border-bottom: 1px solid var(--text-black);
     padding-bottom: 1.5rem;
+    margin-left: 1rem;
   }
 
   .sub_product_item h2 {
@@ -490,7 +494,7 @@ a.page-link{
   }
   .container_ad_search {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 30%);
     margin: 5rem 0;
   }
   .container_ad_search h6 {
@@ -533,7 +537,7 @@ a.page-link{
   }
   .container_ad_search {
     display: grid;
-    grid-template-columns: repeat(3, 10.5rem);
+    grid-template-columns: repeat(3, 35%);
     margin: 2rem 1rem;
     justify-content: center;
   }
@@ -587,4 +591,9 @@ a.page-link{
 .page-link{
   font-size: 1.5rem;
 }
+.ad_btn_search{
+  
+  font-size: 1.5rem;
+}
+
 }

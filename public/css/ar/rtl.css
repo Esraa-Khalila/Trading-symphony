@@ -84,6 +84,22 @@ html[dir="rtl"] .confirm_form_number {
 html[dir="rtl"] .checkout_image img {
   width: 79%;
 }
+html[dir="rtl"] .product_sort_type {
+  padding-right: 0;
+}
+html[dir="rtl"] .product_sort_icon {
+  padding: 0 2rem;
+}
+html[dir="rtl"] .container_ad_search .select1 {
+  text-align: left;
+  background-position: calc(5px - 0%) center !important;
+  text-align: right;
+}
+
+
+html[dir="rtl"]  .sub_nav_price {
+    padding-right: 1rem;
+}
 @media (max-width: 1550px) {
   html[dir="rtl"] .btn_shop {
     margin-right: 52%;
