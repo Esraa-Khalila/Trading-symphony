@@ -375,128 +375,34 @@
         </div>
       </div>
     </div>
-    <div class="list">
-      <div class="list_type">
-        <div class="list_design">
-          <div><img src="./images/Announcements-/Announcements-one.png" /></div>
-          <div class="list_details">
-            <h2 class="list_item">
-              ASUS ROG Strix GeForce RTX 3070 V2 8GB GDDR6 OC Edition
-              Graphic Card
-            </h2>
-            <p class="list_item">
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-              diam nonumy eirmod tempor invidunt ut labore et dolore magna
-              aliquyam erat, sed diam voluptua. At vero eos et accusam et
-              justo duo dolores et ea rebum. Stet clita kasd gubergren, no
-              sea takimata
-            </p>
-            <div class="user_info_list">
-              <div>
-                <iconify-icon icon="bxs:user" class="Announcements_icon"></iconify-icon>
-                <span>Ahmed Khaled</span>
-              </div>
-              <div>
-                <iconify-icon icon="carbon:phone-filled" class="Announcements_icon"></iconify-icon>
-                <span>00962789685234</span>
-              </div>
-            </div>
-            <span class="list_item price">99900 JOD</span>
-          </div>
-        </div>
-        <div class="list_design">
-          <div><img src="./images/Announcements-/Announcements-two.png" /></div>
-          <div class="list_details">
-            <h2 class="list_item">
-              ASUS ROG Strix GeForce RTX 3070 V2 8GB GDDR6 OC Edition
-              Graphic Card
-            </h2>
-            <p class="list_item">
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-              diam nonumy eirmod tempor invidunt ut labore et dolore magna
-              aliquyam erat, sed diam voluptua. At vero eos et accusam et
-              justo duo dolores et ea rebum. Stet clita kasd gubergren, no
-              sea takimata
-            </p>
-            <div class="user_info_list">
-              <div>
-                <iconify-icon icon="bxs:user" class="Announcements_icon"></iconify-icon>
-                <span>Ahmed Khaled</span>
-              </div>
-              <div>
-                <iconify-icon icon="carbon:phone-filled" class="Announcements_icon"></iconify-icon>
-                <span>00962789685234</span>
-              </div>
-            </div>
-            <span class="list_item price">99900 JOD</span>
-          </div>
-        </div>
-        <div class="list_design">
-          <div><img src="./images/Announcements-/Announcements-three.png" /></div>
-          <div class="list_details">
-            <h2 class="list_item">
-              ASUS ROG Strix GeForce RTX 3070 V2 8GB GDDR6 OC Edition
-              Graphic Card
-            </h2>
-            <p class="list_item">
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-              diam nonumy eirmod tempor invidunt ut labore et dolore magna
-              aliquyam erat, sed diam voluptua. At vero eos et accusam et
-              justo duo dolores et ea rebum. Stet clita kasd gubergren, no
-              sea takimata
-            </p>
-            <div class="user_info_list">
-              <div>
-                <iconify-icon icon="bxs:user" class="Announcements_icon"></iconify-icon>
-                <span>Ahmed Khaled</span>
-              </div>
-              <div>
-                <iconify-icon icon="carbon:phone-filled" class="Announcements_icon"></iconify-icon>
-                <span>00962789685234</span>
-              </div>
-            </div>
-            <span class="list_item price">99900 JOD</span>
-          </div>
-        </div>
-        <div class="list_design">
-          <div><img src="./images/Announcements-/Announcements-four.png" /></div>
-          <div class="list_details">
-            <h2 class="list_item">
-              ASUS ROG Strix GeForce RTX 3070 V2 8GB GDDR6 OC Edition
-              Graphic Card
-            </h2>
-            <p class="list_item">
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-              diam nonumy eirmod tempor invidunt ut labore et dolore magna
-              aliquyam erat, sed diam voluptua. At vero eos et accusam et
-              justo duo dolores et ea rebum. Stet clita kasd gubergren, no
-              sea takimata
-            </p>
-            <div class="user_info_list">
-              <div>
-                <iconify-icon icon="bxs:user" class="Announcements_icon"></iconify-icon>
-                <span>Ahmed Khaled</span>
-              </div>
-              <div>
-                <iconify-icon icon="carbon:phone-filled" class="Announcements_icon"></iconify-icon>
-                <span>00962789685234</span>
-              </div>
-            </div>
-            <span class="list_item price">99900 JOD</span>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="pagination_section">
-      <div class="pagination">
-        <div class="prev">Prev</div>
-        <div class="page">
-          Page <span class="page-num"></span>
-          <!-- <div class="num_page active">1</div> -->
-        </div>
-        <div class="next">Next</div>
-      </div>
-    </div>
+    <ul class="pagination">
+      <li
+        class="page-item disabled"
+        aria-disabled="true"
+        aria-label="« السابق"
+      >
+        <span class="page-link" aria-hidden="true">‹</span>
+      </li>
+
+      <li class="page-item active" aria-current="page">
+        <span class="page-link">1</span>
+      </li>
+      <li class="page-item">
+        <a class="page-link" href="http://127.0.0.1:8000/products?page=2"
+          >2</a
+        >
+      </li>
+
+      <li class="page-item">
+        <a
+          class="page-link"
+          href="http://127.0.0.1:8000/products?page=2"
+          rel="next"
+          aria-label="التالي »"
+          >›</a
+        >
+      </li>
+    </ul>
     </div>
     </div>
   </section>

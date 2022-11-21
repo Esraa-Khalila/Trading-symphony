@@ -179,6 +179,10 @@ html[dir="rtl"]  .sub_nav_price {
   html[dir="rtl"] .hamburger-icon {
     padding-left: 1.5rem;
   }
+  html[dir="rtl"] .sub_product_item span {
+    font-size: 1.2rem;
+    display: flex;
+}
 }
 @media (max-width: 480px) {
   html[dir="rtl"] .category_img .category_img_two {
