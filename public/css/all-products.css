@@ -141,6 +141,9 @@
 .sub_product_item:hover {
   transform: scale(1.1);
 }
+.show_as_list .sub_product_item:hover {
+  transform: scale(1);
+}
 
 @keyframes card {
   from {
